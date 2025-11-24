@@ -3,7 +3,6 @@ import { getFirestore } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
 import { getAnalytics } from 'firebase/analytics';
 
-// Cấu hình Firebase từ environment variables
 const firebaseConfig = {
     apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
     authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
@@ -16,12 +15,10 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 
-// Khởi tạo Analytics (nếu cần)
 if (typeof window !== 'undefined') {
   getAnalytics(app);
 }
 
-// Khởi tạo Firestore và Auth
 const db = getFirestore(app);
 const auth = getAuth(app);
 
