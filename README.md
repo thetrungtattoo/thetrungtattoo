@@ -8,8 +8,6 @@
   <img src="https://img.shields.io/badge/React-19.1.1-61dafb" alt="React 19.1.1">
 </p>
 
----
-
 <h3 align="center">Built with modern web technologies:</h3>
 
 <p align="center">
