@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import styles from './styles.module.scss';
-import logo from '@/assets/svg/Logo.svg';
 import { geminiService, GeminiConfigError, GeminiApiError } from '../../services/geminiService';
 import { studioInfo } from '../../config/studioInfo';
+import { CloseIcon } from '../../assets/svg/svg';
 
 interface ChatBotProps {
     onClose?: () => void;
@@ -86,11 +86,11 @@ const ChatBot: React.FC<ChatBotProps> = ({ onClose }) => {
         <div className={styles.chatBotContainer}>
             <div className={styles.chatHeader}>
                 <div className={styles.logo}>
-                    <img src={logo} alt="logo" />
+                    <span>Quản Gia Online</span>
                 </div>
                 {onClose && (
                     <button className={styles.closeButton} onClick={onClose}>
-                        ×
+                        <CloseIcon />
                     </button>
                 )}
             </div>
@@ -110,16 +110,24 @@ const ChatBot: React.FC<ChatBotProps> = ({ onClose }) => {
                     </div>
                 )}
             </div>
+            <div className={styles.chatInputContainer}>
             <div className={styles.chatInput}>
                 <input
                     type="text"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     onKeyPress={handleKeyPress}
-                    placeholder={isLoading ? "Đang xử lý..." : "Nhập tin nhắn..."}
-                    className={styles.inputField}
+                    placeholder={isLoading ? "Đang trả lời..." : "Nhập tin nhắn..."}
+                    className={styles.chatInputField}
                     disabled={isLoading}
                 />
+                <svg className={styles.attachIcon} viewBox="0 0 24 24">
+                  <path d="M16.5 6v11.5c0 2.21-1.79 4-4 4s-4-1.79-4-4V5c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5v10.5c0 .55-.45 1-1 1s-1-.45-1-1V6H10v9.5c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5V5c0-2.21-1.79-4-4-4s-4 1.79-4 4v12.5c0 3.04 2.46 5.5 5.5 5.5s5.5-2.46 5.5-5.5V6h-1.5z" />
+                </svg>
+                <svg className={styles.sendIcon} viewBox="0 0 24 24" onClick={handleSendMessage}>
+                  <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+                </svg>
+            </div>
             </div>
         </div>
     );

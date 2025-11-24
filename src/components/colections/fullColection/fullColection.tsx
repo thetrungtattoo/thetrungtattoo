@@ -60,8 +60,8 @@ const FullColection = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 interface ProductCardProps {
   product: ProductImage
@@ -82,27 +82,38 @@ const ProductCard: React.FC<ProductCardProps> = ({
   reviewCount,
   onFavoriteClick,
   onProductClick
-}) => (
-  <div className={styles.productWrapper}>
-    <div className={styles.productItem}>
-      <div className={styles.productImageContainer}>
-        {product.mainImage && <img src={product.mainImage} alt={product.name} />}
-        <div className={styles.imageOverlay} onClick={onProductClick}>
-          <span className={styles.overlayText}>XEM CHI TIẾT</span>
+}) => {
+  const handleProductClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    onProductClick();
+  };
+
+  const handleFavoriteClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    onFavoriteClick();
+  };
+
+  return (
+    <div className={styles.productWrapper}>
+      <div className={styles.productItem} onClick={handleProductClick}>
+        <div className={styles.productImageContainer}>
+          {product.mainImage && <img src={product.mainImage} alt={product.name} />}
+          <div className={styles.imageOverlay}>
+            <span className={styles.overlayText}>XEM CHI TIẾT</span>
+          </div>
         </div>
-      </div>
-      <div className={styles.productInfo}>
+        <div className={styles.productInfo}>
         <span className={styles.productName}>{product.name}</span>
         <span className={styles.productDescription}>
           {getProductDescription(product.description)}
         </span>
         <div className={styles.productAction}>
-          <span className={styles.messageButton} onClick={onProductClick}>
+          <span className={styles.messageButton} onClick={handleProductClick}>
             <MessageTV />
           </span>
           <span
             className={`${styles.heartButton} ${isFavorite ? styles.heartActive : ''}`}
-            onClick={onFavoriteClick}
+            onClick={handleFavoriteClick}
           >
             {isFavorite ? <HeartIcon /> : <HeartActiveIcon />}
           </span>
@@ -118,9 +129,10 @@ const ProductCard: React.FC<ProductCardProps> = ({
             </span>
           </div>
         </div>
+        </div>
       </div>
     </div>
-  </div>
-)
+  );
+};
 
 export default FullColection

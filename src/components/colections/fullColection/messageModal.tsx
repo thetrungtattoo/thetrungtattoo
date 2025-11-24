@@ -174,10 +174,11 @@ const MessageModal: React.FC<MessageModalProps> = ({ product, isOpen, onClose })
   if (!isOpen || !product) return null
 
   const markdownComponents = {
-    p: ({ children }: any) => <p style={{ margin: 0, lineHeight: '1.4' }}>{children}</p>,
+    p: ({ children }: any) => <p style={{ margin: 0, lineHeight: '28px' }}>{children}</p>,
     strong: ({ children }: any) => <strong style={{ fontWeight: 'bold' }}>{children}</strong>,
-    ul: ({ children }: any) => <ul style={{ margin: '8px 0', paddingLeft: '20px' }}>{children}</ul>,
-    li: ({ children }: any) => <li style={{ margin: '4px 0' }}>{children}</li>
+    ul: ({ children }: any) => <ul style={{ margin: '8px 0', paddingLeft: '24px' }}>{children}</ul>,
+    ol: ({ children }: any) => <ol style={{ margin: '8px 0', paddingLeft: '28px', paddingRight: '0' }}>{children}</ol>,
+    li: ({ children }: any) => <li style={{ margin: '4px 0', paddingLeft: '4px' }}>{children}</li>
   }
 
   return (
@@ -198,7 +199,7 @@ const MessageModal: React.FC<MessageModalProps> = ({ product, isOpen, onClose })
             className={`${styles.mobileHeaderItem} ${mobileView === 'chat' ? styles.mobileActive : ''}`}
             onClick={() => setMobileView('chat')}
           >
-            <span className={styles.mobileHeaderText}>Tư vấn Online cùng AI</span>
+            <span className={styles.mobileHeaderText}>Tư vấn cùng Quản Gia Online</span>
           </div>
         </div>
 
@@ -209,15 +210,23 @@ const MessageModal: React.FC<MessageModalProps> = ({ product, isOpen, onClose })
                 className={`${styles.tab} ${activeTab === 'comments' ? styles.active : ''}`}
                 onClick={() => setActiveTab('comments')}
               >
-                Chat online với AI
+                Chat online với Quản Gia
               </div>
             </div>
 
             <div className={styles.commentsContent}>
               {messages.length === 0 ? (
                 <div className={styles.emptyChat}>
-                  <video src={aiAssistant} autoPlay muted loop />
-                  <p>Tư vấn miễn phí với AI Assistant. Hãy bắt đầu cuộc trò chuyện.</p>
+                  <video 
+                    src={aiAssistant} 
+                    autoPlay 
+                    muted 
+                    loop 
+                    playsInline
+                    disablePictureInPicture
+                    controls={false}
+                  />
+                  <p>Tư vấn miễn phí với Quản Gia Online. Hãy bắt đầu cuộc trò chuyện.</p>
                 </div>
               ) : (
                 <div className={styles.messagesContainer} ref={messagesContainerRef}>
