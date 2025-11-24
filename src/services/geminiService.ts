@@ -150,7 +150,23 @@ class GeminiService {
                         });
                     }
 
-                    throw new GeminiApiError(errorMessage, statusCode, errorCode);
+                    // Handle specific API errors with user-friendly messages
+                    let userFriendlyMessage = errorMessage;
+                    if (statusCode === 403) {
+                        if (errorMessage.toLowerCase().includes('leaked') || errorMessage.toLowerCase().includes('reported')) {
+                            userFriendlyMessage = 'API key không hợp lệ hoặc đã bị thu hồi. Vui lòng liên hệ quản trị viên để cập nhật API key mới.';
+                        } else {
+                            userFriendlyMessage = 'Không có quyền truy cập API. Vui lòng kiểm tra cấu hình API key.';
+                        }
+                    } else if (statusCode === 401) {
+                        userFriendlyMessage = 'API key không hợp lệ. Vui lòng kiểm tra lại cấu hình.';
+                    } else if (statusCode === 429) {
+                        userFriendlyMessage = 'API đang quá tải. Vui lòng thử lại sau vài phút.';
+                    } else if (statusCode >= 500) {
+                        userFriendlyMessage = 'Lỗi từ phía server. Vui lòng thử lại sau.';
+                    }
+
+                    throw new GeminiApiError(userFriendlyMessage, statusCode, errorCode);
                 }
 
                 const data: GeminiResponse = await response.json();

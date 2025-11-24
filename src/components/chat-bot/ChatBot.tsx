@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './styles.module.scss';
 import logo from '@/assets/svg/Logo.svg';
-import { geminiService } from '../../services/geminiService';
+import { geminiService, GeminiConfigError, GeminiApiError } from '../../services/geminiService';
 import { studioInfo } from '../../config/studioInfo';
 
 interface ChatBotProps {
@@ -35,11 +35,6 @@ const ChatBot: React.FC<ChatBotProps> = ({ onClose }) => {
             setIsLoading(true);
             
             try {
-                // Check if service is configured
-                if (!geminiService.isConfigured()) {
-                    throw new Error('API_KEY_NOT_CONFIGURED');
-                }
-
                 const chatHistory = geminiService.convertChatHistory(messages);
                 const botResponse = await geminiService.generateResponse(userMessage, chatHistory);
                 
@@ -50,16 +45,23 @@ const ChatBot: React.FC<ChatBotProps> = ({ onClose }) => {
                 // Determine error message based on error type
                 let errorMessage = 'Xin lỗi, hệ thống đang quá tải. Vui lòng thử lại sau hoặc liên hệ trực tiếp với chúng tôi qua số điện thoại: 0378 927 665.';
                 
-                if (error instanceof Error) {
-                    // Check for specific error types
-                    if (error.message.includes('API key') || error.message.includes('chưa được cấu hình')) {
-                        errorMessage = 'Xin lỗi, dịch vụ AI tạm thời không khả dụng. Vui lòng liên hệ trực tiếp với chúng tôi qua số điện thoại: 0378 927 665.';
-                    } else if (error.message.includes('kết nối mạng') || error.message.includes('network')) {
+                if (error instanceof GeminiConfigError) {
+                    // API key not configured
+                    errorMessage = 'Xin lỗi, dịch vụ AI tạm thời không khả dụng. Vui lòng liên hệ trực tiếp với chúng tôi qua số điện thoại: 0378 927 665.';
+                } else if (error instanceof GeminiApiError) {
+                    // Use the user-friendly message from GeminiApiError
+                    // If it's an API key issue, append contact info
+                    if (error.statusCode === 403 || error.statusCode === 401) {
+                        errorMessage = `${error.message} Vui lòng liên hệ trực tiếp với chúng tôi qua số điện thoại: 0378 927 665.`;
+                    } else {
+                        errorMessage = error.message;
+                    }
+                } else if (error instanceof Error) {
+                    // Check for specific error messages
+                    if (error.message.includes('kết nối mạng') || error.message.includes('network')) {
                         errorMessage = 'Xin lỗi, có vấn đề về kết nối mạng. Vui lòng kiểm tra kết nối internet và thử lại sau.';
                     } else if (error.message.includes('thời gian chờ') || error.message.includes('timeout')) {
                         errorMessage = 'Xin lỗi, yêu cầu quá thời gian chờ. Vui lòng thử lại sau.';
-                    } else if (error.message === 'API_KEY_NOT_CONFIGURED') {
-                        errorMessage = 'Xin lỗi, dịch vụ AI tạm thời không khả dụng. Vui lòng liên hệ trực tiếp với chúng tôi qua số điện thoại: 0378 927 665.';
                     }
                 }
                 

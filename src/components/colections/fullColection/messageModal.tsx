@@ -123,11 +123,6 @@ const MessageModal: React.FC<MessageModalProps> = ({ product, isOpen, onClose })
     scrollToBottom()
 
     try {
-      // Check if service is configured
-      if (!geminiService.isConfigured()) {
-        throw new Error('API_KEY_NOT_CONFIGURED')
-      }
-
       const chatHistory = geminiService.convertChatHistory(messages)
       const response = await geminiService.generateResponse(userMessage.text, chatHistory)
       const botMessage: ChatMessage = {
@@ -142,7 +137,8 @@ const MessageModal: React.FC<MessageModalProps> = ({ product, isOpen, onClose })
       // Determine error message based on error type
       let errorText = 'Xin lỗi, tôi không thể trả lời lúc này. Vui lòng thử lại sau.'
       
-      if (error instanceof GeminiConfigError || error instanceof Error && error.message === 'API_KEY_NOT_CONFIGURED') {
+      if (error instanceof GeminiConfigError) {
+        // API key not configured
         errorText = 'Xin lỗi, dịch vụ AI tạm thời không khả dụng. Vui lòng liên hệ trực tiếp với chúng tôi qua số điện thoại: 0378 927 665.'
       } else if (error instanceof GeminiApiError) {
         // Use the error message from GeminiApiError which already contains user-friendly text
