@@ -35,19 +35,27 @@ const FadeInSection: React.FC<FadeInSectionProps> = memo(({
     delay
   });
 
-  const animationClass = isVisible 
-    ? `${styles[direction]} ${styles.visible}` 
-    : `${styles[direction]} ${styles.hidden}`;
+  // Safely get direction class with fallback
+  const directionClass = styles[direction] || styles.fadeIn || '';
+  const visibilityClass = isVisible ? styles.visible : styles.hidden;
+  
+  const animationClass = `${directionClass} ${visibilityClass}`.trim();
 
   const inlineStyles: React.CSSProperties = {
     '--duration': `${duration}s`,
     '--delay': `${delay}ms`
   } as React.CSSProperties;
 
+  const finalClassName = [
+    styles.fadeInSection,
+    animationClass,
+    className
+  ].filter(Boolean).join(' ');
+
   return (
     <div
       ref={elementRef}
-      className={`${styles.fadeInSection} ${animationClass} ${className}`.trim()}
+      className={finalClassName}
       style={inlineStyles}
     >
       {children}

@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect, useMemo, useCallback } from 'react'
-import { geminiService } from '@/services/geminiService'
+import { geminiService, GeminiApiError, GeminiConfigError } from '@/services/geminiService'
 import type { ProductImage } from '@/types/product'
 import ReactMarkdown from 'react-markdown'
 import aiAssistant from '@/assets/images/colections/Ai.mp4'
@@ -123,6 +123,11 @@ const MessageModal: React.FC<MessageModalProps> = ({ product, isOpen, onClose })
     scrollToBottom()
 
     try {
+      // Check if service is configured
+      if (!geminiService.isConfigured()) {
+        throw new Error('API_KEY_NOT_CONFIGURED')
+      }
+
       const chatHistory = geminiService.convertChatHistory(messages)
       const response = await geminiService.generateResponse(userMessage.text, chatHistory)
       const botMessage: ChatMessage = {
@@ -133,10 +138,26 @@ const MessageModal: React.FC<MessageModalProps> = ({ product, isOpen, onClose })
       }
       setMessages(prev => [...prev, botMessage])
       scrollToBottom()
-    } catch {
+    } catch (error) {
+      // Determine error message based on error type
+      let errorText = 'Xin lỗi, tôi không thể trả lời lúc này. Vui lòng thử lại sau.'
+      
+      if (error instanceof GeminiConfigError || error instanceof Error && error.message === 'API_KEY_NOT_CONFIGURED') {
+        errorText = 'Xin lỗi, dịch vụ AI tạm thời không khả dụng. Vui lòng liên hệ trực tiếp với chúng tôi qua số điện thoại: 0378 927 665.'
+      } else if (error instanceof GeminiApiError) {
+        // Use the error message from GeminiApiError which already contains user-friendly text
+        errorText = error.message
+      } else if (error instanceof Error) {
+        if (error.message.includes('kết nối mạng') || error.message.includes('network')) {
+          errorText = 'Xin lỗi, có vấn đề về kết nối mạng. Vui lòng kiểm tra kết nối internet và thử lại sau.'
+        } else if (error.message.includes('thời gian chờ') || error.message.includes('timeout')) {
+          errorText = 'Xin lỗi, yêu cầu quá thời gian chờ. Vui lòng thử lại sau.'
+        }
+      }
+
       const errorMessage: ChatMessage = {
         id: Date.now() + 1,
-        text: 'Xin lỗi, tôi không thể trả lời lúc này. Vui lòng thử lại sau.',
+        text: errorText,
         isBot: true,
         timestamp: new Date()
       }

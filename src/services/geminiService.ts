@@ -17,20 +17,61 @@ interface ChatMessage {
     }>;
 }
 
+// Custom error classes for better error handling
+export class GeminiApiError extends Error {
+    readonly statusCode?: number;
+    readonly code?: string;
+
+    constructor(
+        message: string,
+        statusCode?: number,
+        code?: string
+    ) {
+        super(message);
+        this.name = 'GeminiApiError';
+        this.statusCode = statusCode;
+        this.code = code;
+    }
+}
+
+export class GeminiConfigError extends Error {
+    constructor(message: string) {
+        super(message);
+        this.name = 'GeminiConfigError';
+    }
+}
+
 class GeminiService {
     private apiKey: string;
     private baseUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
 
     constructor() {
         this.apiKey = import.meta.env.VITE_GEMINI_API_KEY || '';
-        if (!this.apiKey) {
+        
+        // Only warn in development, not in production to avoid exposing config issues
+        if (!this.apiKey && import.meta.env.DEV) {
             console.warn('VITE_GEMINI_API_KEY not found in environment variables');
         }
     }
 
+    /**
+     * Check if API key is configured
+     */
+    isConfigured(): boolean {
+        return !!this.apiKey && this.apiKey.trim().length > 0;
+    }
+
     async generateResponse(userMessage: string, chatHistory: ChatMessage[] = []): Promise<string> {
-        if (!this.apiKey) {
-            throw new Error('Gemini API key not configured');
+        // Validate API key
+        if (!this.isConfigured()) {
+            const error = new GeminiConfigError('Gemini API key chưa được cấu hình. Vui lòng liên hệ quản trị viên.');
+            console.error('[GeminiService]', error.message);
+            throw error;
+        }
+
+        // Validate input
+        if (!userMessage || !userMessage.trim()) {
+            throw new Error('Tin nhắn không được để trống');
         }
 
         try {
@@ -68,33 +109,92 @@ class GeminiService {
                 }
             ];
 
-            const response = await fetch(this.baseUrl, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'X-goog-api-key': this.apiKey,
-                },
-                body: JSON.stringify({
-                    contents: messages
-                })
-            });
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 30000); // 30s timeout
 
-            if (!response.ok) {
-                const errorData = await response.json();
-                throw new Error(`Gemini API error: ${errorData.error?.message || 'Unknown error'}`);
-            }
+            try {
+                const response = await fetch(this.baseUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-goog-api-key': this.apiKey,
+                    },
+                    body: JSON.stringify({
+                        contents: messages
+                    }),
+                    signal: controller.signal
+                });
 
-            const data: GeminiResponse = await response.json();
-            
-            if (data.candidates && data.candidates.length > 0) {
-                return data.candidates[0].content.parts[0].text;
-            } else {
-                throw new Error('No response from Gemini API');
+                clearTimeout(timeoutId);
+
+                if (!response.ok) {
+                    let errorMessage = 'Lỗi không xác định từ API';
+                    let statusCode = response.status;
+                    let errorCode: string | undefined;
+
+                    try {
+                        const errorData = await response.json();
+                        errorMessage = errorData.error?.message || errorMessage;
+                        errorCode = errorData.error?.code;
+                    } catch {
+                        // If JSON parsing fails, use status text
+                        errorMessage = response.statusText || errorMessage;
+                    }
+
+                    // Log detailed error in development
+                    if (import.meta.env.DEV) {
+                        console.error('[GeminiService] API Error:', {
+                            status: statusCode,
+                            code: errorCode,
+                            message: errorMessage
+                        });
+                    }
+
+                    throw new GeminiApiError(errorMessage, statusCode, errorCode);
+                }
+
+                const data: GeminiResponse = await response.json();
+                
+                if (data.candidates && data.candidates.length > 0 && data.candidates[0].content?.parts?.[0]?.text) {
+                    return data.candidates[0].content.parts[0].text;
+                } else {
+                    throw new GeminiApiError('API không trả về dữ liệu hợp lệ');
+                }
+
+            } catch (error) {
+                clearTimeout(timeoutId);
+                
+                // Handle abort (timeout)
+                if (error instanceof Error && error.name === 'AbortError') {
+                    throw new GeminiApiError('Yêu cầu quá thời gian chờ. Vui lòng thử lại sau.');
+                }
+                
+                // Re-throw if it's already a GeminiApiError
+                if (error instanceof GeminiApiError || error instanceof GeminiConfigError) {
+                    throw error;
+                }
+
+                // Handle network errors
+                if (error instanceof TypeError && error.message.includes('fetch')) {
+                    throw new GeminiApiError('Lỗi kết nối mạng. Vui lòng kiểm tra kết nối internet và thử lại.');
+                }
+
+                // Generic error
+                const errorMessage = error instanceof Error ? error.message : 'Lỗi không xác định';
+                console.error('[GeminiService] Unexpected error:', error);
+                throw new GeminiApiError(`Lỗi: ${errorMessage}`);
             }
 
         } catch (error) {
-            console.error('Error calling Gemini API:', error);
-            throw error;
+            // Re-throw known errors
+            if (error instanceof GeminiApiError || error instanceof GeminiConfigError) {
+                throw error;
+            }
+
+            // Wrap unknown errors
+            const errorMessage = error instanceof Error ? error.message : 'Lỗi không xác định';
+            console.error('[GeminiService] Error calling Gemini API:', error);
+            throw new GeminiApiError(errorMessage);
         }
     }
 
