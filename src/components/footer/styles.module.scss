@@ -1,0 +1,196 @@
+.footer {
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footerContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 auto;
+
+  .footerItem {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+
+    .footerItemTitle {
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .footerItemSubTitle {
+      font-size: 16px;
+      font-weight: 390;
+      padding: 5px 0;
+
+      &:hover {
+        cursor: pointer;
+        color: #fafad2;
+      }
+    }
+
+    .logoFooter {
+      width: 100%;
+    }
+
+    .ncstLogo {
+      width: 100%;
+    }
+
+    .informationContent {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .informationItem {
+        width: 100%;
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+
+        .customIcon {
+          padding-top: 8px;
+
+          svg {
+            color: #fff;
+          }
+        }
+
+        .informationTitle {
+          height: 100%;
+          display: flex;
+          align-items: center;
+        }
+
+        .informationText {
+          display: flex;
+          align-items: center;
+          font-size: 16px;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 390;
+          letter-spacing: 0.5px;
+          text-align: justify;
+          line-height: 32px;
+          letter-spacing: 0.5px;
+          flex: 1;
+          word-wrap: break-word;
+        }
+      }
+    }
+  }
+
+  .footerItem2 {
+    width: fit-content !important;
+  }
+
+  .footerItem3 {
+    width: fit-content !important;
+  }
+}
+
+.footerItem4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  .footerItemTitle {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .footerItem4Content {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .contactIcons {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      span {
+        svg {
+          width: 32px;
+          height: 32px;
+          fill: #fafad2;
+          transition: fill 0.3s ease;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .contactLine {
+      height: 40px;
+      width: 2px;
+      background-color: #333;
+    }
+    .contactPayment {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      flex-wrap: wrap;
+      img {
+        width: 56px;
+        height: 48px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footerContainer {
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 24px;
+    .footerItem {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  .logoFooter {
+    width: 50% !important;
+  }
+  .footer {
+    gap: 24px;
+  }
+  .contactLine{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footerContainer {
+    justify-content: flex-start;
+  }
+  .logoFooter {
+    width: 80% !important;
+  }
+}

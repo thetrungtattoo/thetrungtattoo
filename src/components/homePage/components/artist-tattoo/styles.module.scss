@@ -1,0 +1,52 @@
+.artistTattooSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.artistTattooLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px 120px;
+  position: relative;
+  color: #ffffff;
+
+  @media screen and (max-width: 768px) {
+    padding: 24px 60px;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 24px 0 0 0;
+  }
+
+  .artistTattooTitle {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 52px;
+    letter-spacing: 3.5px;
+    word-wrap: break-word;
+    text-transform: uppercase;
+  }
+
+  .artistTattooText2 {
+    text-align: right;
+    font-style: italic;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  .artistTattooName {
+    text-align: right;
+    font-style: italic;
+    display: block;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+}

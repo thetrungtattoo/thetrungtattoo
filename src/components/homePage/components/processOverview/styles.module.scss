@@ -1,0 +1,307 @@
+.procedureSection {
+  width: 100%;
+  min-height: 70vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media screen and (max-width: 500px) {
+    gap: 24px;
+  }
+
+  .header {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    padding-left: 50px;
+
+    @media screen and (max-width: 768px) {
+      gap: 16px;
+      padding-left: 0 !important;
+      width: 100% !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+  
+    .title {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 52px;
+      letter-spacing: 5.5px;
+      word-wrap: break-word;
+      text-transform: uppercase;
+
+      @media screen and (max-width: 500px) {
+        font-size: 26px;
+      }
+    }
+
+    .subtitle {
+      width: 100%;
+      font-weight: 400;
+      color: #999;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+  }
+
+  .timelineContainer {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+  
+    .timelineLine {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 2px;
+      height: 100%;
+      transform: translateX(-50%);
+      z-index: 1;
+      background: repeating-linear-gradient(
+        to bottom,
+        #fafad2 0,
+        #fafad2 12px,
+        transparent 12px,
+        transparent 24px
+      );
+      background-size: 2px 24px;
+      animation: timelineFlow 1s linear infinite;
+    }
+  
+    @keyframes timelineFlow {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 0 24px;
+      }
+    }
+  
+    .timeline {
+      min-height: 165vh;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      z-index: 2;
+  
+      &::-webkit-scrollbar {
+        display: none;
+      }
+  
+      @media screen and (max-width: 500px) {
+        min-height: 100vh !important;
+        gap: 24px;
+      }
+  
+      .step {
+        display: flex;
+        width: 100%;
+        cursor: pointer;
+        position: relative;
+        min-height: 23vh;
+
+        @media screen and (max-width: 500px) {
+          min-height: 13vh !important;
+        }
+  
+        &.stepLeft {
+          .stepContent {
+            left: 0;
+            right: calc(50% + 72px);
+            align-items: flex-end;
+            text-align: right;
+  
+            .stepTitle,
+            .stepSubtitle {
+              text-align: right;
+            }
+  
+            @media screen and (max-width: 500px) {
+              right: calc(50% + 45px);
+            }
+          }
+        }
+  
+        &.stepRight {
+          .stepContent {
+            left: calc(50% + 72px);
+            right: 0;
+            align-items: flex-start;
+            text-align: left;
+  
+            @media screen and (max-width: 500px) {
+              left: calc(50% + 45px);
+            }
+          }
+        }
+  
+        .stepIcon {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          background-color: #0f0f0f;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 3;
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  
+          &::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            border-radius: 50%;
+            background: conic-gradient(
+              from 0deg,
+              #fafad2 0deg 20deg,
+              transparent 20deg 40deg,
+              #fafad2 40deg 60deg,
+              transparent 60deg 80deg,
+              #fafad2 80deg 100deg,
+              transparent 100deg 120deg,
+              #fafad2 120deg 140deg,
+              transparent 140deg 160deg,
+              #fafad2 160deg 180deg,
+              transparent 180deg 200deg,
+              #fafad2 200deg 220deg,
+              transparent 220deg 240deg,
+              #fafad2 240deg 260deg,
+              transparent 260deg 280deg,
+              #fafad2 280deg 300deg,
+              transparent 300deg 320deg,
+              #fafad2 320deg 340deg,
+              transparent 340deg 360deg
+            );
+            padding: 2px;
+            -webkit-mask: linear-gradient(#fff 0 0) content-box,
+              linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask-composite: exclude;
+            transform-origin: center center;
+            animation: borderRotate 6.5s linear infinite;
+          }
+  
+          @keyframes borderRotate {
+            0% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+  
+          svg {
+            width: 40px;
+            height: 40px;
+            fill: #fafad2;
+            position: relative;
+            z-index: 1;
+  
+            @media screen and (max-width: 500px) {
+              width: 30px !important;
+              height: 30px !important;
+            }
+          }
+  
+          @media screen and (max-width: 500px) {
+            width: 60px !important;
+            height: 60px !important;
+          }
+        }
+  
+        .stepContent {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 5px;
+          position: absolute;
+  
+  
+          .stepNumber {
+            display: block;
+            font-size: 18px;
+            font-weight: 390;
+            letter-spacing: 3.5px;
+  
+            @media screen and (max-width: 500px) {
+              font-size: 16px;
+            }
+          }
+  
+          .stepTitle {
+            font-size: 18px;
+            font-weight: 390;
+            letter-spacing: 0.5px;
+  
+            @media screen and (max-width: 500px) {
+              font-size: 14px;
+            }
+          }
+  
+          .stepSubtitle {
+            color: #999;
+  
+            @media screen and (max-width: 500px) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+
+
+
+
+
+// Responsive design
+@media (max-width: 1024px) {
+  .step {
+    max-width: 700px;
+
+    &.stepLeft .stepContent {
+      right: calc(50% + 67px);
+    }
+
+    &.stepRight .stepContent {
+      left: calc(50% + 67px);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .step {
+    max-width: 100%;
+
+    &.stepLeft .stepContent {
+      right: calc(50% + 62px);
+    }
+
+    &.stepRight .stepContent {
+      left: calc(50% + 62px);
+    }
+  }
+}

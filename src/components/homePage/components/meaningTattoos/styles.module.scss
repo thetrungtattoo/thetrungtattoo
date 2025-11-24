@@ -1,0 +1,236 @@
+.meaningSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.meaningTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  .meaningSectionTitle {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.75;
+    text-align: center;
+    letter-spacing: 5.5px;
+    word-wrap: break-word;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 500px) {
+      font-size: 24px;
+    }
+  }
+
+  .meaningSectionSubText {
+    font-size: 18px;
+    font-weight: 390;
+    color: #999;
+  }
+}
+
+.meaningCarousel {
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carouselTrack {
+    display: flex;
+    gap: 24px;
+
+    .meaningCard {
+      flex-shrink: 0;
+      width: 225px;
+      border-radius: 16px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: 2px solid #222;
+      position: relative;
+
+      .cardImage {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        background-color: #ffffff;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          object-position: center;
+          transition: transform 0.3s ease;
+        }
+
+        .cardOverlay {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 0;
+          background: linear-gradient(
+            to top,
+            #000000f5 0%,
+            #000000e5 10%,
+            #000000d0 20%,
+            #000000b8 30%,
+            #0000009c 40%,
+            #00000080 50%,
+            #00000060 60%,
+            #00000040 70%,
+            #00000025 80%,
+            #00000015 90%,
+            #00000005 100%
+          );
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: height 0.4s ease;
+          overflow: hidden;
+
+          .overlayText {
+            color: #ffffff;
+            font-size: 16px;
+            letter-spacing: 1px;
+            opacity: 0;
+            transition: opacity 0.3s ease 0.1s;
+            position: absolute;
+            bottom: 25px;
+          }
+        }
+      }
+
+      &:hover {
+        .cardImage {
+          .cardOverlay {
+            height: 100%;
+
+            .overlayText {
+              opacity: 1;
+            }
+          }
+
+          img {
+            transform: scale(1.05);
+          }
+        }
+      }
+
+      .cardContent {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .cardDate {
+          font-size: 14px;
+          color: #666;
+          font-weight: 400;
+        }
+
+        .cardTitle {
+          line-height: 1.4;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+
+        .cardSubtitle {
+          font-size: 14px;
+          line-height: 2;
+          color: #666;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
+
+// Responsive design
+@media (max-width: 1200px) {
+  .meaningCard {
+    width: 250px;
+  }
+
+  .carouselTrack {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .meaningCard {
+    width: 220px;
+  }
+
+  .carouselTrack {
+    gap: 16px;
+  }
+
+  .cardTitle {
+    font-size: 16px;
+  }
+
+  .cardSubtitle {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .meaningCarousel {
+    gap: 12px;
+  }
+
+  .meaningCard {
+    width: 200px;
+  }
+
+  .carouselTrack {
+    gap: 12px;
+  }
+
+  .cardImage {
+    height: 250px;
+  }
+
+  .playButton {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .meaningCard {
+    width: 224px;
+  }
+
+  // .meaningSectionTitle {
+  //   font-size: 24px;
+  //   text-align: center;
+  // }
+
+  .carouselTrack {
+    gap: 8px;
+  }
+
+  .cardContent {
+    padding: 12px;
+  }
+}

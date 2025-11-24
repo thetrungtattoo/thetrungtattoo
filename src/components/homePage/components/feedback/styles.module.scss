@@ -1,0 +1,330 @@
+.feedback {
+  width: 100%;
+  display: flex;
+  gap: 32px;
+  position: relative;
+  cursor: pointer;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
+}
+
+.feedbackTitle {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    gap: 16px;
+  }
+
+  .subTitleText {
+    font-size: 18px;
+    font-weight: 390;
+    color: #999;
+
+    @media screen and (max-width: 1024px) {
+      text-align: center;
+    }
+  }
+
+  .titleText {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 5.5px;
+    line-height: 1.75;
+    word-wrap: break-word;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 1024px) {
+      text-align: center;
+    }
+
+    @media screen and (max-width: 425px) {
+      font-size: 24px;
+    }
+  }
+
+  .feedbackImage {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+
+    @media screen and (max-width: 1024px) {
+      justify-content: center;
+    }
+
+    .badgeCheck {
+      width: 80px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media screen and (max-width: 425px) {
+        width: 60px;
+        height: 60px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .badgeCheckText {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      .star {
+        display: flex;
+        gap: 8px;
+
+        .starIcon {
+          display: flex;
+          gap: 8px;
+          width: 40px;
+          height: 40px;
+  
+          @media screen and (max-width: 425px) {
+            width: 30px;
+            height: 30px;
+          }
+  
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+
+      
+
+      span {
+        font-size: 18px;
+        font-weight: 390;
+
+        @media screen and (max-width: 425px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.feedbackContainer {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 32px;
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
+}
+
+.feedbackCarousel {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carouselTrack {
+    display: flex;
+    gap: 32px;
+
+    .feedbackContent {
+      flex-shrink: 0;
+    }
+  }
+}
+
+.feedbackContent {
+  width: 100%;
+  max-width: 450px;
+  position: relative;
+  padding: 14px 0 0 16px;
+  cursor: pointer;
+
+  @media screen and (max-width: 425px) {
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 1024px) {
+    max-width: 350px;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border: 2px dashed #333;
+    border-radius: 8px;
+    width: calc(95% - 10px);
+    height: calc(95% - 10px);
+    top: 0;
+    left: 0;
+
+    @media screen and (max-width: 375px) {
+      width: calc(90% - 5px);
+      height: calc(85% - 5px);
+    }
+  }
+
+  &:hover {
+    &::before {
+      border-color: #ddeeff;
+    }
+  }
+
+  .feedbackItems {
+    min-height: 420px;
+    padding: 16px;
+    border: 5px solid #333;
+    background-color: #0f0f0f;
+    border-radius: 8px;
+    z-index: 10;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    @media screen and (max-width: 1024px) {
+      min-height: 350px;
+    }
+
+    .quoteTop {
+      position: absolute;
+      top: 8px;
+      left: 12px;
+      font-size: 82px;
+      font-weight: 700;
+      color: #666;
+      line-height: 1;
+      font-family: Georgia, serif;
+      z-index: 1;
+      opacity: 0.4;
+
+      @media screen and (max-width: 500px) {
+        font-size: 50px;
+        top: 6px;
+        left: 10px;
+      }
+    }
+
+    .quoteBottom {
+      position: absolute;
+      bottom: 8px;
+      right: 12px;
+      font-size: 82px;
+      font-weight: 700;
+      color: #666;
+      line-height: 1;
+      font-family: Georgia, serif;
+      z-index: 1;
+      opacity: 0.4;
+      transform: rotate(180deg);
+
+      @media screen and (max-width: 500px) {
+        font-size: 50px;
+        bottom: 6px;
+        right: 10px;
+      }
+    }
+
+    .feedbackInfo {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      padding-left: 40px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #333;
+      .avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .infoText {
+        display: flex;
+        flex-direction: column;
+
+        .nameText {
+          font-size: 18px;
+        }
+        .addressText {
+          font-size: 14px;
+          color: #999;
+        }
+        .ratingStars {
+          display: flex;
+          gap: 4px;
+          align-items: center;
+          margin-top: 4px;
+
+          .starIcon {
+            display: inline-flex;
+            width: 20px;
+            height: 20px;
+            color: #ffd700;
+
+            svg {
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          .starIconEmpty {
+            display: inline-flex;
+            width: 20px;
+            height: 20px;
+            color: #ffd700;
+            opacity: 0.3;
+
+            svg {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .feedbackContentText {
+      display: -webkit-box;
+      -webkit-line-clamp: 7;
+      line-clamp: 7;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+
+      @media screen and (max-width: 1024px) {
+        -webkit-line-clamp: 5;
+        line-clamp: 5;
+      }
+    }
+  }
+}

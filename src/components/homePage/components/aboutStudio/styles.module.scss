@@ -1,0 +1,221 @@
+.aboutStudioContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+
+  @media screen and (max-width: 500px) {
+    gap: 24px;
+  }
+}
+
+.aboutTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+
+  .sectionTitle {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 5.5px;
+    text-align: center;
+    word-wrap: break-word;
+    text-transform: uppercase;
+  }
+
+  .subTitle {
+    font-size: 18px;
+    font-weight: 390;
+    color: #999;
+    text-align: center;
+  }
+}
+
+.aboutContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .aboutItem {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+    padding-left: 24px;
+
+    @media screen and (max-width: 768px) {
+      padding-left: 0;
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .verticalIndicator {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 5px;
+      z-index: 0;
+      border-radius: 2px;
+      overflow: hidden;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    .indicatorBarTop {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      background: #222;
+      transition: height 0.3s ease;
+    }
+
+    .indicatorBarActive {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      background: #fafad2;
+      border-radius: 2px;
+      transition: top 0.3s ease, height 0.3s ease;
+    }
+
+    .indicatorBarBottom {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background: #222;
+      transition: height 0.3s ease;
+    }
+
+    .tabButton {
+      padding: 16px 24px;
+      background-color: #0f0f0f;
+      border: 1px solid #222;
+      border-radius: 8px;
+      color: #fff;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      z-index: 1;
+
+      &:hover {
+        background: #fafad21a;
+      }
+
+      &.active {
+        border-color: #fafad2;
+        background: #fafad21a;
+      }
+
+      @media screen and (max-width: 768px) {
+        padding: 10px 16px;
+      }
+
+      @media screen and (max-width: 425px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.aboutContentContainer {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+
+  .aboutContent {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+    z-index: 10;
+    height: fit-content;
+    padding: 24px;
+    border-radius: 8px;
+    border: 2px solid #222;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      padding: 16px;
+    }
+
+    .contentTitle {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 20px;
+      letter-spacing: 3.5px;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 390;
+      text-transform: uppercase;
+
+      .contentIcon {
+        width: 32px;
+        height: 32px;
+        fill: #fafad2;
+      }
+
+      @media screen and (max-width: 425px) {
+        font-size: 28px;
+      }
+    }
+
+    .subTitle {
+      font-size: 18px;
+      color: #999;
+    }
+  }
+
+  .aboutContentImageContainer {
+    width: 310px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+
+    @media screen and (max-width: 425px) {
+      display: block;
+      width: 250px;
+      height: auto;
+    }
+
+    .aboutContentImage {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      opacity: 0.25;
+    }
+  }
+}

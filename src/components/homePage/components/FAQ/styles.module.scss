@@ -1,0 +1,248 @@
+.faqContainer {
+  position: relative;
+  display: flex;
+  width: 100%;
+  gap: 32px;
+}
+
+.faqImageContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 310px;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  animation: float 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+
+  @media screen and (max-width: 1024px) {
+    width: 300px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 250px;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 200px;
+  }
+
+  .faqImage {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: left bottom;
+    opacity: 0.25;
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0) translateX(0);
+    }
+    25% {
+      transform: translateY(-20px) translateX(20px);
+    }
+    50% {
+      transform: translateY(20px) translateX(20px);
+    }
+    75% {
+      transform: translateY(20px) translateX(0);
+    }
+  }
+}
+
+.faqContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+  z-index: 10;
+
+  .faqTitle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    @media screen and (max-width: 500px) {
+      gap: 8px;
+    }
+
+    svg {
+      width: 40px;
+      height: 40px;
+      fill: #fafad2;
+
+      @media screen and (max-width: 768px) {
+        width: 30px;
+        height: 30px;
+      }
+
+      @media screen and (max-width: 450px) {
+        display: none;
+      }
+    }
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 52px;
+      letter-spacing: 5.5px;
+      word-wrap: break-word;
+      text-transform: uppercase;
+
+      &.titleShort {
+        display: none;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 24px;
+      }
+
+      @media screen and (max-width: 450px) {
+        &.titleFull {
+          display: none;
+        }
+
+        &.titleShort {
+          display: flex;
+          font-size: 32px;
+
+          svg {
+            display: block;
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  .faqGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .faqColumn {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+}
+
+.faqCard {
+  border-radius: 12px;
+  border: 2px solid #222;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  &.open {
+    .faqQuestion {
+      color: #ddeeff;
+      font-weight: 600;
+    }
+
+    .faqAnswerWrapper {
+      max-height: 1000px;
+      opacity: 1;
+    }
+  }
+
+  .faqQuestion {
+    width: 100%;
+    padding: 12px 24px;
+    border: none;
+    background: none;
+    text-align: left;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    outline: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+
+    &:hover {
+      color: #ddeeff;
+    }
+
+    &:focus-visible {
+      outline: 2px solid #ddeeff;
+      outline-offset: -2px;
+      border-radius: 12px;
+    }
+
+    .questionText {
+      flex: 1;
+      text-align: left;
+    }
+
+    .arrowIcon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+      svg {
+        width: 100%;
+        height: 100%;
+        fill: currentColor;
+      }
+
+      &.rotated {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .faqAnswerWrapper {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+
+    .faqAnswer {
+      padding: 0 24px 20px;
+      font-size: 16px;
+      text-align: left;
+      white-space: pre-line;
+
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+        padding: 0 20px 16px 20px;
+      }
+    }
+  }
+}
