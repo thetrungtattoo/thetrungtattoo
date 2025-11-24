@@ -1,174 +1,34 @@
-# Thế Trung Tattoo Studio - Frontend
+<h1 align="center">the Thế Trung Tattoo Studio</h1>
 
-## Tổng quan
-Ứng dụng web frontend cho Thế Trung Tattoo Studio, được xây dựng với React 19, TypeScript và Vite. Ứng dụng cung cấp giao diện hiện đại để khách hàng có thể khám phá các tác phẩm tattoo, đặt lịch hẹn và tương tác với AI assistant.
-
-## Tính năng chính
-
-### 🎨 Bộ sưu tập Tattoo
-- **Hiển thị sản phẩm**: Grid layout responsive với hình ảnh chất lượng cao
-- **Bộ lọc thông minh**: Filter theo danh mục với hiệu ứng animation mượt mà
-- **Tương tác sản phẩm**: Like/unlike, xem chi tiết, chia sẻ
-- **Tự động cập nhật**: Khi thêm data mới vào `colection.ts` sẽ tự động hiển thị
-
-### 🤖 AI Assistant (Gemini)
-- **Chat trực tiếp**: Tương tác với AI để tư vấn về sản phẩm
-- **Thông tin sản phẩm**: Hiển thị đầy đủ chi tiết, hình ảnh, mô tả
-- **Galerie hình ảnh**: Xem nhiều góc độ của từng tác phẩm
-- **Rating & Tags**: Đánh giá sao, hashtag, lượt yêu thích
-
-### 📱 Responsive Design
-- **Mobile-first**: Tối ưu cho mọi thiết bị
-- **Smooth animations**: Hiệu ứng chuyển động mượt mà
-- **Modern UI/UX**: Giao diện đẹp, trực quan
-
-## Công nghệ sử dụng
-
-- **Frontend**: React 19, TypeScript, Vite
-- **Styling**: SCSS Modules
-- **Routing**: React Router DOM
-- **AI Integration**: Google Gemini API
-- **Build Tool**: Vite với HMR
-- **Code Quality**: ESLint, TypeScript strict mode
-
-## Cấu trúc dự án
-
-```
-src/
-├── components/           # React components
-│   ├── colections/      # Bộ sưu tập tattoo
-│   │   ├── fullColection/  # Component chính
-│   │   │   ├── fullColection.tsx
-│   │   │   ├── MessageModal.tsx
-│   │   │   └── styles.module.scss
-│   │   ├── colection.tsx
-│   │   └── styles.module.scss
-│   ├── homePage/        # Trang chủ
-│   ├── booking/         # Đặt lịch hẹn
-│   ├── about-us/        # Giới thiệu
-│   └── ...
-├── assets/              # Tài nguyên tĩnh
-│   ├── images/         # Hình ảnh
-│   └── svg/           # SVG icons
-├── services/           # API services
-│   └── geminiService.ts
-├── database/          # Dữ liệu mock
-│   └── colection.ts
-├── types/             # TypeScript types
-├── config/            # Cấu hình
-└── shared/            # Components dùng chung
-```
-
-## Cài đặt và chạy
-
-### Yêu cầu
-- Node.js 18+
-- npm hoặc yarn
-
-### Cài đặt
-```bash
-# Clone repository
-git clone <repository-url>
-cd tattoostudio-frontend
-
-# Cài đặt dependencies
-npm install
-
-# Cấu hình environment variables
-cp .env.example .env
-# Thêm VITE_GEMINI_API_KEY vào .env
-```
-
-### Chạy development
-```bash
-npm run dev
-```
-
-### Build production
-```bash
-npm run build
-```
-
-### Lint & Type check
-```bash
-npm run lint
-```
-
-## Cấu hình
-
-### Environment Variables
-```env
-VITE_GEMINI_API_KEY=your_gemini_api_key_here
-```
-
-### Studio Info
-Cấu hình thông tin studio trong `src/config/studioInfo.ts`:
-- Tên studio
-- Địa chỉ, SĐT
-- Dịch vụ chính
-- Giá cả tham khảo
-- Quy trình làm việc
-
-## Tính năng nổi bật
-
-### 1. Filter Animation
-- Hiệu ứng chạy từ trái sang phải khi click filter button
-- Smooth transition với cubic-bezier timing
-- Responsive design cho mobile
-
-### 2. Message Modal
-- Modal trượt từ bên phải màn hình
-- Chia đôi: Chat AI + Thông tin sản phẩm
-- Real-time chat với Gemini API
-- Galerie hình ảnh tương tác
-
-### 3. Product Grid
-- Grid layout tự động responsive
-- Hover effects mượt mà
-- Like/unlike với animation
-- Auto-loading từ database
-
-## API Integration
-
-### Gemini Service
-- Tích hợp Google Gemini API
-- Chat context với lịch sử tin nhắn
-- Error handling và fallback
-- System prompt tùy chỉnh cho studio
-
-## Performance
-
-- **Code Splitting**: Tự động chia nhỏ bundle
-- **Lazy Loading**: Load components khi cần
-- **Image Optimization**: Tối ưu hình ảnh
-- **Caching**: Cache API responses
-- **Bundle Size**: Tối ưu kích thước bundle
-
-## Browser Support
-
-- Chrome 90+
-- Firefox 88+
-- Safari 14+
-- Edge 90+
-
-## Contributing
-
-1. Fork repository
-2. Tạo feature branch
-3. Commit changes
-4. Push và tạo Pull Request
-
-## License
-
-MIT License - Xem file LICENSE để biết thêm chi tiết.
-
-## Liên hệ
-
-- **Studio**: Thế Trung Tattoo Studio
-- **Địa chỉ**: 52 Nguyễn Nhạc, Phường Quy Nhơn Đông, Tỉnh Gia Lai
-- **SĐT**: 0378 927 665
-- **Email**: contact@thetrungtattoo.com
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Live-brightgreen" alt="Status Live">
+  <img src="https://img.shields.io/badge/Updated-2025-blue" alt="Updated 2025">
+  <img src="https://img.shields.io/badge/TypeScript-100%25-blue" alt="TypeScript 100%">
+  <img src="https://img.shields.io/badge/React-19.1.1-61dafb" alt="React 19.1.1">
+</p>
 
 ---
 
-**Lưu ý**: Dự án này được phát triển với mục đích học tập và thương mại. Vui lòng tuân thủ các quy định về bản quyền và sử dụng hợp lý.# thetrungtattoo
+<h3 align="center">Built with modern web technologies:</h3>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/React-19.1.1-61dafb?style=flat&logo=react&logoColor=white" alt="React">
+  <img src="https://img.shields.io/badge/React%20DOM-19.1.1-61dafb?style=flat&logo=react&logoColor=white" alt="React DOM">
+  <img src="https://img.shields.io/badge/TypeScript-5.8.3-3178c6?style=flat&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Vite-7.1.0-646cff?style=flat&logo=vite&logoColor=white" alt="Vite">
+  <img src="https://img.shields.io/badge/React%20Router-7.8.0-ca4245?style=flat&logo=react-router&logoColor=white" alt="React Router">
+  <img src="https://img.shields.io/badge/Sass-1.90.0-cc6699?style=flat&logo=sass&logoColor=white" alt="Sass">
+  <img src="https://img.shields.io/badge/Firebase-12.1.0-ffca28?style=flat&logo=firebase&logoColor=black" alt="Firebase">
+  <img src="https://img.shields.io/badge/ESLint-9.32.0-4b32c3?style=flat&logo=eslint&logoColor=white" alt="ESLint">
+  <img src="https://img.shields.io/badge/Node.js-18-339933?style=flat&logo=node.js&logoColor=white" alt="Node.js">
+  <img src="https://img.shields.io/badge/CSS%20Modules-Enabled-1572B6?style=flat&logo=css3&logoColor=white" alt="CSS Modules">
+  <img src="https://img.shields.io/badge/Context%20API-Enabled-61dafb?style=flat&logo=react&logoColor=white" alt="Context API">
+  <img src="https://img.shields.io/badge/Custom%20Hooks-Enabled-61dafb?style=flat&logo=react&logoColor=white" alt="Custom Hooks">
+  <img src="https://img.shields.io/badge/Responsive%20Design-100%25-ff6b6b?style=flat&logo=css3&logoColor=white" alt="Responsive Design">
+  <img src="https://img.shields.io/badge/Dark%20Mode-Enabled-6c5ce7?style=flat&logo=theme&logoColor=white" alt="Dark Mode">
+  <img src="https://img.shields.io/badge/Google%20Maps-Enabled-4285f4?style=flat&logo=google-maps&logoColor=white" alt="Google Maps">
+  <img src="https://img.shields.io/badge/Social%20Media-Integration-1877f2?style=flat&logo=facebook&logoColor=white" alt="Social Media">
+  <img src="https://img.shields.io/badge/Payment%20Integration-Enabled-00c851?style=flat&logo=payment&logoColor=white" alt="Payment Integration">
+  <img src="https://img.shields.io/badge/Netlify-Hosting-00c7b7?style=flat&logo=netlify&logoColor=white" alt="Netlify">
+  <img src="https://img.shields.io/badge/Firebase%20Hosting-ffca28?style=flat&logo=firebase&logoColor=black" alt="Firebase Hosting">
+</p>
