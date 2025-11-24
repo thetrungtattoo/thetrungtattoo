@@ -4,6 +4,7 @@
   <img src="https://img.shields.io/badge/Status-Live-brightgreen" alt="Status Live">
   <img src="https://img.shields.io/badge/Updated-2025-blue" alt="Updated 2025">
   <img src="https://img.shields.io/badge/TypeScript-100%25-blue" alt="TypeScript 100%">
+  <img src="https://img.shields.io/badge/Node.js-20.19.2-green" alt="Node.js">
   <img src="https://img.shields.io/badge/React-19.1.1-61dafb" alt="React 19.1.1">
 </p>
 
