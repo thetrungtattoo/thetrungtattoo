@@ -104,7 +104,7 @@
     .pricingTable td:first-child {
       width: 25%;
       text-align: left;
-      color: #fafad2;
+      color: #ddeeff;
     }
 
     .pricingTable th:not(:first-child),
@@ -236,7 +236,7 @@
       background: rgba(255, 193, 7, 0.1);
       border: 1px solid rgba(255, 193, 7, 0.3);
       border-radius: 12px;
-      color: #fafad2;
+      color: #ddeeff;
       line-height: 1.5;
       font-style: italic;
       margin-top: 16px;
@@ -330,7 +330,7 @@
       }
 
       .servicePrice {
-        color: #fafad2;
+        color: #ddeeff;
         display: flex;
         align-items: center;
         gap: 8px;
@@ -345,7 +345,7 @@
         svg {
           width: 16px;
           height: 16px;
-          fill: #fafad2;
+          fill: #ddeeff;
         }
       }
     }

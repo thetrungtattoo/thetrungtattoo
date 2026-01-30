@@ -55,6 +55,16 @@ export const ROUTE_PATHS = {
     AFTERCARE: '/blog/aftercare',
   },
 
+  NEWS: {
+    LIST: '/news',
+    DETAIL: '/news/:id',
+  },
+
+  MEANING: {
+    LIST: '/meaning',
+    DETAIL: '/meaning/:id',
+  },
+
   SUPPORT: {
     CHAT: '/support/chat',
     FEEDBACK: '/support/feedback',

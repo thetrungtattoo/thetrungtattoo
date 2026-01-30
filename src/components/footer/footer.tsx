@@ -1,5 +1,5 @@
 import { Address, Phone, Email, IconClock, IconInstagram, IconFacebook, IconZalo, IconTiktok, MessageIcon } from '@/assets/svg/svg';
-import logo from '@/assets/svg/Logo.svg';
+import logo from '@/assets/svg/logo.svg';
 import ncst from '@/assets/images/footer/ncsc.png';
 import Visa from '@/assets/images/payMoney/visa.png';
 import ZaloPay from '@/assets/images/payMoney/zalopay.png';

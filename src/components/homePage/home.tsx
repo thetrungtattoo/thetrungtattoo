@@ -1,3 +1,5 @@
+import { useEffect, useRef } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import AboutStudio from './components/aboutStudio/aboutStudio';
 import BrandPhilosophy from './components/brandPhilosophy/brandPhilosophy';
 import ArtistTattoo from './components/artist-tattoo/artistTattoo';
@@ -17,6 +19,27 @@ import FeedBack from './components/feedback/feed-back';
 import styles from './styles.module.scss';
 
 const HomePage = () => {
+    const location = useLocation();
+    const navigate = useNavigate();
+    const hasScrolled = useRef(false);
+
+    useEffect(() => {
+        const state = location.state as { scrollToSection?: string; skipLoading?: boolean } | null;
+        if (state?.scrollToSection && !hasScrolled.current) {
+            const element = document.getElementById(state.scrollToSection);
+            if (element) {
+                hasScrolled.current = true;
+                setTimeout(() => {
+                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    navigate('/', { replace: true, state: null });
+                }, 100);
+            }
+        }
+        if (!state?.scrollToSection) {
+            hasScrolled.current = false;
+        }
+    }, [location.state, navigate]);
+
     return (
         <div className={styles.homePageContainer}>
             {/* 1. Hero Banner */}
@@ -44,8 +67,6 @@ const HomePage = () => {
                 <OurValues />
             </div>
 
-
-
             {/* 6. Artist Quote / ArtistTattoo */}
             <div className={styles.section}>
                 <ArtistTattoo />
@@ -56,8 +77,8 @@ const HomePage = () => {
                 <StudioHighlights />
             </div>
 
-                        {/* 10. Quy trình thực hiện (Process Overview) */}
-                        <div className={styles.section}>
+            {/* 10. Quy trình thực hiện (Process Overview) */}
+            <div className={styles.section}>
                 <ProcessOverview />
             </div>
 
@@ -67,18 +88,14 @@ const HomePage = () => {
             </div>
 
             {/* 9. Ý nghĩa hình xăm (Meaning Tattoos) */}
-            <div className={styles.section}>
+            <div id="meaning-tattoos" className={styles.section}>
                 <MeaningTattoos />
             </div>
-
-
 
             {/* 11. Feedback / Testimonials */}
             <div className={styles.section}>
                 <FeedBack />
             </div>
-
-
 
             {/* 15. Đặt lịch ngay (Booking CTA) */}
             <div className={styles.section}>
@@ -96,12 +113,12 @@ const HomePage = () => {
             </div>
 
             {/* 13. Tin tức / Blog (Latest News) */}
-            <div className={styles.section}>
+            <div id="latest-news" className={styles.section}>
                 <LatestNews />
             </div>
 
             {/* 14. Câu hỏi thường gặp (FAQ) */}
-            <div className={styles.section}>
+            <div id="faq-section" className={styles.section}>
                 <FAQ />
             </div>
         </div>

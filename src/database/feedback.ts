@@ -1,6 +1,6 @@
 /**
- * Dữ liệu feedback/đánh giá từ khách hàng
- * Format địa chỉ: "Phường/Xã - Tỉnh" (không ghi chữ "Phường" hoặc "Xã")
+ * Dữ liệu đánh giá từ khách hàng
+ * Định dạng địa chỉ: "Phường/Xã - Tỉnh" (không ghi chữ "Phường" hoặc "Xã")
  */
 
 export interface Feedback {
@@ -8,14 +8,13 @@ export interface Feedback {
     avatar: string;
     name: string;
     address: string;
-    rating: number; // 1-5 sao (có thể dùng số thập phân như 4.5, 4.8, v.v.)
+    rating: number;
     content: string;
-    date: string; // Format: "DD/MM/YYYY"
-    service?: string; // Dịch vụ đã sử dụng (tùy chọn)
-    verified?: boolean; // Đã xác minh (tùy chọn)
+    date: string;
+    service?: string;
+    verified?: boolean;
 }
 
-// Helper function để format địa chỉ (bỏ chữ "Phường" hoặc "Xã")
 const formatAddress = (address: string): string => {
     return address
         .replace(/^Phường\s+/i, '')
@@ -30,9 +29,9 @@ export const FEEDBACK_DATA: Feedback[] = [
         name: 'Nguyễn Văn An',
         address: formatAddress('Phường Hải Châu - Đà Nẵng'),
         rating: 5,
-        content: 'Trải nghiệm tuyệt vời tại The Thế Trung Tattoo Studio! Nghệ sĩ rất chuyên nghiệp, tư vấn nhiệt tình và thiết kế hình xăm đúng như mong muốn. Không gian studio sạch sẽ, đảm bảo vệ sinh an toàn. Hình xăm lên màu đẹp, đường nét sắc nét. Chắc chắn sẽ quay lại cho lần xăm tiếp theo!',
+        content: 'Đã tìm hiểu khá lâu trước khi quyết định làm kín tay đầu tiên. Chọn The Thế Trung vì danh mục tác phẩm ấn tượng và quy trình tư vấn chuyên nghiệp. Nghệ sĩ hiểu chính xác điều tôi muốn và còn đề xuất những cải tiến mà tôi không nghĩ tới. 3 buổi xăm, mỗi buổi 5 tiếng, kết quả vượt xa mong đợi. Xứng đáng từng đồng.',
         date: '15/12/2024',
-        service: 'Hình xăm Realism',
+        service: 'Kín tay phong cách Nhật',
         verified: true
     },
     {
@@ -41,9 +40,9 @@ export const FEEDBACK_DATA: Feedback[] = [
         name: 'Trần Thị Bình',
         address: formatAddress('Phường Pleiku - Gia Lai'),
         rating: 5,
-        content: 'Studio tattoo uy tín nhất mà tôi từng biết. Quy trình làm việc rất chuyên nghiệp từ khâu tư vấn đến hoàn thiện. Nghệ sĩ có tay nghề cao, thái độ phục vụ tận tâm. Hình xăm của tôi đã lành hoàn toàn và trông rất đẹp. Giá cả hợp lý so với chất lượng dịch vụ. Highly recommended!',
+        content: 'Lần đầu xăm, hồi hộp lắm. Đội ngũ rất kiên nhẫn, giải thích từng bước, không vội vàng. Quá trình thiết kế mất 2 tuần vì tôi hay thay đổi ý, họ không phàn nàn một lời. Tác phẩm cuối cùng – một bông hồng chân thực trên cổ tay – hoàn hảo. Hướng dẫn chăm sóc rõ ràng, quá trình lành da suôn sẻ. Rất khuyến khích cho người mới.',
         date: '10/12/2024',
-        service: 'Hình xăm Japanese Style',
+        service: 'Hoa hồng nét mảnh',
         verified: true
     },
     {
@@ -52,9 +51,9 @@ export const FEEDBACK_DATA: Feedback[] = [
         name: 'Lê Minh Cường',
         address: formatAddress('Phường Nghĩa Lộ - Quảng Ngãi'),
         rating: 5,
-        content: 'Đã xăm tại nhiều nơi nhưng The Thế Trung là nơi tốt nhất. Đội ngũ nghệ sĩ giàu kinh nghiệm, hiểu rõ về nghệ thuật tattoo. Studio có đầy đủ thiết bị hiện đại, môi trường làm việc vô cùng chuyên nghiệp. Hình xăm của tôi nhận được rất nhiều lời khen. Cảm ơn team đã tạo ra tác phẩm tuyệt vời!',
+        content: 'Che phủ một hình xăm cũ bị nhòe từ tiệm khác. Tưởng hết cách nhưng nghệ sĩ ở đây biến nó thành tuyệt phẩm. Họ thật thà về giới hạn, không hứa hẹn quá mức. Quá trình thiết kế mất thời gian nhưng kết quả đáng chờ đợi. Giờ tự hào khoe thay vì phải giấu.',
         date: '08/12/2024',
-        service: 'Full Sleeve Tattoo',
+        service: 'Che phủ Blackwork',
         verified: true
     },
     {
@@ -63,9 +62,9 @@ export const FEEDBACK_DATA: Feedback[] = [
         name: 'Phạm Thị Dung',
         address: formatAddress('Phường Sơn Trà - Đà Nẵng'),
         rating: 5,
-        content: 'Lần đầu xăm hình và tôi rất hài lòng! Nhân viên tư vấn rất chu đáo, giải thích rõ ràng về quy trình và cách chăm sóc sau xăm. Nghệ sĩ vẽ thiết kế trước khi xăm để tôi xem và chỉnh sửa. Hình xăm đẹp hơn cả mong đợi, màu sắc tươi sáng và bền. Studio rất sạch sẽ, đảm bảo an toàn vệ sinh.',
+        content: 'Quy trình đặt lịch rõ ràng, không cần đến tận nơi cho buổi tư vấn đầu tiên – gọi video được. Nghệ sĩ gửi 3 phương án thiết kế, tôi chọn 1 và yêu cầu điều chỉnh nhỏ, xong. Ngày xăm thoải mái, studio sạch sẽ, nhiệt độ mát mẻ. Lành đẹp. Quy trình đơn giản nhưng hiệu quả.',
         date: '05/12/2024',
-        service: 'Hình xăm Minimalist',
+        service: 'Hình học tối giản',
         verified: true
     },
     {
@@ -74,9 +73,9 @@ export const FEEDBACK_DATA: Feedback[] = [
         name: 'Hoàng Văn Đức',
         address: formatAddress('Xã Biển Hồ - Gia Lai'),
         rating: 5,
-        content: 'The Thế Trung Tattoo Studio thực sự là địa chỉ đáng tin cậy cho những ai yêu thích nghệ thuật tattoo. Nghệ sĩ có phong cách riêng, sáng tạo và tỉ mỉ trong từng chi tiết. Tôi đã xăm 3 hình tại đây và tất cả đều xuất sắc. Giá cả minh bạch, không phát sinh thêm chi phí. Chắc chắn sẽ giới thiệu cho bạn bè!',
+        content: 'Bay từ Gia Lai xuống đặc biệt cho hình kín lưng. Đáng chuyến đi. Nghệ sĩ có tầm nhìn cho các tác phẩm lớn mà tiệm địa phương không sánh được. 4 buổi xăm trong 6 tháng, chất lượng đồng đều xuyên suốt. Liên lạc giữa các buổi xuất sắc – họ nhớ chính xác chỗ dừng lại mỗi lần.',
         date: '03/12/2024',
-        service: 'Hình xăm Geometric',
+        service: 'Kín lưng phong cách Nhật',
         verified: true
     },
     {
@@ -85,9 +84,9 @@ export const FEEDBACK_DATA: Feedback[] = [
         name: 'Võ Thị Hương',
         address: formatAddress('Phường Cẩm Thành - Quảng Ngãi'),
         rating: 5,
-        content: 'Studio tattoo chuyên nghiệp với đội ngũ nghệ sĩ tài năng. Tôi rất ấn tượng với cách họ lắng nghe ý tưởng và biến nó thành tác phẩm nghệ thuật đẹp mắt. Quy trình làm việc khoa học, đúng giờ hẹn. Hình xăm của tôi đã lành hoàn toàn và trông rất tự nhiên. Cảm ơn team đã mang đến trải nghiệm tuyệt vời!',
+        content: 'Phong cách màu nước khó tìm nghệ sĩ làm tốt ở Việt Nam. Tìm thấy The Thế Trung qua mạng xã hội, danh mục tác phẩm thuyết phục được tôi. Thực tế đúng như hình – không phải trường hợp "hình thì đẹp, làm thì khác". Màu hòa quyện mượt mà, không bị loang sau khi lành. Ấn tượng.',
         date: '01/12/2024',
-        service: 'Hình xăm Watercolor',
+        service: 'Phượng hoàng màu nước',
         verified: true
     },
     {
@@ -96,9 +95,9 @@ export const FEEDBACK_DATA: Feedback[] = [
         name: 'Đặng Văn Hùng',
         address: formatAddress('Phường Hòa Khánh - Đà Nẵng'),
         rating: 5,
-        content: 'Tuyệt vời từ A đến Z! Từ lúc đặt lịch đến khi hoàn thành, mọi thứ đều suôn sẻ. Nghệ sĩ rất kiên nhẫn, tư vấn kỹ lưỡng về vị trí xăm và kích thước phù hợp. Hình xăm của tôi có ý nghĩa đặc biệt và được thực hiện một cách hoàn hảo. Studio có không gian thoải mái, nhạc nhẹ nhàng giúp thư giãn trong quá trình xăm.',
+        content: 'Hình tưởng niệm cho ba tôi – chân dung siêu thực. Dự án mang nhiều cảm xúc, nghệ sĩ xử lý rất tinh tế. Không vội vàng, cho thời gian để tôi lấy lại bình tĩnh khi cần. Tác phẩm cuối cùng nắm bắt chính xác thần thái trong ảnh gốc. Hơn cả hình xăm, đây là một sự tri ân. Biết ơn vô cùng.',
         date: '28/11/2024',
-        service: 'Hình xăm Memorial',
+        service: 'Chân dung siêu thực',
         verified: true
     },
     {
@@ -107,9 +106,9 @@ export const FEEDBACK_DATA: Feedback[] = [
         name: 'Bùi Thị Lan',
         address: formatAddress('Xã Ia Grai - Gia Lai'),
         rating: 4.5,
-        content: 'Chất lượng dịch vụ tốt! Nghệ sĩ có tay nghề cao, đường nét chính xác và màu sắc đẹp. Studio tuân thủ nghiêm ngặt các tiêu chuẩn vệ sinh, sử dụng kim và mực chất lượng cao. Hình xăm của tôi đã lành nhanh chóng và trông rất đẹp. Giá cả hợp lý, xứng đáng với chất lượng. Sẽ quay lại!',
+        content: 'Trải nghiệm tổng thể tuyệt vời. Trừ 0.5 sao vì thời gian chờ lịch hẹn hơi lâu – 6 tuần. Có thể hiểu được với chất lượng và danh tiếng của studio, nhưng nói để ai cần gấp biết. Khi vào buổi xăm thì mọi thứ suôn sẻ. Thiết kế đẹp, thực hiện sạch sẽ.',
         date: '25/11/2024',
-        service: 'Hình xăm Traditional',
+        service: 'Truyền thống Mỹ',
         verified: true
     },
     {
@@ -118,20 +117,20 @@ export const FEEDBACK_DATA: Feedback[] = [
         name: 'Ngô Văn Minh',
         address: formatAddress('Xã Sơn Tịnh - Quảng Ngãi'),
         rating: 4.5,
-        content: 'The Thế Trung là studio tattoo hàng đầu! Đội ngũ nghệ sĩ không chỉ giỏi về kỹ thuật mà còn rất am hiểu về nghệ thuật tattoo. Họ giúp tôi chọn được phong cách phù hợp và thiết kế độc đáo. Quá trình xăm diễn ra nhẹ nhàng, ít đau hơn tôi nghĩ. Hình xăm hoàn hảo, đúng như thiết kế. Rất hài lòng!',
+        content: 'Tay nghề chắc, dịch vụ chuyên nghiệp. Nghệ sĩ tỉ mỉ, đường nét sạch, tô bóng mượt. Không gian studio thoải mái nhưng gọn gàng. Giá hợp lý với chất lượng nhận được. Chỉ lưu ý: chỗ đậu xe hơi hạn chế, nên tính trước. Chắc chắn sẽ quay lại cho hình tiếp theo.',
         date: '22/11/2024',
-        service: 'Hình xăm Blackwork',
+        service: 'Kín tay Blackwork',
         verified: true
     },
     {
         id: '10',
         avatar: 'https://i.pravatar.cc/150?img=70',
         name: 'Sarah Johnson',
-        address: 'Brooklyn, New York, USA',
+        address: 'Brooklyn, New York, Hoa Kỳ',
         rating: 5,
-        content: 'Amazing tattoo studio! I traveled to Vietnam and found The Thế Trung Tattoo Studio. The artist was incredibly skilled and professional. The studio was clean and modern. My tattoo turned out perfect - the lines are crisp and the colors are vibrant. The aftercare instructions were clear and helpful. Highly recommend this place to anyone looking for quality tattoos in Vietnam!',
+        content: 'Du lịch qua Việt Nam và có The Thế Trung trong danh sách phải ghé. Không thất vọng. Giao tiếp tiếng Anh trôi chảy, quy trình thiết kế hiệu quả dù thời gian hạn chế. Xăm được một hình cỡ trung trong một buổi. Chất lượng ngang ngửa các tiệm hàng đầu ở New York với giá phải chăng hơn nhiều. Nếu bạn đến Việt Nam và đang cân nhắc xăm hình – hãy đến đây.',
         date: '20/11/2024',
-        service: 'Custom Design Tattoo',
+        service: 'Thiết kế trang trí riêng',
         verified: true
     },
     {
@@ -140,9 +139,9 @@ export const FEEDBACK_DATA: Feedback[] = [
         name: 'Phan Văn Nam',
         address: formatAddress('Phường Ngũ Hành Sơn - Đà Nẵng'),
         rating: 5,
-        content: 'Studio tattoo đẳng cấp quốc tế ngay tại Việt Nam! Nghệ sĩ có phong cách riêng biệt, sáng tạo và chuyên nghiệp. Tôi đã xăm một bộ hình xăm lớn và rất hài lòng với kết quả. Quy trình làm việc chuyên nghiệp, đúng giờ, không để khách hàng chờ đợi. Hình xăm lên màu đẹp, bền màu. Đây là địa chỉ đáng tin cậy cho mọi người yêu thích tattoo!',
+        content: 'Sưu tầm hình xăm từ 2019, đây là studio thứ 5 tôi thử ở Việt Nam. Tốt nhất không bàn cãi. Chất lượng đồng đều qua nhiều buổi xăm, nghệ sĩ thực sự quan tâm đến việc hình xăm sẽ như thế nào sau nhiều năm, không chỉ lúc mới xong. Tư duy dài hạn hiếm có trong ngành này. Nể phục.',
         date: '18/11/2024',
-        service: 'Back Piece Tattoo',
+        service: 'Kín tay Tân truyền thống',
         verified: true
     },
     {
@@ -151,9 +150,9 @@ export const FEEDBACK_DATA: Feedback[] = [
         name: 'Lý Thị Oanh',
         address: formatAddress('Xã Chư Prông - Gia Lai'),
         rating: 5,
-        content: 'Lần đầu tiên xăm hình và tôi không thể hài lòng hơn! Nhân viên tư vấn rất nhiệt tình, giúp tôi chọn được thiết kế phù hợp. Nghệ sĩ rất tỉ mỉ, từng đường nét đều được thực hiện cẩn thận. Studio có không gian đẹp, thoải mái. Hình xăm của tôi nhận được rất nhiều lời khen. Cảm ơn team đã tạo ra tác phẩm tuyệt vời!',
+        content: 'Hình Mandala chấm điểm – 8 tiếng liên tục. Sức bền của nghệ sĩ ấn tượng, độ đều từ giờ thứ 1 đến giờ thứ 8 như nhau. Các chấm đều, khoảng cách chính xác. Không phải phong cách dễ làm, họ thực hiện xuất sắc. Quá trình như thiền định cho cả hai. Trải nghiệm đẹp, kết quả đẹp.',
         date: '15/11/2024',
-        service: 'Hình xăm Floral',
+        service: 'Mandala chấm điểm',
         verified: true
     },
     {
@@ -162,9 +161,9 @@ export const FEEDBACK_DATA: Feedback[] = [
         name: 'Trương Văn Phong',
         address: formatAddress('Phường Trương Quang Trọng - Quảng Ngãi'),
         rating: 5,
-        content: 'The Thế Trung Tattoo Studio thực sự xứng đáng với danh tiếng! Nghệ sĩ có kinh nghiệm lâu năm, tay nghề điêu luyện. Tôi đã xăm một hình xăm phức tạp và kết quả vượt ngoài mong đợi. Studio sử dụng mực và thiết bị chất lượng cao, đảm bảo an toàn. Quy trình chăm sóc sau xăm được hướng dẫn chi tiết. Rất hài lòng!',
+        content: 'Sau 5 năm với hình xăm cũ không ưng, cuối cùng cũng tìm được người che phủ đúng cách. Nghệ sĩ dành thời gian phân tích mực cũ, đề xuất các phương án thực tế, thực hiện hoàn hảo. Hình cũ giờ hoàn toàn biến mất. Lẽ ra nên đến đây từ đầu. Bài học kinh nghiệm.',
         date: '12/11/2024',
-        service: 'Hình xăm Portrait',
+        service: 'Che phủ phong cách Nhật',
         verified: true
     },
     {
@@ -173,9 +172,9 @@ export const FEEDBACK_DATA: Feedback[] = [
         name: 'Đinh Thị Quỳnh',
         address: formatAddress('Phường An Hải - Đà Nẵng'),
         rating: 5,
-        content: 'Studio tattoo chuyên nghiệp với đội ngũ nghệ sĩ tài năng! Tôi rất ấn tượng với cách họ làm việc - tỉ mỉ, cẩn thận và sáng tạo. Hình xăm của tôi có ý nghĩa đặc biệt và được thực hiện một cách hoàn hảo. Studio có không gian đẹp, thoải mái, nhạc nhẹ nhàng. Giá cả minh bạch, không phát sinh thêm chi phí. Highly recommended!',
+        content: 'Hình xăm chữ làm quà sinh nhật cho mẹ. Khó vì việc chọn font rất quan trọng với chữ viết. Nghệ sĩ đề xuất điều chỉnh để chữ chảy đẹp hơn trên da – những điều tôi không nghĩ đến. Chuyên môn tinh tế tạo nên sự khác biệt. Mẹ rất thích, nhiệm vụ hoàn thành.',
         date: '10/11/2024',
-        service: 'Hình xăm Script',
+        service: 'Chữ viết nghệ thuật',
         verified: true
     },
     {
@@ -184,20 +183,20 @@ export const FEEDBACK_DATA: Feedback[] = [
         name: 'Vũ Văn Sơn',
         address: formatAddress('Xã Ia Krái - Gia Lai'),
         rating: 5,
-        content: 'Tuyệt vời! Đã xăm tại nhiều studio nhưng The Thế Trung là nơi tốt nhất. Nghệ sĩ có phong cách riêng, sáng tạo và chuyên nghiệp. Quy trình làm việc khoa học, đúng giờ hẹn. Hình xăm của tôi đã lành hoàn toàn và trông rất đẹp. Studio tuân thủ nghiêm ngặt các tiêu chuẩn vệ sinh. Chắc chắn sẽ quay lại cho lần xăm tiếp theo!',
+        content: 'Chân dung siêu thực của con gái. Rủi ro cao – xăm khuôn mặt người thân không có chỗ cho sai sót. Nghệ sĩ dành thêm thời gian chỉnh tỷ lệ cho đúng trước khi bắt đầu. Kết quả: Nắm bắt hoàn hảo thần thái của con bé. Khoảnh khắc đầy cảm xúc khi vợ tôi nhìn thấy. Đây là lý do tôi chọn người chuyên nghiệp.',
         date: '08/11/2024',
-        service: 'Hình xăm Neo-traditional',
+        service: 'Chân dung siêu thực',
         verified: true
     },
     {
         id: '16',
         avatar: 'https://i.pravatar.cc/150?img=62',
         name: 'James Wilson',
-        address: 'London, UK',
+        address: 'London, Vương quốc Anh',
         rating: 5,
-        content: 'Outstanding tattoo studio! I was visiting Vietnam and decided to get a tattoo at The Thế Trung Tattoo Studio. The artist was professional, skilled, and spoke good English. The studio was clean and well-equipped. My tattoo exceeded my expectations - the design was perfect and the execution was flawless. The pricing was fair and transparent. I would definitely come back!',
+        content: 'Đây là hình xăm thứ ba từ các studio châu Á, lần đầu tiên ở Việt Nam. The Thế Trung sánh ngang với các tiệm hàng đầu ở Bangkok và Tokyo. Cơ sở sạch sẽ, nghệ sĩ tay nghề cao, giá hợp lý. Xăm một mặt nạ Quỷ Nhật – chi tiết đáng kinh ngạc. Đã lên kế hoạch quay lại để xăm thêm. Rất khuyến khích cho du khách.',
         date: '05/11/2024',
-        service: 'Hình xăm Dotwork',
+        service: 'Mặt nạ Quỷ Nhật Bản',
         verified: true
     },
     {
@@ -206,9 +205,9 @@ export const FEEDBACK_DATA: Feedback[] = [
         name: 'Lê Thị Thanh',
         address: formatAddress('Xã Sơn Hà - Quảng Ngãi'),
         rating: 4.5,
-        content: 'Studio tattoo uy tín và chuyên nghiệp! Nghệ sĩ rất kiên nhẫn, tư vấn kỹ lưỡng về thiết kế và vị trí xăm. Hình xăm của tôi có ý nghĩa đặc biệt và được thực hiện một cách hoàn hảo. Studio có không gian đẹp, thoải mái. Quy trình chăm sóc sau xăm được hướng dẫn chi tiết. Hình xăm đã lành nhanh chóng và trông rất đẹp. Rất hài lòng!',
+        content: 'Hình hoa lá nét mảnh ở mặt trong cánh tay. Công việc tinh xảo đòi hỏi tay vững, nghệ sĩ đã làm được. Đường nét sau khi lành vẫn sắc nét – dấu hiệu của kỹ thuật đúng. Đặt lịch mất vài tuần (studio đông khách) nhưng đáng chờ. Trừ 0.5 sao vì muốn có thêm lựa chọn thiết kế trong buổi tư vấn đầu tiên.',
         date: '03/11/2024',
-        service: 'Hình xăm Mandala',
+        service: 'Hoa lá nét mảnh',
         verified: true
     },
     {
@@ -217,9 +216,9 @@ export const FEEDBACK_DATA: Feedback[] = [
         name: 'Hoàng Văn Tuấn',
         address: formatAddress('Phường Hòa Cường - Đà Nẵng'),
         rating: 5,
-        content: 'The Thế Trung Tattoo Studio là địa chỉ đáng tin cậy cho những ai yêu thích nghệ thuật tattoo! Nghệ sĩ có tay nghề cao, đường nét chính xác và màu sắc đẹp. Studio sử dụng mực và thiết bị chất lượng cao, đảm bảo an toàn. Tôi đã xăm một bộ hình xăm lớn và rất hài lòng với kết quả. Giá cả hợp lý, xứng đáng với chất lượng. Sẽ quay lại!',
+        content: 'Kín ngực – Cá chép và sóng. Cam kết lớn, studio đối xử tương xứng. Nhiều buổi tư vấn, sửa thiết kế cho đến khi hoàn hảo, thời gian và giá rõ ràng ngay từ đầu. Không bất ngờ. Thực hiện đúng như kế hoạch. Đây là cách các dự án lớn nên được xử lý.',
         date: '01/11/2024',
-        service: 'Full Sleeve Tattoo',
+        service: 'Kín ngực phong cách Nhật',
         verified: true
     },
     {
@@ -228,9 +227,9 @@ export const FEEDBACK_DATA: Feedback[] = [
         name: 'Phạm Thị Uyên',
         address: formatAddress('Xã Mang Yang - Gia Lai'),
         rating: 5,
-        content: 'Trải nghiệm tuyệt vời! Từ lúc đặt lịch đến khi hoàn thành, mọi thứ đều suôn sẻ. Nghệ sĩ rất chuyên nghiệp, hiểu rõ về nghệ thuật tattoo. Hình xăm của tôi nhận được rất nhiều lời khen. Studio có đầy đủ thiết bị hiện đại, môi trường làm việc vô cùng chuyên nghiệp. Quy trình làm việc khoa học, đúng giờ hẹn. Cảm ơn team!',
+        content: 'Hình xăm đôi với bạn thân. Tưởng hình nhỏ thì đơn giản, nhưng thực ra đòi hỏi sự chính xác cao. Hai nghệ sĩ phối hợp để đảm bảo hai hình giống hệt nhau. Sự chu đáo đáng quý. Cả hai đều hài lòng với kết quả. Cột mốc tình bạn hoàn hảo.',
         date: '30/10/2024',
-        service: 'Hình xăm Realism',
+        service: 'Hình đôi tối giản',
         verified: true
     },
     {
@@ -239,10 +238,9 @@ export const FEEDBACK_DATA: Feedback[] = [
         name: 'Nguyễn Văn Vinh',
         address: formatAddress('Phường Đức Phổ - Quảng Ngãi'),
         rating: 5,
-        content: 'Studio tattoo đẳng cấp! Nghệ sĩ có phong cách riêng biệt, sáng tạo và chuyên nghiệp. Tôi rất ấn tượng với cách họ lắng nghe ý tưởng và biến nó thành tác phẩm nghệ thuật đẹp mắt. Hình xăm của tôi đã lành hoàn toàn và trông rất tự nhiên. Studio tuân thủ nghiêm ngặt các tiêu chuẩn vệ sinh. Highly recommended!',
+        content: 'Hình Samurai kín lưng bắt đầu từ 2 năm trước, vừa hoàn thành. Nghệ sĩ bắt đầu từ đầu vẫn nhớ mọi chi tiết khi tôi quay lại. Sự liên tục qua các dự án dài hạn thật ấn tượng. Tác phẩm cuối cùng thống nhất dù được thực hiện qua nhiều buổi. Đây mới là tay nghề thực thụ.',
         date: '28/10/2024',
-        service: 'Hình xăm Japanese Style',
+        service: 'Samurai kín lưng',
         verified: true
     }
 ];
-

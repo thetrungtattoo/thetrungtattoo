@@ -48,15 +48,15 @@
       }
 
       .previous, .next {
-        color: #fafad2;
+        color: #ddeeff;
       }
 
       &:hover {
         background-color: #222;
         cursor: pointer;
-        color: #fafad2;
+        color: #ddeeff;
         svg {
-          fill: #fafad2;
+          fill: #ddeeff;
         }
       }
     }

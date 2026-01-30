@@ -1,16 +1,16 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ROUTE_PATHS } from '@/config/path';
 import { useState, useRef, useCallback, useMemo, memo, useEffect } from 'react';
-import logo from '@/assets/svg/Logo.svg';
+import logo from '@/assets/svg/logo.svg';
 import bookingIcon from '@/assets/images/booking/booking.png';
 import { ArrowDownIcon, BellIcon, Symbol } from '@/assets/svg/svg';
 import { DROPDOWN_CONFIG, DROPDOWN_DELAY } from './config';
 import type { DropdownColumn } from './config';
-
 import styles from './styles.module.scss';
 
 const Header = () => {
     const location = useLocation();
+    const navigate = useNavigate();
     const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const timeoutRef = useRef<number | null>(null);
@@ -73,6 +73,21 @@ const Header = () => {
         setActiveDropdown(null);
     }, [location.pathname]);
 
+    const handleScrollNavigation = useCallback((path: string, e: React.MouseEvent) => {
+        if (path.startsWith('/#')) {
+            e.preventDefault();
+            const sectionId = path.replace('/#', '');
+            if (location.pathname === '/') {
+                const element = document.getElementById(sectionId);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            } else {
+                navigate('/', { state: { scrollToSection: sectionId, skipLoading: true } });
+            }
+        }
+    }, [location.pathname, navigate]);
+
     const navigationItems = useMemo(() => [
         { label: 'Trang chủ', path: ROUTE_PATHS.ROOT, hasDropdown: false, dropdownKey: '' },
         { label: 'Sản phẩm', path: ROUTE_PATHS.PRODUCTS, hasDropdown: false, dropdownKey: 'collections' },
@@ -85,27 +100,27 @@ const Header = () => {
 
     const isItemActive = useCallback((item: typeof navigationItems[0]) => {
         const pathname = location.pathname;
-        
         if (item.path && pathname === item.path) {
             return true;
         }
-        
         if (item.hasDropdown && item.dropdownKey && DROPDOWN_CONFIG[item.dropdownKey]) {
             return DROPDOWN_CONFIG[item.dropdownKey].some(column =>
                 column.items.some(dropdownItem => dropdownItem.path === pathname)
             );
         }
-        
         return false;
     }, [location.pathname]);
 
-    const DropdownColumn = memo(({ column }: { column: DropdownColumn }) => (
+    const DropdownColumnComponent = memo(({ column }: { column: DropdownColumn }) => (
         <div className={styles.dropdownColumn}>
             {column.title && <h4 className={styles.dropdownTitle}>{column.title}</h4>}
             <ul className={styles.dropdownList}>
                 {column.items.map((item, index) => (
                     <li key={index}>
-                        <Link to={item.path}>
+                        <Link
+                            to={item.path.startsWith('/#') ? '/' : item.path}
+                            onClick={(e) => handleScrollNavigation(item.path, e)}
+                        >
                             {item.label}
                         </Link>
                     </li>
@@ -114,69 +129,76 @@ const Header = () => {
         </div>
     ));
 
-    const MobileMenu = memo(({ 
-        isItemActive, 
-        isMobileMenuOpen, 
-        closeMobileMenu 
-    }: { 
+    const MobileMenu = memo(({
+        isItemActive,
+        isMobileMenuOpen,
+        closeMobileMenu,
+        onScrollNav
+    }: {
         isItemActive: (item: typeof navigationItems[0]) => boolean;
         isMobileMenuOpen: boolean;
         closeMobileMenu: () => void;
+        onScrollNav: (path: string, e: React.MouseEvent) => void;
     }) => {
+        const handleMobileNavClick = (path: string, e: React.MouseEvent) => {
+            onScrollNav(path, e);
+            closeMobileMenu();
+        };
+
         return (
-        <>
-            <div
-                className={`${styles.mobileOverlay} ${isMobileMenuOpen ? styles.mobileOverlayOpen : ''}`}
-                onClick={closeMobileMenu}
-            />
-            <div className={`${styles.mobileMenu} ${isMobileMenuOpen ? styles.mobileMenuOpen : ''}`}>
-                <div className={styles.mobileMenuContent}>
-                    {navigationItems.map((item, index) => {
-                        const active = isItemActive(item);
-                        return (
-                        <div key={index} className={styles.mobileMenuItem}>
-                            <Link
-                                to={item.path || '#'}
-                                className={`${styles.mobileMenuLink} ${active ? styles.active : ''}`}
-                                onClick={closeMobileMenu}
-                            >
-                                {item.label}
-                                {item.isBooking && <img src={bookingIcon} alt="booking" className={styles.mobileBookingIcon} />}
-                            </Link>
-                            {item.hasDropdown && DROPDOWN_CONFIG[item.dropdownKey!] && (
-                                <div className={styles.mobileDropdown}>
-                                    {DROPDOWN_CONFIG[item.dropdownKey!].map((column, colIndex) => (
-                                        <div key={colIndex} className={styles.mobileDropdownColumn}>
-                                            {column.title && <h4 className={styles.mobileDropdownTitle}>{column.title}</h4>}
-                                            <ul className={styles.mobileDropdownList}>
-                                                {column.items.map((dropdownItem, itemIndex) => (
-                                                    <li key={itemIndex}>
-                                                        <Link
-                                                            to={dropdownItem.path}
-                                                            className={styles.mobileDropdownLink}
-                                                            onClick={closeMobileMenu}
-                                                        >
-                                                            {dropdownItem.label}
-                                                        </Link>
-                                                    </li>
-                                                ))}
-                                            </ul>
+            <>
+                <div
+                    className={`${styles.mobileOverlay} ${isMobileMenuOpen ? styles.mobileOverlayOpen : ''}`}
+                    onClick={closeMobileMenu}
+                />
+                <div className={`${styles.mobileMenu} ${isMobileMenuOpen ? styles.mobileMenuOpen : ''}`}>
+                    <div className={styles.mobileMenuContent}>
+                        {navigationItems.map((item, index) => {
+                            const active = isItemActive(item);
+                            return (
+                                <div key={index} className={styles.mobileMenuItem}>
+                                    <Link
+                                        to={item.path || '#'}
+                                        className={`${styles.mobileMenuLink} ${active ? styles.active : ''}`}
+                                        onClick={closeMobileMenu}
+                                    >
+                                        {item.label}
+                                        {item.isBooking && <img src={bookingIcon} alt="booking" className={styles.mobileBookingIcon} />}
+                                    </Link>
+                                    {item.hasDropdown && DROPDOWN_CONFIG[item.dropdownKey!] && (
+                                        <div className={styles.mobileDropdown}>
+                                            {DROPDOWN_CONFIG[item.dropdownKey!].map((column, colIndex) => (
+                                                <div key={colIndex} className={styles.mobileDropdownColumn}>
+                                                    {column.title && <h4 className={styles.mobileDropdownTitle}>{column.title}</h4>}
+                                                    <ul className={styles.mobileDropdownList}>
+                                                        {column.items.map((dropdownItem, itemIndex) => (
+                                                            <li key={itemIndex}>
+                                                                <Link
+                                                                    to={dropdownItem.path.startsWith('/#') ? '/' : dropdownItem.path}
+                                                                    className={styles.mobileDropdownLink}
+                                                                    onClick={(e) => handleMobileNavClick(dropdownItem.path, e)}
+                                                                >
+                                                                    {dropdownItem.label}
+                                                                </Link>
+                                                            </li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            ))}
                                         </div>
-                                    ))}
+                                    )}
                                 </div>
-                            )}
-                        </div>
-                        );
-                    })}
+                            );
+                        })}
+                    </div>
                 </div>
-            </div>
-        </>
+            </>
         );
     });
 
     const NavigationItem = memo(({ item }: { item: typeof navigationItems[0] }) => {
         const active = isItemActive(item);
-        
+
         if (!item.hasDropdown) {
             return (
                 <Link to={item.path || '#'} className={`${styles.navLink} ${active ? styles.active : ''}`}>
@@ -202,7 +224,7 @@ const Header = () => {
                 {activeDropdown === item.dropdownKey && (
                     <div className={`${styles.dropdown} ${item.dropdownKey === 'blog' ? styles.blogDropdown : ''}`}>
                         {DROPDOWN_CONFIG[item.dropdownKey!]?.map((column, index) => (
-                            <DropdownColumn key={index} column={column} />
+                            <DropdownColumnComponent key={index} column={column} />
                         ))}
                     </div>
                 )}
@@ -231,10 +253,11 @@ const Header = () => {
                 <Symbol />
             </div>
 
-            <MobileMenu 
-                isItemActive={isItemActive} 
+            <MobileMenu
+                isItemActive={isItemActive}
                 isMobileMenuOpen={isMobileMenuOpen}
                 closeMobileMenu={closeMobileMenu}
+                onScrollNav={handleScrollNavigation}
             />
         </div>
     );

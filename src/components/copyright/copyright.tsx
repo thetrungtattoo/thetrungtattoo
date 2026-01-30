@@ -20,7 +20,7 @@ const CopyRight = () => {
         <div className={styles.copyrightContainer}>
             <span className={styles.copyrightContent}>
                 <span className={styles.copyright}>Copyright © 2025 The Thế Trung Tattoo.</span>
-                <span className={styles.copyrightVersion}> All rights reserved for Version 3.0</span>
+                <span className={styles.copyrightVersion}> All rights reserved for Version 26.1.2</span>
             </span>
             <span className={styles.copyrightText}>{isMobile ? 'Powered by ' : 'Website được cung cấp và quản lý bởi '}<a className={styles.hiubdn} href={ROUTE_PATHS.BRAND.HIUBDN}>_hiubdn.</a></span>
         </div>

@@ -1,6 +1,6 @@
 import Test from '@/assets/images/pricing/test.png';
 import Test1 from '@/assets/images/pricing/test1.png';
-import Logo from '@/assets/svg/Logo.svg';
+import Logo from '@/assets/svg/logo.svg';
 import styles from './styles.module.scss';
 
 const BannerPricing = () => {

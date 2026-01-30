@@ -1,39 +1,39 @@
 export const CONTENT_SERVICE = [
     {
-        title: 'Tattoo không đơn thuần là nghệ thuật, mà là nơi tâm hồn trò chuyện với cơ thể – bằng mực, cảm xúc và sự vĩnh cửu.',
+        title: 'Mỗi đường kim là một lời hứa. Mỗi giọt mực là một di sản.',
         openLesson: [
             {
                 passage: 1,
                 type: 'text',
-                content: 'Có những câu chuyện không thể nói bằng lời, có những ký ức không thể cất giữ trong ảnh – chỉ có thể được khắc lại, sống động, bằng mực và cảm xúc. \n Đó là lý do tại sao, trong suốt hàng nghìn năm, con người đã chọn tattoo như một ngôn ngữ thiêng liêng để ghi lại hành trình của mình – từ những chiến binh Maori, các nghệ nhân Nhật Bản với phong cách Irezumi huyền thoại, đến những người trẻ đương đại muốn khẳng định “Tôi là ai giữa thế giới này”.'
+                content: 'Trong hơn một thập kỷ chứng kiến hàng nghìn khách hàng bước vào studio, tôi nhận ra một điều thú vị: những người tìm đến The Thế Trung không đơn thuần muốn "có một hình xăm". Họ đến vì một thứ gì đó sâu hơn – một cột mốc cần được đánh dấu, một bản sắc cần được khẳng định, hoặc đơn giản là một tác phẩm nghệ thuật xứng đáng tồn tại trên cơ thể họ suốt đời.'
             },
             {
                 passage: 2,
                 type: 'text',
-                content: 'Và giữa dòng chảy đó, The Thế Trung Tattoo Studio ra đời — không chỉ là một studio, mà là một đền thờ nghệ thuật của những linh hồn tự do.'
+                content: 'The Thế Trung Tattoo Studio không vận hành như một xưởng sản xuất hàng loạt. Chúng tôi hoạt động như một xưởng nghệ thuật – nơi mỗi tác phẩm là kết quả của sự hợp tác giữa nghệ sĩ và khách hàng, nơi kỹ thuật gặp gỡ câu chuyện, và nơi mực trở thành phương tiện cho những điều không thể nói bằng lời.'
             },
             {
                 passage: 3,
                 type: 'text',
-                content: 'Hơn 10 năm kinh nghiệm trong ngành tattoo đã dạy chúng tôi một điều: Tattoo không chỉ là dịch vụ – mà là một hành trình cá nhân, một nghi lễ biến đổi. \n Có người đến đây để lưu giữ nỗi nhớ, có người tìm lại bản thân, và có người chỉ đơn giản muốn một thứ gì đó mãi mãi thuộc về mình.'
+                content: 'Với đội ngũ nghệ sĩ được đào tạo theo tiêu chuẩn quốc tế và danh mục tác phẩm trải dài từ phong cách Irezumi truyền thống đến Chân dung siêu thực đương đại, chúng tôi không giới hạn bản thân trong một phong cách duy nhất. Điều chúng tôi làm là tìm ra chính xác thứ phù hợp cho từng khách hàng – và thực hiện nó ở mức cao nhất có thể.'
             },
         ],
         services: [
             {
-                title: 'Dịch vụ Xăm hình nghệ thuật theo mẫu',
-                description: 'Tại The Thế Trung Tattoo Studio, mỗi nghệ sĩ là một storyteller thầm lặng, kể chuyện bằng mực và cảm xúc. Mỗi nét xăm là cuộc đối thoại giữa linh hồn và nghệ thuật, nơi im lặng hóa thành ngôn ngữ, mực hóa thành ký ức. Với hơn 1.000 mẫu tattoo độc quyền lấy cảm hứng từ các phong cách danh giá thế giới, chúng tôi mang đến trải nghiệm cá nhân hóa tuyệt đối cho từng khách hàng.',
+                title: 'Thiết kế hình xăm độc bản theo yêu cầu',
+                description: 'Đây là dịch vụ chủ lực của studio. Quy trình bắt đầu bằng buổi tư vấn (trực tiếp hoặc qua video) để hiểu rõ ý tưởng và mong đợi. Nghệ sĩ sẽ phát triển 2-3 hướng thiết kế, tinh chỉnh dựa trên phản hồi, và chỉ bắt đầu xăm khi khách hàng hoàn toàn hài lòng. Thời gian thiết kế: 3-14 ngày tùy độ phức tạp. Mọi thiết kế đều được giữ độc quyền – không bao giờ tái sử dụng cho khách hàng khác.'
             },
             {
-                title: 'Dịch vụ Thiết kế & Xăm cá nhân hóa',
-                description: 'Mỗi hình xăm được thiết kế riêng tại The Thế Trung Tattoo Studio là một tác phẩm độc bản, được tạo nên từ ký ức và cảm xúc cá nhân. Thông qua quy trình thiết kế độc quyền gồm ba giai đoạn: Concept Talk, AI Visualization và Crafting Session, chúng tôi biến ý tưởng thành nghệ thuật sống động. Với đội ngũ nghệ sĩ quốc tế và sự cá nhân hóa tuyệt đối, mỗi dấu mực trở thành câu chuyện duy nhất, mang linh hồn và bản sắc của chính bạn.',
+                title: 'Bộ sưu tập mẫu có sẵn',
+                description: 'Dành cho khách hàng muốn có tác phẩm chất lượng với thời gian ngắn hơn. Bộ sưu tập mẫu được chọn lọc định kỳ bởi đội ngũ nghệ sĩ, bao gồm các phong cách phổ biến: họa tiết Nhật Bản, hoa lá, hình học, Blackwork và nét mảnh. Mỗi mẫu chỉ được xăm một lần duy nhất – ai đến trước được phục vụ trước. Đây là điểm khởi đầu tốt cho những ai muốn trải nghiệm chất lượng studio trước khi cam kết vào dự án lớn hơn.'
             },
             {
-                title: 'Dịch vụ chăm sóc sau xăm',
-                description: 'Một hình xăm chỉ thật sự hoàn hảo khi được chăm sóc đúng cách. Tại The Thế Trung Tattoo Studio, làn da sau xăm được xem như một tác phẩm sống cần được bảo vệ. Chúng tôi mang đến gói Aftercare chuyên biệt gồm sản phẩm phục hồi vegan, hướng dẫn chăm sóc cá nhân hóa và chương trình làm mới tattoo cũ. Ngoài ra, công nghệ PicoSure Laser hiện đại giúp xoá mực an toàn, hiệu quả, phục hồi làn da nguyên bản.',
+                title: 'Che phủ và sửa chữa hình xăm cũ',
+                description: 'Che phủ là một trong những thử thách khó nhất trong nghệ thuật xăm. Nó đòi hỏi nghệ sĩ phải thông thạo lý thuyết màu sắc, hiểu cách mực cũ phản ứng, và thiết kế dựa trên những giới hạn sẵn có. Chúng tôi tiếp cận che phủ như một bài toán sáng tạo – không chỉ che đi cái cũ, mà biến đổi nó thành một tác phẩm mới có giá trị. Buổi tư vấn bắt buộc để đánh giá khả năng thực hiện trước khi báo giá.'
             },
             {
-                title: 'Đào tạo & Workshop Tattoo',
-                description: 'Nếu tattoo là ngôn ngữ của linh hồn, thì nghệ sĩ xăm chính là người truyền dịch cảm xúc ấy lên da. The Thế Trung Tattoo Academy đào tạo thế hệ artist mới với nền tảng vững vàng cả kỹ thuật lẫn tư duy nghệ thuật. Chương trình gồm khóa Beginner, Advanced Masterclass và Professional Workshop được giảng dạy bởi Thế Trung cùng các Master quốc tế, giúp học viên phát triển kỹ năng, phong cách và triết lý sáng tạo riêng.',
+                title: 'Đào tạo nghệ sĩ xăm chuyên nghiệp',
+                description: 'Chương trình đào tạo 6-12 tháng cho những ai nghiêm túc với sự nghiệp trong ngành xăm hình. Nội dung bao gồm: giải phẫu học và lý thuyết về da, quy trình vệ sinh và an toàn, kỹ thuật sử dụng máy và cấu hình kim, lý thuyết màu sắc và lựa chọn mực, quản lý kinh doanh và khách hàng. Học viên được hướng dẫn trực tiếp bởi các nghệ sĩ giàu kinh nghiệm và có cơ hội thực hành trên khách hàng thật dưới sự giám sát. Số lượng có hạn – cần đăng ký xét duyệt.'
             },
         ],
 

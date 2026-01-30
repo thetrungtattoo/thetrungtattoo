@@ -1,37 +1,42 @@
 export const FAQ_DATA = [
-
     {
-        question: 'Xăm hình có an toàn không?',
-        answer: 'Hoàn toàn an toàn – miễn là bạn chọn một studio đạt chuẩn vệ sinh và tuân thủ quy trình an toàn nghiêm ngặt. \n Tại The Thế Trung Tattoo Studio, mọi kim xăm đều dùng một lần, toàn bộ thiết bị được khử trùng bằng hệ thống y tế đạt chuẩn quốc tế, và không gian làm việc luôn được vệ sinh kỹ lưỡng trước và sau mỗi buổi xăm. Chúng tôi đặt sức khỏe và trải nghiệm của khách hàng lên hàng đầu.',
-    },
-
-    {
-        question: 'Hình xăm thường mất bao lâu để lành hoàn toàn?',
-        answer: 'Thông thường, một hình xăm sẽ lành trong khoảng 2–3 tuần, tùy thuộc vào vị trí, kích thước và cơ địa của mỗi người. Trong thời gian này, bạn cần giữ vùng da xăm sạch sẽ, tránh ánh nắng trực tiếp và không gãi hoặc bóc da non. \n Đội ngũ nghệ sĩ của chúng tôi sẽ hướng dẫn chi tiết quy trình chăm sóc sau xăm (aftercare) để hình xăm lên màu đẹp, sắc nét và bền lâu theo thời gian.',
+        question: 'Quy trình đặt lịch và tư vấn diễn ra như thế nào?',
+        answer: 'Bước 1: Gửi yêu cầu qua form trên website hoặc tin nhắn kèm hình ảnh tham khảo và ý tưởng. \n Bước 2: Đội ngũ sẽ phản hồi trong 24-48 giờ với lịch trống và gợi ý nghệ sĩ phù hợp. \n Bước 3: Buổi tư vấn (30-60 phút) để thảo luận hướng thiết kế, vị trí xăm, kích thước và thời gian thực hiện. \n Bước 4: Đặt cọc 30% để xác nhận lịch hẹn và bắt đầu quá trình thiết kế. Khách vãng lai chỉ áp dụng cho các mẫu có sẵn kích thước nhỏ trong giờ làm việc.'
     },
     {
-        question: 'Nếu tôi không hài lòng với hình xăm thì sao?',
-        answer: 'Chúng tôi luôn mong muốn bạn hài lòng tuyệt đối với tác phẩm của mình. Nếu có bất kỳ điểm nào khiến bạn chưa ưng ý, hãy trao đổi thẳng thắn với nghệ sĩ để được hỗ trợ điều chỉnh hoặc dặm lại. \n The Thế Trung Tattoo Studio luôn tôn trọng cảm nhận của khách hàng và sẵn sàng đồng hành để mang đến kết quả tốt nhất có thể.',
+        question: 'Chi phí xăm được tính như thế nào?',
+        answer: 'Giá được tính dựa trên 3 yếu tố: độ phức tạp của thiết kế, kích thước và vị trí xăm, thời gian thực hiện ước tính. Hình nhỏ (cỡ lòng bàn tay) từ 2-3 triệu đồng. Hình trung bình (cẳng tay, bắp chân) từ 5-15 triệu. Các dự án lớn (full tay, kín lưng) sẽ được báo giá riêng sau buổi tư vấn. Chúng tôi không tính theo giờ với dự án lớn – giá cuối cùng là giá cố định, không phát sinh thêm.'
     },
     {
-        question: 'Tôi có thể mang mẫu thiết kế hình xăm của riêng mình đến không?',
-        answer: 'Tất nhiên rồi. Tại The Thế Trung Tattoo Studio, chúng tôi luôn khuyến khích khách hàng thể hiện dấu ấn cá nhân của mình. Bạn có thể mang bản thiết kế riêng, ảnh tham khảo hoặc ý tưởng phác thảo. \n Nghệ sĩ của chúng tôi sẽ cùng bạn tinh chỉnh bố cục, tỉ lệ và chi tiết để biến nó thành một tác phẩm nghệ thuật độc bản, mang đậm dấu ấn cá nhân và hài hòa với cơ thể bạn.',
-    },
-
-    {
-        question: 'Tôi có thể xăm hình khi đang mang thai không?',
-        answer: 'Chúng tôi không khuyến khích xăm hình trong giai đoạn mang thai hoặc cho con bú. Dù quy trình xăm được kiểm soát nghiêm ngặt, cơ thể mẹ bầu vẫn có nhiều thay đổi sinh lý và hệ miễn dịch yếu hơn, dễ bị kích ứng hoặc nhiễm trùng. Tốt nhất, hãy đợi sau khi sinh và hồi phục hoàn toàn – khi đó, trải nghiệm xăm sẽ an toàn và thoải mái hơn nhiều.',
+        question: 'Làm sao để chuẩn bị tốt nhất cho buổi xăm?',
+        answer: 'Đêm trước: Ngủ đủ 7-8 tiếng, tránh rượu bia và cà phê. \n Ngày xăm: Ăn sáng đầy đủ (đường huyết ổn định giúp chịu đau tốt hơn), mặc quần áo thoải mái để dễ tiếp cận vùng xăm, mang theo đồ ăn nhẹ và giải trí cho các buổi xăm dài. \n Tránh: Cháy nắng, kích ứng da, hoặc bất kỳ vết thương hở nào gần vùng xăm. Nếu bạn đang dùng thuốc chống đông máu hoặc có vấn đề sức khỏe, hãy thông báo trước cho nghệ sĩ.'
     },
     {
-        question: 'Hình xăm có thực sự vĩnh viễn không?',
-        answer: 'Đúng vậy. Hình xăm là một dấu ấn vĩnh viễn trên cơ thể, được tạo ra bằng cách đưa mực vào lớp hạ bì. Tuy nhiên, theo thời gian, màu sắc có thể nhạt đi một chút do tác động của ánh nắng và cơ địa. \n Nếu bạn muốn thay đổi, công nghệ xóa hình xăm bằng laser hiện đại có thể làm mờ hoặc xóa gần như hoàn toàn, nhưng quá trình này cần nhiều buổi và chi phí cao – vì thế hãy chắc chắn trước khi xăm.',
+        question: 'Quy trình chăm sóc sau xăm của studio là gì?',
+        answer: 'Studio sử dụng màng bảo vệ y tế chuyên dụng – giữ nguyên 3-5 ngày, cho phép hình xăm lành trong môi trường kín. Sau khi gỡ màng: rửa nhẹ nhàng với xà phòng không mùi, thoa một lớp mỏng kem dưỡng 2-3 lần/ngày trong 2 tuần đầu. Tránh: ánh nắng trực tiếp, bơi lội, đổ mồ hôi nhiều trong 2-3 tuần. Dặm lại miễn phí trong 3 tháng đầu nếu cần thiết do vấn đề trong quá trình lành.'
     },
     {
-        question: 'Tôi có cần đặt lịch trước khi đến xăm không?',
-        answer: 'Có – và chúng tôi khuyến khích điều đó. Việc đặt lịch trước giúp bạn có thời gian trao đổi ý tưởng, tư vấn thiết kế và chuẩn bị da kỹ càng trước buổi xăm. \n Đặc biệt với những tác phẩm lớn hoặc full-sleeve, chúng tôi sẽ cần lên kế hoạch chi tiết để đảm bảo quá trình diễn ra trơn tru và thoải mái nhất. Bạn có thể đặt lịch dễ dàng qua website, fanpage hoặc trực tiếp tại studio.',
+        question: 'Studio có thể xăm mọi phong cách không?',
+        answer: 'Mỗi nghệ sĩ trong đội ngũ có chuyên môn riêng. Phong cách Nhật Bản và nghệ thuật Á Đông là thế mạnh của studio, bên cạnh đó chúng tôi cũng mạnh về Chân dung siêu thực, Blackwork và Tân truyền thống. Với các phong cách ngoài chuyên môn (như Chicano, hoa văn Polynesia), chúng tôi sẽ giới thiệu đến nghệ sĩ trong mạng lưới mà chúng tôi tin tưởng – vì ưu tiên hàng đầu là khách hàng nhận được kết quả tốt nhất, không phải giữ đơn bằng mọi giá.'
     },
     {
-        question: 'Làm thế nào để chọn được mẫu hình xăm phù hợp nhất với tôi?',
-        answer: 'Hình xăm đẹp không chỉ nằm ở đường nét – mà ở ý nghĩa và cảm xúc mà nó mang lại cho bạn. Hãy nghĩ về câu chuyện, biểu tượng hoặc cảm xúc bạn muốn lưu giữ. \n Nghệ sĩ của The Thế Trung sẽ giúp bạn phát triển ý tưởng, tư vấn phong cách và định vị thiết kế sao cho phù hợp với cá tính, vị trí xăm và đường nét cơ thể, để bạn có được một tác phẩm thật sự thuộc về mình.',
+        question: 'Độ tuổi tối thiểu để xăm là bao nhiêu?',
+        answer: '18 tuổi trở lên với giấy tờ tùy thân hợp lệ. Không có ngoại lệ. Đây là tiêu chuẩn ngành và quy định pháp luật. Với người chưa đủ tuổi dù có sự đồng ý của phụ huynh, câu trả lời vẫn là không – chúng tôi tin rằng xăm hình là quyết định đòi hỏi sự tự chủ và trưởng thành hoàn toàn của người lớn.'
     },
-]
+    {
+        question: 'Tôi có thể mang thiết kế riêng đến không?',
+        answer: 'Hoàn toàn được. Hãy mang theo hình tham khảo, bản phác thảo, hoặc thiết kế hoàn chỉnh của bạn. Nghệ sĩ sẽ đánh giá và tư vấn về những điều chỉnh cần thiết khi chuyển lên da – một thiết kế đẹp trên giấy không tự động trở thành hình xăm đẹp. Một số điều chỉnh thường gặp: độ dày nét, khoảng cách, tỷ lệ kích thước, và phối màu phù hợp với tông da. Thiết kế cuối cùng sẽ là kết quả hợp tác giữa ý tưởng của bạn và chuyên môn của nghệ sĩ.'
+    },
+    {
+        question: 'Chính sách hoàn tiền như thế nào nếu tôi hủy?',
+        answer: 'Tiền đặt cọc không hoàn lại vì đó là chi phí bù đắp cho thời gian thiết kế đã đầu tư. Tuy nhiên, tiền cọc có thể chuyển sang lịch hẹn khác trong vòng 6 tháng. Dời lịch với thông báo trước 72 giờ: không phạt. Dời lịch với thông báo dưới 24 giờ hoặc vắng mặt không báo: mất tiền cọc. Chúng tôi hiểu cuộc sống có nhiều bất ngờ – hãy liên hệ sớm và chúng tôi sẽ hỗ trợ khi có thể.'
+    },
+    {
+        question: 'Xăm hình có đau không?',
+        answer: 'Cảm giác đau khác nhau tùy người và tùy vị trí. Vùng da mỏng gần xương (mắt cá, xương sườn, cột sống) thường nhạy cảm hơn. Vùng thịt dày (bắp tay, đùi, bắp chân) chịu đựng tốt hơn. Với kinh nghiệm hơn 10 năm, chúng tôi nhận thấy 90% khách hàng đều vượt qua thoải mái hơn họ tưởng. Nghệ sĩ sẽ làm việc theo nhịp của bạn, nghỉ giữa chừng khi cần, đảm bảo trải nghiệm dễ chịu nhất có thể.'
+    },
+    {
+        question: 'Hình xăm có tồn tại vĩnh viễn không?',
+        answer: 'Có. Hình xăm là dấu ấn vĩnh viễn trên cơ thể, được tạo bằng cách đưa mực vào lớp hạ bì của da. Theo thời gian, màu sắc có thể nhạt đi một chút do tác động của ánh nắng và lão hóa tự nhiên – đây là lý do chúng tôi luôn tư vấn về cách bảo vệ và dưỡng da sau xăm. Công nghệ xóa xăm bằng laser hiện đại có thể làm mờ hoặc xóa gần như hoàn toàn, nhưng quá trình này tốn nhiều buổi và chi phí cao – vì vậy hãy cân nhắc kỹ trước khi quyết định.'
+    },
+];

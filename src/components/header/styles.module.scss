@@ -16,7 +16,7 @@
 }
 
 .headerLogo {
-  width: 250px;
+  width: 185px;
   height: 100%;
   img {
     width: 100%;
@@ -49,17 +49,17 @@
       transition: color 0.3s ease;
 
       &:hover {
-        color: #FAFAD2;
+        color: #ddeeff;
         svg {
-          fill: #FAFAD2;
+          fill: #ddeeff;
         }
       }
 
       &.active {
-        color: #FAFAD2;
-        border-bottom: 2px solid #FAFAD2;
+        color: #ddeeff;
+        border-bottom: 2px solid #ddeeff;
         svg {
-          fill: #FAFAD2;
+          fill: #ddeeff;
         }
       }
 
@@ -90,9 +90,9 @@
 
       &:hover {
         .navLink {
-        color: #FAFAD2;
+        color: #ddeeff;
           svg {
-            fill: #FAFAD2;
+            fill: #ddeeff;
           }
         }
       }
@@ -163,7 +163,7 @@
 
     &:hover {
         background: rgba(255, 255, 255, 0.2);
-        border-color: #FAFAD2;
+        border-color: #ddeeff;
     }
 
     svg {
@@ -174,7 +174,7 @@
     }
 
     &:hover svg {
-        fill: #FAFAD2;
+        fill: #ddeeff;
     }
 }
 
@@ -257,7 +257,7 @@
           padding: 4px 10px;
 
           &:hover {
-            color: #FAFAD2;
+            color: #ddeeff;
           }
         }
       }
@@ -294,7 +294,7 @@
 
   &:hover {
     background: rgba(255, 255, 255, 0.2);
-    border-color: #FAFAD2;
+    border-color: #ddeeff;
   }
 
   svg {
@@ -305,7 +305,7 @@
   }
 
   &:hover svg {
-    fill: #FAFAD2;
+    fill: #ddeeff;
   }
 }
 
@@ -404,11 +404,11 @@
   padding: 8px 0;
 
   &:hover {
-    color: #FAFAD2;
+    color: #ddeeff;
   }
 
   &.active {
-    color: #FAFAD2;
+    color: #ddeeff;
   }
 }
 
@@ -433,7 +433,7 @@
 
 .mobileDropdownTitle {
   font-size: 16px;
-  color: #FAFAD2;
+  color: #ddeeff;
   font-weight: 600;
   margin: 0;
   padding-bottom: 8px;
@@ -461,7 +461,7 @@
   display: block;
 
   &:hover {
-    color: #FAFAD2;
+    color: #ddeeff;
   }
 }
 
@@ -508,7 +508,7 @@
   }
 
   .headerLogo {
-    width: 200px;
+    width: 150px;
   }
 
   .mobileMenuToggle {

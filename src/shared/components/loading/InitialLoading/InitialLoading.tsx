@@ -6,10 +6,6 @@ interface InitialLoadingProps {
   onComplete: () => void;
 }
 
-/**
- * Initial Loading Screen - Hiển thị khi vào trang lần đầu hoặc reload
- * Không có header, full screen, 3 giây
- */
 const InitialLoading: React.FC<InitialLoadingProps> = ({ onComplete }) => {
   const [isVisible, setIsVisible] = useState(true);
 
@@ -17,7 +13,7 @@ const InitialLoading: React.FC<InitialLoadingProps> = ({ onComplete }) => {
     const timer = setTimeout(() => {
       setIsVisible(false);
       setTimeout(onComplete, 300);
-    }, 3000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, [onComplete]);
@@ -27,7 +23,7 @@ const InitialLoading: React.FC<InitialLoadingProps> = ({ onComplete }) => {
   return (
     <div className={`${styles.initialLoading} ${!isVisible ? styles.fadeOut : ''}`}>
       <div className={styles.loadingContent}>
-        <div className={styles.spinner}></div>
+        <div className={styles.spinner}><span /></div>
         <span className={styles.loadingText}>{LOADING_CONSTANTS.DEFAULT_LOADING_MESSAGE}</span>
       </div>
     </div>

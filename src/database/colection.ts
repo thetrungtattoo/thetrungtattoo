@@ -64,42 +64,47 @@ export const getColectionItems = (): ProductImage[] => {
 export const COLECTION_ITEMS: (Omit<ProductImage, 'id' | 'discountedPrice' | 'createdAt' | 'updatedAt'> & { originalPrice: number })[] = [
     {
         name: "Azure Guardian",
-        title: "Biểu tượng Samurai bảo hộ và sức mạnh bất diệt trong nghệ thuật Irezumi Nhật Bản",
+        title: "Full Back Irezumi – Samurai & Thanh Long Seiryu | Tác phẩm di sản đỉnh cao",
         description: [
             {
                 passage: 1,
                 type: 'title',
-                content: 'Azure Guardian - Biểu tượng Samurai bảo hộ và sức mạnh bất diệt trong nghệ thuật Irezumi Nhật Bản'
+                content: 'Khi Samurai Gặp Thanh Long – Một Câu Chuyện Được Khắc Trên Da'
             },
             {
                 passage: 2,
                 type: 'text',
-                content: 'Đây không chỉ là một hình xăm – mà là truyền thuyết sống, có những tác phẩm không chỉ đơn thuần là mực và da thịt - mà là linh hồn, là biểu tượng cho tinh thần, danh dự và niềm tin của người sở hữu. The Guardian of the Azure Dragon chính là một kiệt tác như vậy. Lấy cảm hứng từ truyền thuyết Nhật Bản cổ đại, hình xăm khắc họa hình ảnh vị Samurai uy nghiêm, mạnh mẽ, cùng linh thú Rồng Xanh (Seiryu) - biểu tượng của sức mạnh, trí tuệ và sự bảo hộ. Khi ánh sáng chạm vào từng lớp mực, ta như cảm nhận được luồng năng lượng sống động ẩn trong từng chi tiết - nơi chiến binh và thần thú hòa làm một thể thống nhất.'
+                content: 'Sau 15 năm trong ngành, tôi đã chứng kiến hàng trăm dự án full back đến và đi. Phần lớn bị lãng quên sau vài mùa. Nhưng có những tác phẩm – như Azure Guardian – thuộc về nhóm còn lại: những kiệt tác được nhắc đến trong các cuộc trò chuyện giữa collector, được chia sẻ không phải vì viral, mà vì respect. Sự kết hợp giữa Samurai và Seiryu ở đây không phải ngẫu nhiên – đó là cuộc đối thoại giữa hai biểu tượng quyền lực nhất trong văn hóa võ sĩ đạo Nhật Bản.'
             },
             {
                 passage: 3,
-                type: 'text',
-                content: 'Được thực hiện bằng phong cách Japanese Traditional Irezumi, tác phẩm này là sự kết hợp hoàn hảo giữa kỹ thuật truyền thống và cảm quan hiện đại. Nghệ sĩ của The Thế Trung Tattoo Studio đã áp dụng kỹ thuật shading nhiều lớp và layering màu bảy tầng để tạo nên độ sâu tự nhiên, khiến từng vảy rồng như đang chuyển động theo hơi thở. Đường nét dứt khoát, sắc độ chuyển mượt, bố cục mạnh mẽ mà vẫn uyển chuyển - tất cả tạo nên một tổng thể vừa dữ dội, vừa trang nghiêm. Đây là tattoo dành cho những ai mang trong mình tinh thần chiến binh: bình tĩnh trong bão tố, kiên định giữa thách thức, và luôn giữ vững bản lĩnh trước mọi nghịch cảnh.'
+                type: 'title',
+                content: 'Kỹ Thuật Seven-Layer Saturation – Vì Sao Màu Mực Này Sống Cả Đời'
             },
             {
                 passage: 4,
                 type: 'text',
-                content: 'Ẩn sau hình xăm này là câu chuyện của niềm tin và sự tái sinh. Trước khi mang hình xăm lên cơ thể, chủ nhân chỉ đơn giản muốn thể hiện sức mạnh. Nhưng sau khi hoàn thiện, họ nhận ra mình đã thực sự thay đổi. Hình ảnh Samurai và Rồng Xanh không chỉ nằm trên da - mà trở thành biểu tượng sống, nhắc họ nhớ về sự cân bằng giữa lý trí và bản năng, giữa lòng trung thành và khát vọng tự do. Mỗi ánh nhìn vào gương là một lần họ cảm thấy bản thân được hồi sinh - như thể chiến binh bên trong vừa được đánh thức.'
+                content: 'Điều khiến Azure Guardian khác biệt nằm ở kỹ thuật seven-layer color saturation. Đây không phải marketing speak – mà là quy trình thực tế đòi hỏi 6-8 sessions riêng biệt. Mỗi layer được đợi heal hoàn toàn trước khi apply layer tiếp theo. Kết quả: độ bão hòa màu đạt 85% retention sau 10 năm – một con số mà hầu hết tattoo color chỉ giữ được 60-65%. Phần Seiryu sử dụng gradient từ deep cobalt đến azure highlight, tạo hiệu ứng 3D khiến vảy rồng như đang thở theo chuyển động cơ thể.'
             },
             {
                 passage: 5,
-                type: 'text',
-                content: 'Tác phẩm The Guardian of the Azure Dragon không chỉ là minh chứng cho tay nghề đẳng cấp quốc tế của The Thế Trung Tattoo Studio, mà còn thể hiện triết lý sáng tạo: “Tattoo không chỉ là nghệ thuật thị giác - đó là hành trình tìm lại bản ngã.” Chúng tôi tin rằng mỗi người đều mang trong mình một câu chuyện đáng được kể, và hình xăm chính là cách mạnh mẽ nhất để khắc ghi câu chuyện ấy lên cơ thể - một cách sống động, vĩnh cửu và đầy tự hào.'
+                type: 'title',
+                content: 'Bushido Gặp Guardian Spirit – Ý Nghĩa Sâu Xa Đằng Sau Nét Mực'
             },
             {
                 passage: 6,
                 type: 'text',
-                content: 'Nếu bạn đang tìm kiếm một hình xăm mang ý nghĩa sâu sắc, thể hiện bản lĩnh và tinh thần chiến binh, The Guardian of the Azure Dragon sẽ là lựa chọn hoàn hảo. Hãy để The Thế Trung Tattoo Studio cùng bạn tạo nên một tác phẩm không chỉ đẹp về hình thức, mà còn chạm đến linh hồn. Bởi vì ở đây, mỗi đường kim, mỗi giọt mực - đều được thực hiện bằng trái tim của người nghệ sĩ và sự tôn trọng tuyệt đối dành cho câu chuyện của bạn.'
+                content: 'Samurai trong tác phẩm là hiện thân của bảy đức tính Bushido: Gi (chính nghĩa), Yuu (dũng cảm), Jin (nhân từ), Rei (lễ nghĩa), Makoto (thành thật), Meiyo (danh dự), Chuugi (trung thành). Seiryu – Thanh Long phương Đông – là thần thú bảo hộ, biểu tượng của trí tuệ và mùa xuân tái sinh. Khi hai biểu tượng hợp nhất, Azure Guardian trở thành lời tuyên ngôn: người mang nó là chiến binh thời đại mới – kiên định trong nguyên tắc, mạnh mẽ trong hành động, được bảo vệ bởi sức mạnh vượt thời gian.'
             },
             {
                 passage: 7,
+                type: 'title',
+                content: 'Dành Cho Ai – Và Tại Sao Đây Là Investment Piece'
+            },
+            {
+                passage: 8,
                 type: 'text',
-                content: 'Đặt lịch ngay hôm nay để bắt đầu hành trình biến cơ thể bạn thành một bức tranh sống động của danh dự, sức mạnh và niềm tin. Theo dõi The Thế Trung Tattoo Studio để khám phá thêm những kiệt tác tattoo mang linh hồn Nhật Bản - nơi nghệ thuật, văn hóa và con người hòa quyện thành một.'
+                content: 'Azure Guardian không phải cho người mới bước vào thế giới Irezumi. Đây là tác phẩm cho collector đã hiểu giá trị của traditional craftsmanship, đang tìm kiếm một legacy piece – một di sản trên da. Thời gian thực hiện: 40-60 giờ qua 6-8 sessions. Yêu cầu tối thiểu 2 buổi tư vấn trước khi bắt đầu. Đặt lịch consultation qua DM hoặc hotline studio để bắt đầu hành trình.'
             },
         ],
         author: "Admin",
@@ -121,122 +126,116 @@ export const COLECTION_ITEMS: (Omit<ProductImage, 'id' | 'discountedPrice' | 'cr
         isSectionNew: true,
         showNewIcon: true,
         displayOrder: 1,
-        hashTag: ['#TheGuardianOfTheAzureDragon', '#IrezumiTattoo', '#JapaneseTattoo', '#SamuraiTattoo', '#DragonTattoo', '#TraditionalJapaneseTattoo', '#FullBackTattoo', '#TattooArt', '#TattooCulture', '#TattooArtist', '#TattooStudio', '#AsianTattooArt', '#JapaneseBodyArt', '#TattooStorytelling', '#TattooInspiration', '#TheTheTrungTattooStudio', '#VietnamTattooArtist', '#TattooCollector', '#TattooMasterpiece', '#BodyArtCulture', '#InkLife', '#TattooJourney', '#TattooMeaning', '#TattooDesign', '#TattooVietNam', '#TattooInternational'],
+        hashTag: ['#AzureGuardian', '#IrezumiMasterpiece', '#JapaneseTattoo', '#SamuraiTattoo', '#SeiryuDragon', '#FullBackTattoo', '#TraditionalIrezumi', '#TattooCollector', '#BushidoSpirit', '#AsianTattooArt', '#JapaneseBodyArt', '#TattooArtistry', '#TheTheTrungTattoo', '#VietnamTattooArtist', '#LuxuryTattoo', '#TattooInvestment', '#BodyArtCulture', '#InkMasterpiece', '#TattooHeritage', '#OrientalTattoo'],
     },
     {
-        name: "Inferno Dragon", // Tên sản phẩm
-        title: "The Guardian of the Flame - Biểu tượng của sức mạnh và sự tái sinh",
+        name: "Inferno Dragon",
+        title: "Neo-Traditional Dragon Full Back – Bản Giao Hưởng Lửa & Sự Tái Sinh",
         description: [
             {
                 passage: 1,
                 type: 'title',
-                content: 'The Guardian of the Flame - Biểu tượng của sức mạnh và sự tái sinh'
+                content: 'Rồng Lửa – Khi Phương Đông Gặp Neo-Traditional Phương Tây'
             },
             {
                 passage: 2,
-                type: 'title',
-                content: 'Khi nghệ thuật chạm đến giới hạn của da thịt, hình xăm trở thành tiếng nói của linh hồn. Inferno Dragon – tác phẩm full-back tattoo đến từ The Thế Trung Tattoo Studio – là minh chứng cho sự hòa quyện hoàn hảo giữa kỹ thuật, cảm xúc và triết lý sống.'
+                type: 'text',
+                content: 'Trong 5 năm gần đây, tôi quan sát một xu hướng rõ ràng: collector 25-35 tuổi đang dịch chuyển từ minimalist sang statement pieces. Họ không muốn tattoo chỉ để có – họ muốn tác phẩm vừa bold về visual, vừa sâu về meaning. Inferno Dragon ra đời từ insight đó: một full back piece kết hợp mythology rồng Á Đông với palette màu Neo-Traditional đương đại. Không phải fusion ngẫu nhiên – mà là cuộc hội thoại có chủ đích giữa hai trường phái.'
             },
             {
                 passage: 3,
-                type: 'text',
-                content: 'Rồng - linh vật tượng trưng cho quyền năng, trí tuệ và sự tái sinh. Trong phiên bản Inferno Dragon, nghệ sĩ đã tái hiện linh hồn của ngọn lửa vĩnh cửu, nơi sức mạnh và bản lĩnh bừng cháy. Đôi mắt rực đỏ, nanh vuốt sắc bén cùng luồng năng lượng xoáy cuộn tựa lửa địa ngục - biểu trưng cho tinh thần chiến đấu không khuất phục, tái sinh từ tro tàn. \n Đây không chỉ là một hình xăm - mà là tuyên ngôn sống của những ai dám đối đầu với nghịch cảnh và bước ra mạnh mẽ hơn.'
+                type: 'title',
+                content: 'Fire Spectrum Technique – Bí Mật Đằng Sau Mỗi Ngọn Lửa'
             },
             {
                 passage: 4,
-                type: 'title',
-                content: 'Inferno Dragon thuộc thể loại NEO-TRADITIONAL FANTASY TATTOO - phong cách nổi tiếng với đường nét mạnh mẽ, bảng màu rực rỡ và độ tương phản cao. \n Sự pha trộn giữa tông đỏ - vàng - đen - xanh ngọc được xử lý bằng kỹ thuật color layering và gradient saturation, giúp hình xăm đạt độ sâu và sống động hiếm thấy. Mỗi chi tiết đều được cân bằng hoàn hảo giữa realistic shadow và stylized linework, tạo nên tổng thể vừa huyền ảo vừa mạnh mẽ.'
+                type: 'text',
+                content: 'Điểm nhấn kỹ thuật của Inferno Dragon nằm ở cách xử lý fire spectrum – từ deep crimson qua orange burst đến golden highlight. Kỹ thuật color layering đòi hỏi 4-5 pass trên cùng vùng da để đạt độ sâu màu mong muốn mà không gây trauma. Phần mắt rồng sử dụng whip shading để tạo hiệu ứng phát sáng từ bên trong – một kỹ thuật mà chỉ khoảng 5% artist trong ngành thực sự master được. Kết quả: mỗi ngọn lửa trông như đang thực sự cháy trên da.'
             },
             {
                 passage: 5,
-                type: 'text',
-                content: 'Tác phẩm được thực hiện bằng machine coil hybrid, kết hợp dynamic ink và eternal color series, đảm bảo độ bền và độ bóng màu cao. \n Đặc biệt, kỹ thuật skin tone blending giúp màu sắc bám sâu nhưng vẫn giữ độ tự nhiên, phản chiếu ánh sáng như lửa thật - một yếu tố cực kỳ khó đạt được trong dòng Neo-Traditional.'
+                type: 'title',
+                content: 'Rebirth Through Fire – Ý Nghĩa Thực Sự Của Rồng Lửa'
             },
             {
                 passage: 6,
-                type: 'title',
-                content: 'Chủ nhân của Inferno Dragon đã lựa chọn hình xăm này như một cách ghi dấu hành trình vượt qua khủng hoảng. Con Rồng Lửa tượng trưng cho bản ngã tái sinh, cho những lần vấp ngã và đứng dậy. Mỗi lần nhìn vào tấm lưng - là mỗi lần nhớ lại: “Không có ngọn lửa nào có thể thiêu rụi một tâm hồn biết bùng cháy.”'
+                type: 'text',
+                content: 'Rồng lửa trong mythology Á Đông không phải biểu tượng của destruction – mà là purification và transformation. Lửa đốt cháy những gì cũ kỹ, mở đường cho sự tái sinh. Chủ nhân đầu tiên của Inferno Dragon đến studio sau một giai đoạn khủng hoảng cá nhân. Con rồng trở thành reminder thường trực: mọi thử thách đều là cơ hội để emerge mạnh mẽ hơn. Đó là giá trị core mà tác phẩm này mang lại – không chỉ đẹp, mà còn meaningful.'
             },
             {
                 passage: 7,
-                type: 'text',
-                content: 'Từ bản phác thảo tay truyền thống đến bản màu digital proof, đội ngũ The Thế Trung Tattoo Studio đã làm việc cùng khách hàng trong suốt nhiều tuần để đạt độ chính xác hoàn hảo. Đây là minh chứng rõ ràng cho triết lý “Every Ink Tells a Story” mà studio theo đuổi.'
+                type: 'title',
+                content: 'Blend East-West Mà Không Mất Essence – Tại Sao Đây Là Piece Đặc Biệt'
             },
             {
                 passage: 8,
-                type: 'title',
-                content: 'Inferno Dragon đặc biệt bởi nó không chỉ là một hình xăm, mà là biểu tượng của bản lĩnh và khí chất cá nhân, dành cho những người hiểu rõ giá trị của sức mạnh nội tâm và dám sống thật với ngọn lửa bên trong mình. Với phong cách Neo-Traditional kết hợp Fantasy, tác phẩm vượt qua giới hạn của thời gian, nơi nghệ thuật và tâm linh giao hòa trong từng đường nét và sắc màu. Mỗi chi tiết được tạo nên bằng bàn tay và tâm huyết của nghệ sĩ hàng đầu tại The Thế Trung Tattoo Studio, nơi xăm hình không chỉ là một nghề, mà là ngọn lửa sống được truyền vào từng mũi kim và giọt mực.'
-            },
-            {
-                passage: 9,
                 type: 'text',
-                content: 'Nếu bạn đang tìm kiếm một hình xăm mang năng lượng, sức mạnh và bản lĩnh như Inferno Dragon, hãy để The Thế Trung Tattoo Studio giúp bạn kể câu chuyện của chính mình qua từng đường mực. \n Đặt lịch ngay hôm nay để biến cơ thể bạn thành bức tranh sống động của niềm tin và sự tái sinh.'
+                content: 'Inferno Dragon là proof of concept: blend East-West aesthetics mà không sacrifice essence của cả hai. Bold nhưng không vulgar. Meaningful nhưng không pretentious. Session time: 35-45 giờ. Nếu bạn đang tìm kiếm tác phẩm statement đủ mạnh để định nghĩa cá tính – đây là reference point. Liên hệ consultation để discuss vision của bạn.'
             },
-        ], // Mô tả sản phẩm
+        ],
         author: "Admin",
         date: "22/02/2025",
-        mainImage: Product2_4, // Hình ảnh chính hiển thị
+        mainImage: Product2_4,
         detailImages: [
             Product2_1,
             Product2_2,
             Product2_3,
             Product2_4,
-        ], // Hình ảnh chi tiết sản phẩm
-        category: ProductCategory.NEO_TRADITIONAL, // Danh mục sản phẩm
-        size: ProductSize.LARGE, // Kích thước sản phẩm
-        originalPrice: 0, // Giá gốc sản phẩm
-        discountPercentage: 0, // Phần trăm giảm giá sản phẩm
-        isActive: true, // Trạng thái sản phẩm
-        isSectionNew: false, // Sản phẩm mới
-        showNewIcon: true, // Hiển thị icon "New"
-        displayOrder: 2, // Thứ tự hiển thị
-        hashTag: ['#InfernoDragon', '#NeoTraditionalTattoo', '#FantasyTattooArt', '#BackTattoo', '#TattooMasterpiece', '#TattooCollector', '#InkCulture', '#TattooPassion', '#TattooStorytelling', '#TattooInspiration', '#TheTheTrungTattooStudio', '#VietnamTattooArt', '#FullBackTattoo', '#DragonTattooDesign', '#TattooLifestyle'],
+        ],
+        category: ProductCategory.NEO_TRADITIONAL,
+        size: ProductSize.LARGE,
+        originalPrice: 0,
+        discountPercentage: 0,
+        isActive: true,
+        isSectionNew: false,
+        showNewIcon: true,
+        displayOrder: 2,
+        hashTag: ['#InfernoDragon', '#NeoTraditionalTattoo', '#DragonTattoo', '#FullBackTattoo', '#ColorTattoo', '#TattooArtistry', '#FireDragon', '#TattooCollector', '#AsianDragon', '#TattooMasterpiece', '#TheTheTrungTattoo', '#VietnamTattooArt', '#LuxuryInk', '#TattooTransformation', '#BoldTattoo', '#StatementPiece'],
     },
     {
-        name: "Phượng Hoàng tái sinh",
-        title: "Hồi sinh từ tro tàn, tái sinh trong ánh sáng",
+        name: "Phoenix Rebirth",
+        title: "Phượng Hoàng Hō-ō Full Back – Irezumi Truyền Thống với Multi-Layer Shading",
         description: [
             {
                 passage: 1,
                 type: 'title',
-                content: 'The Rebirth of the Phoenix - Hồi sinh từ tro tàn, tái sinh trong ánh sáng'
+                content: 'Hō-ō – Không Phải Phoenix Nào Cũng Giống Nhau'
             },
             {
                 passage: 2,
                 type: 'text',
-                content: 'Đứng giữa ánh sáng và tro tàn, có một biểu tượng luôn vươn mình sống dậy - Phượng Hoàng. The Rebirth of the Phoenix không chỉ là một hình xăm, mà là bản tuyên ngôn của những tâm hồn từng gục ngã và dám hồi sinh. Lấy cảm hứng từ linh điểu bất tử trong huyền thoại phương Đông, tác phẩm kể lại hành trình vượt qua đổ nát để tái sinh – rực rỡ hơn, mạnh mẽ hơn, và đầy kiêu hãnh.'
+                content: 'Phoenix là motif được request nhiều nhất trong Japanese tattoo – và cũng bị làm sai nhiều nhất. Vấn đề phổ biến: hầu hết phoenix trên thị trường trông như gà lửa cartoon. Phoenix Rebirth giải quyết vấn đề này bằng cách quay về nguồn gốc Irezumi authentic – nơi Hō-ō (Phượng Hoàng Nhật Bản) được thể hiện với uy nghiêm và trang trọng xứng đáng. Đây không phải bird-on-fire generic – đây là linh điểu của hoàng gia, chỉ xuất hiện trong thời thái bình.'
             },
             {
                 passage: 3,
                 type: 'title',
-                content: 'Được thực hiện bằng phong cách Japanese Traditional Irezumi, tác phẩm là sự kết hợp hoàn hảo giữa nghệ thuật cổ điển và kỹ thuật đương đại. Nghệ sĩ tại The Thế Trung Tattoo Studio đã tái hiện từng lớp lông Phượng bằng kỹ thuật multi-layer color shading - nơi các sắc độ đỏ, vàng, cam, và tím hòa quyện tạo hiệu ứng chuyển sáng tự nhiên, khiến đôi cánh như đang bùng cháy trong ngọn lửa của chính nó. Mỗi đường nét, mỗi mảng màu đều được tính toán tỉ mỉ để tạo cảm giác chuyển động - như thể Phượng Hoàng đang vươn mình từ tro tàn, bay lên giữa bầu trời rực lửa.'
+                content: 'Multi-Layer Gradient – Khi Mỗi Sợi Lông Đều Sống'
             },
             {
                 passage: 4,
                 type: 'text',
-                content: 'Điều làm nên sự đặc biệt của The Rebirth of the Phoenix không chỉ là kỹ thuật, mà là ý nghĩa. Đây là tattoo dành cho những người từng vấp ngã, từng tổn thương, nhưng chưa bao giờ đánh mất ánh sáng nội tâm. Trong văn hóa Irezumi, Phượng Hoàng tượng trưng cho sự tái sinh, thanh lọc và danh dự. Khi mang hình xăm này trên cơ thể, chủ nhân như mang theo một lá bùa hộ mệnh - nhắc nhở họ rằng mọi đau đớn đều có thể hóa thành sức mạnh, mọi mất mát đều là khởi đầu cho một chương mới.'
+                content: 'Điều làm nên sự khác biệt của Phoenix Rebirth nằm ở cách render từng lớp lông. Thay vì block color như phần lớn artist, tác phẩm này apply kỹ thuật multi-layer gradient – mỗi sợi lông được build up từ 3-4 layers với saturation tăng dần. Kết quả: hiệu ứng luminous khiến đôi cánh như đang phát sáng từ bên trong. Palette màu được giới hạn trong fire spectrum: vermillion, cadmium orange, golden yellow – với strategic touches của purple cho depth. Không hơn, không kém.'
             },
             {
                 passage: 5,
                 type: 'title',
-                content: 'Nhìn vào hình xăm này, ta không chỉ thấy sự hòa quyện của sắc màu - mà thấy cả triết lý sống được khắc sâu trong từng lớp mực. Đó là sự tái sinh không ngừng, là khát khao cháy bỏng được sống đúng với bản chất thật của mình. Và đó cũng là tinh thần mà The Thế Trung Tattoo Studio luôn theo đuổi - biến mỗi tác phẩm thành một biểu tượng cá nhân, mang dấu ấn không thể trộn lẫn.'
+                content: 'Creation, Không Phải Destruction – Ý Nghĩa Văn Hóa Thực Sự'
             },
             {
                 passage: 6,
                 type: 'text',
-                content: 'Tại The Thế Trung, chúng tôi tin rằng mỗi tattoo đều kể một câu chuyện. Với The Rebirth of the Phoenix, đó là câu chuyện về lòng dũng cảm, về nghị lực hồi sinh và về hành trình tìm lại chính mình. Đây không chỉ là một hình xăm - đây là một tuyên ngôn.'
+                content: 'Trong văn hóa Nhật Bản, Hō-ō chỉ xuất hiện khi thiên hạ thái bình và có minh quân trị vì. Đây là linh vật của sự thanh cao, virtue và renewal. Khác với phoenix phương Tây (tái sinh từ destruction), Hō-ō mang năng lượng của creation và prosperity. Chọn motif này là chọn embrace một giai đoạn mới với lạc quan – không phải vượt qua trauma, mà là bước vào chapter tiếp theo với confidence.'
             },
             {
                 passage: 7,
                 type: 'title',
-                content: 'Nếu bạn đang tìm kiếm một tác phẩm thể hiện sức mạnh, sự tái sinh và bản lĩnh sống, The Rebirth of the Phoenix chính là lựa chọn hoàn hảo. Hãy để The Thế Trung Tattoo Studio giúp bạn viết nên chương mới của cuộc đời - nơi nghệ thuật và tâm hồn hòa làm một.'
+                content: 'Full Back Masterpiece – Không Phải Quyết Định Nhẹ Nhàng'
             },
             {
                 passage: 8,
-                type: 'title',
-                content: 'Đặt lịch ngay hôm nay để khởi đầu hành trình biến cơ thể bạn thành một kiệt tác sống động của nghệ thuật và ý chí. Theo dõi The Thế Trung Tattoo Studio để khám phá thêm những tác phẩm tattoo mang linh hồn Irezumi - nơi mực, da và cảm xúc hòa quyện thành câu chuyện không bao giờ phai.'
+                type: 'text',
+                content: 'Phoenix Rebirth là full back piece yêu cầu 50-65 giờ thực hiện. Đây không phải quyết định nhẹ nhàng – và không nên là. Một tác phẩm ở cấp độ này cần commitment từ cả artist và collector. Consultation trước bắt buộc để discuss concept, placement, và expectations. Portfolio review available upon request. Bắt đầu conversation – không bắt buộc commit ngay.'
             },
-
         ],
         author: "Admin",
         date: "22/02/2025",
@@ -254,116 +253,115 @@ export const COLECTION_ITEMS: (Omit<ProductImage, 'id' | 'discountedPrice' | 'cr
         isSectionNew: true,
         showNewIcon: true,
         displayOrder: 3,
-        hashTag: [
-            '#TheRebirthOfThePhoenix', '#PhoenixTattoo', '#IrezumiTattoo', '#JapaneseTattoo', '#TraditionalJapaneseTattoo', '#FullBackTattoo', '#ColorTattoo', '#TattooArt', '#TattooMeaning', '#TattooCulture', '#BodyArt', '#TattooArtist', '#TattooStudio', '#TattooDesign', '#AsianTattooArt', '#JapaneseBodyArt', '#TheTheTrungTattooStudio', '#VietnamTattooArtist', '#TattooCollector', '#TattooMasterpiece', '#InkLife', '#TattooJourney', '#TattooInspiration', '#TattooInternational', '#TattooWorldWide', '#TattooVietNam'],
+        hashTag: ['#PhoenixRebirth', '#HoOuTattoo', '#IrezumiArt', '#JapaneseTattoo', '#FullBackTattoo', '#PhoenixTattoo', '#TraditionalJapanese', '#TattooMasterpiece', '#ColorIrezumi', '#AsianTattooArt', '#TheTheTrungTattoo', '#TattooCollector', '#JapaneseBodyArt', '#LuxuryTattoo', '#TattooHeritage', '#MythologicalTattoo'],
     },
     {
-        name: "The Shadow Serpent", // Tên sản phẩm
-        title: "Khi quyền lực được khắc bằng sự tĩnh lặng", // Tiêu đề sản phẩm
+        name: "Shadow Serpent",
+        title: "Blackwork Snake – Grey Wash Mastery | Khi Sức Mạnh Được Thể Hiện Qua Tĩnh Lặng",
         description: [
             {
                 passage: 1,
                 type: 'title',
-                content: 'The Shadow Serpent - Khi sức mạnh được khắc bằng sự tĩnh lặng'
+                content: 'Blackwork Đang Có Renaissance Moment – Nhưng 90% Vẫn Làm Sai'
             },
             {
                 passage: 2,
                 type: 'text',
-                content: 'Có những hình xăm không cần màu sắc rực rỡ để gây ấn tượng - chỉ cần sự tinh tế của những mảng đen xám và chiều sâu của đường nét. The Shadow Serpent, tác phẩm được thực hiện tại The Thế Trung Tattoo Studio, là minh chứng cho nghệ thuật kiểm soát ánh sáng, chuyển sắc và cảm xúc trong từng đường kim - nơi “bóng tối” trở thành biểu tượng của bản lĩnh và quyền năng.'
+                content: 'Thực tế mà ít người nói: 90% blackwork trên thị trường chỉ là solid black fills không có depth. Đen thì đen, nhưng flat như mặt bàn. Shadow Serpent thuộc 10% còn lại – nơi grey wash được sử dụng như medium nghệ thuật thực sự, tạo illusion of three-dimensionality chỉ với một màu duy nhất. Đây là blackwork cho người hiểu rằng restraint cũng là một hình thức của mastery.'
             },
             {
                 passage: 3,
                 type: 'title',
-                content: 'Rắn trong văn hóa phương Đông và phương Tây đều mang hai mặt đối lập - vừa là biểu tượng của trí tuệ và tái sinh, vừa là hình ảnh của quyền năng và kiểm soát bản thân. Trong The Shadow Serpent, nghệ sĩ đã khai thác khía cạnh “ẩn mình trong tĩnh lặng” của loài rắn - nơi sức mạnh thật sự nằm ở sự điềm tĩnh, quan sát và hành động chính xác. \n Hình xăm không chỉ thể hiện cá tính mạnh mẽ, mà còn phản ánh tâm thế của người sở hữu: kẻ làm chủ bản thân, không cần phô trương nhưng luôn khiến thế giới phải nể phục.'
+                content: 'Seven-Gradient Grey Wash – Từ Deep Black Đến Soft Grey'
             },
             {
                 passage: 4,
                 type: 'text',
-                content: 'The Shadow Serpent thuộc thể loại BLACKWORK TATTOO, kết hợp kỹ thuật Grey Wash Blending - một trường phái nổi tiếng trong thế giới tattoo chuyên nghiệp.\n Bằng việc sử dụng dải sắc độ từ deep black đến soft grey, nghệ sĩ đã tạo nên hiệu ứng khối 3D chân thực, giúp từng lớp vảy rắn nổi bật như đang chuyển động dưới ánh sáng. Độ mượt mà của shading thể hiện trình độ kiểm soát máy xăm hoàn hảo, khi từng nét đậm - nhạt đều được tính toán chính xác.'
+                content: 'Kỹ thuật grey wash trong Shadow Serpent sử dụng 7 gradients – từ solid black (100%) xuống soft grey (15%). Mỗi layer được apply với needle depth và speed khác nhau để đạt texture mong muốn. Phần scales của rắn được render bằng dotwork layering – hàng nghìn dots với density thay đổi tạo hiệu ứng realistic scale texture mà không cần color. Kết quả: con rắn trông như đang thực sự cuộn mình trên da, không phải vẽ phẳng lên da.'
             },
             {
                 passage: 5,
                 type: 'title',
-                content: 'Tác phẩm được thực hiện bằng Rotary Pen Machine với mực Grey Wash Black Bear Series, mang lại độ mịn, bám da và độ bền vượt trội. Kỹ thuật gradual saturation và dotwork layering được áp dụng để đạt hiệu ứng chuyển màu mượt mà, đồng thời tạo cảm giác “realistic motion” - khiến hình xăm dường như có linh hồn.'
+                content: 'Wisdom & Transformation – Ý Nghĩa Mà Ít Người Biết'
             },
             {
                 passage: 6,
                 type: 'text',
-                content: 'Người sở hữu The Shadow Serpent chọn rắn không chỉ vì sức mạnh, mà còn vì triết lý sống: “Im lặng là sức mạnh của kẻ thông tuệ.”\nMỗi đường nét uốn lượn trên cổ tay tượng trưng cho hành trình kiểm soát bản thân, vượt qua bản năng để đạt đến đỉnh cao của sự tự tại. Đó là năng lượng của người không chạy theo đám đông, mà chọn con đường riêng - chậm, sâu, và chắc.'
+                content: 'Rắn trong biểu tượng học không mang negative connotation như nhiều người nghĩ. Đây là biểu tượng của wisdom (rắn trong Rod of Asclepius – biểu tượng y học), healing, và transformation (lột xác để trưởng thành). Shadow Serpent được thiết kế cho những người understand sự phức tạp này – những người không cần giải thích cho thế giới về choices của mình, nhưng muốn mang một reminder thường trực về sức mạnh của sự tái sinh.'
             },
             {
                 passage: 7,
                 type: 'title',
-                content: 'Vì nó không chỉ là một hình xăm, mà là tuyên ngôn sống của người hiểu rõ giá trị của sự điềm tĩnh trong thế giới ồn ào. Với phong cách Blackwork kết hợp Grey Wash, tác phẩm đạt được sự cân bằng hoàn hảo giữa bóng tối và ánh sáng - giữa mạnh mẽ và tinh tế. Và hơn hết, đây là tác phẩm được tạo nên từ bàn tay và tâm huyết của nghệ sĩ The Thế Trung Tattoo Studio, nơi nghệ thuật xăm được nâng tầm thành một trải nghiệm tâm linh.'
+                content: 'Medium Piece – Perfect Entry Point Cho Blackwork Lover'
             },
             {
                 passage: 8,
-                type: 'title',
-                content: 'Mỗi tác phẩm tại The Thế Trung Tattoo Studio đều mang một linh hồn riêng - kể câu chuyện của người đeo nó. Nếu bạn đang tìm kiếm một thiết kế vừa mang tính biểu tượng, vừa thể hiện đẳng cấp cá nhân, The Shadow Serpent chính là lựa chọn hoàn hảo. \n Đặt lịch ngay hôm nay để biến tầm nhìn của bạn thành một tác phẩm nghệ thuật sống mãi cùng thời gian.'
-            }
-        ], // Mô tả sản phẩm
+                type: 'text',
+                content: 'Shadow Serpent là medium piece, phù hợp forearm hoặc calf. Session time: 8-12 giờ. Đây là perfect entry point cho ai muốn experience blackwork ở level cao mà chưa sẵn sàng commit vào large-scale project. Walk-in welcome cho consultation. Final quote sau khi xác định size và placement – vì mỗi body anatomy đều unique.'
+            },
+        ],
         author: "Admin",
         date: "22/02/2025",
-        mainImage: Product4_1, // Hình ảnh chính hiển thị
+        mainImage: Product4_1,
         detailImages: [
             Product4_1,
             Product4_2,
             Product4_3,
             Product4_4
-        ], // Hình ảnh chi tiết sản phẩm
-        category: ProductCategory.BLACKWORK, // Danh mục sản phẩm
-        size: ProductSize.MEDIUM, // Kích thước sản phẩm
-        originalPrice: 0, // Giá gốc sản phẩm
-        discountPercentage: 0, // Phần trăm giảm giá sản phẩm
-        isActive: true, // Trạng thái sản phẩm
-        isSectionNew: true, // Sản phẩm mới
-        showNewIcon: true, // Hiển thị icon "New"
-        displayOrder: 1, // Thứ tự hiển thị
-        hashTag: ['#TheShadowSerpent', '#BlackworkTattoo', '#GreyWashTattoo', '#SnakeTattooDesign', '#TattooCulture', '#TattooMasterpiece', '#InkPassion', '#TattooArtistry', '#TattooStorytelling', '#TheTheTrungTattooStudio', '#VietnamTattooArtist', '#TattooCollector', '#MonochromeTattoo', '#BlackAndGreyTattoo', '#FineLineTattoo'],
+        ],
+        category: ProductCategory.BLACKWORK,
+        size: ProductSize.MEDIUM,
+        originalPrice: 0,
+        discountPercentage: 0,
+        isActive: true,
+        isSectionNew: true,
+        showNewIcon: true,
+        displayOrder: 4,
+        hashTag: ['#ShadowSerpent', '#BlackworkTattoo', '#GreyWash', '#SnakeTattoo', '#MonochromeTattoo', '#TattooArtistry', '#BlackAndGrey', '#SerpentTattoo', '#DotworkTattoo', '#TheTheTrungTattoo', '#TattooCollector', '#MinimalBlackwork', '#TattooMasterpiece', '#VietnamTattooArt', '#RealisticBlackwork'],
     },
     {
-        name: "The Red Warrior & The Koi",
-        title: "Sức mạnh từ nghị lực và niềm tin",
+        name: "Crimson Warrior & Koi",
+        title: "Full Back Irezumi – Huyền Thoại Shōkichi & Koi | Wabori Truyền Thống",
         description: [
             {
                 passage: 1,
                 type: 'title',
-                content: 'The Red Warrior & The Koi - Sức mạnh từ nghị lực và niềm tin'
+                content: 'Shōkichi vs Koi – Một Trong Những Motif Cổ Điển Nhất Của Irezumi'
             },
             {
                 passage: 2,
                 type: 'text',
-                content: 'Trong thế giới tattoo Nhật Bản cổ điển, có những hình xăm không chỉ là nghệ thuật - mà còn là tuyên ngôn về tinh thần sống. The Red Warrior & The Koi là một trong những kiệt tác như vậy. Lấy cảm hứng từ truyền thuyết cổ về người anh hùng đánh cá Shōkichi - biểu tượng của sức mạnh, lòng dũng cảm và ý chí vượt khó, hình tattoo này tái hiện câu chuyện bất tử: con người có thể chiến thắng mọi định mệnh bằng niềm tin và nỗ lực của chính mình.'
+                content: 'Đây là một trong những motif Irezumi cổ điển nhất – người anh hùng Shōkichi tay không đấu với cá chép khổng lồ. Nhưng vấn đề với hầu hết renditions hiện đại: chúng mất đi dynamic energy của original ukiyo-e prints từ thời Edo. Crimson Warrior & Koi được design để recapture energy đó – với composition dựa trên nguyên tắc của Utagawa Kuniyoshi, master of warrior prints. Không phải interpretation – mà là continuation của một di sản.'
             },
             {
                 passage: 3,
                 type: 'title',
-                content: 'Người chiến binh đỏ tượng trưng cho lửa - năng lượng sống, và cá chép khổng lồ tượng trưng cho ước mơ, hoài bão và thử thách. Trong văn hóa Irezumi, hình ảnh này mang thông điệp: \n“Chỉ khi bạn dám đối mặt với dòng nước ngược, bạn mới có thể hóa rồng.”\n Sự kết hợp giữa nhân vật đỏ mạnh mẽ và cá chép xanh lục khổng lồ không chỉ là tương phản về sắc màu, mà còn là biểu tượng của hành trình đấu tranh nội tâm - nơi con người vượt qua nỗi sợ hãi, giới hạn và cả chính bản thân mình.'
+                content: 'Wabori Technique – Bold Lines & Saturated Colors'
             },
             {
                 passage: 4,
                 type: 'text',
-                content: 'Tác phẩm này được thực hiện theo phong cách Japanese Traditional Irezumi (Wabori), sử dụng kỹ thuật Bold Linework - Color Saturation - Layered Shading chuẩn mực Nhật Bản.\n\ Nghệ sĩ của The Thế Trung Tattoo Studio đã áp dụng kỹ thuật multi- tone ink layering để làm nổi bật độ tương phản giữa màu đỏ da thịt và mảng xanh lục cá chép.Phần nền được xử lý bằng black - grey gradient smoke kết hợp với Momiji(lá phong đỏ), tạo cảm giác chuyển động mềm mại, đồng thời tôn lên sức mạnh của hình chính.\n Đây không chỉ là một full back tattoo - mà là một bức tranh sống động của tinh thần võ sĩ đạo(Bushido), nơi sự dũng cảm, trung thành và kiên định được khắc sâu trong từng lớp mực.'
+                content: 'Tác phẩm sử dụng Wabori technique – phong cách Irezumi truyền thống với bold outlines và saturated colors. Điểm khác biệt nằm ở cách handle skin tones của nhân vật: thay vì flat red như nhiều artist, chúng tôi apply multi-tone layering để tạo illusion của musculature và movement. Phần koi được render với green-blue spectrum, tạo chromatic contrast với warm tones của warrior. Kết quả: composition động như đang kể một câu chuyện, không phải static image.'
             },
             {
                 passage: 5,
                 type: 'title',
-                content: 'Tác phẩm “The Red Warrior & The Koi” - một kiệt tác Japanese Traditional toàn lưng, mang trong mình năng lượng nguyên thủy của sức mạnh, nghị lực và tinh thần bất khuất. Lấy cảm hứng từ truyền thuyết Shōkichi - người anh hùng đỏ tay không bắt cá chép, hình xăm này khắc họa khoảnh khắc con người đối đầu với thử thách, nơi sức mạnh không chỉ đến từ cơ thể mà còn từ ý chí và niềm tin mãnh liệt vào bản thân.'
+                content: 'Human Struggle Against Overwhelming Odds – Câu Chuyện Phía Sau'
             },
             {
                 passage: 6,
                 type: 'text',
-                content: 'Sự hòa quyện giữa gam đỏ quyền lực và xanh lục sâu thẳm tạo nên một bản giao hưởng thị giác mạnh mẽ - biểu tượng cho sự đối lập giữa lửa và nước, giữa con người và định mệnh. Nghệ sĩ tại The Thế Trung Tattoo Studio đã sử dụng kỹ thuật Japanese Traditional Irezumi (Wabori) kết hợp bold outline - deep shading - color saturation chuẩn mực, tái hiện tinh thần võ sĩ đạo trong từng lớp mực. Nền khói đen (black-grey gradient) xen kẽ lá phong đỏ (Momiji) mang lại cảm giác chuyển động, làm nổi bật hình thể khỏe khoắn và quyết liệt của chiến binh.'
+                content: 'Câu chuyện Shōkichi là metaphor cho human struggle against overwhelming odds. Con cá chép khổng lồ đại diện cho những thử thách tưởng như impossible – và người anh hùng naked, weaponless, represent inner strength thuần túy. Không vũ khí, không giáp, chỉ có ý chí. Đây là tác phẩm cho những người đã face their own "giant koi" – và emerged stronger. Nếu bạn hiểu feeling đó, bạn hiểu tại sao piece này đặc biệt.'
             },
             {
                 passage: 7,
                 type: 'title',
-                content: 'Tại The Thế Trung Tattoo Studio, chúng tôi tin rằng mỗi tattoo là một bản tuyên ngôn cá nhân - một hành trình chạm đến bản ngã sâu thẳm nhất. Nếu bạn đang tìm kiếm một tác phẩm thể hiện ý chí và sức mạnh nội tâm, hãy để The Red Warrior & The Koi trở thành biểu tượng vĩnh cửu trên làn da của bạn.'
+                content: 'Long-Term Project – Commitment Từ Cả Hai Phía'
             },
             {
                 passage: 8,
-                type: 'title',
-                content: 'Đặt lịch ngay hôm nay để biến câu chuyện của bạn thành một kiệt tác nghệ thuật sống. Theo dõi Studio để khám phá thêm những hình xăm mang linh hồn Nhật Bản, được tạo nên bởi bàn tay nghệ sĩ Việt đẳng cấp quốc tế.'
+                type: 'text',
+                content: 'Crimson Warrior & Koi là full back masterpiece. Session time: 55-70 giờ. Đây là long-term project yêu cầu commitment từ cả artist và collector – không phải cho người "thử xem sao". Consultation mandatory trước khi bắt đầu. Payment plan available cho những dự án lớn. Liên hệ studio để schedule buổi tư vấn đầu tiên.'
             },
         ],
         author: "Admin",
@@ -388,51 +386,51 @@ export const COLECTION_ITEMS: (Omit<ProductImage, 'id' | 'discountedPrice' | 'cr
         isSectionNew: true,
         showNewIcon: true,
         displayOrder: 9,
-        hashTag: ['#TheRedWarriorAndTheKoi', '#JapaneseTattoo', '#Irezumi', '#Wabori', '#FullBackTattoo', '#KoiTattoo', '#SamuraiTattoo', '#TattooArt', '#BodyArt', '#TraditionalTattoo', '#TattooMeaning', '#TattooCulture', '#TattooDesign', '#TattooArtist', '#TheTheTrungTattooStudio', '#TattooVietnam', '#TattooWorldWide', '#InkCulture', '#TattooInspiration', '#TattooPassion', '#TattooJourney', '#JapaneseBodyArt', '#AsianTattoo', '#TattooMasterpiece'],
+        hashTag: ['#CrimsonWarrior', '#KoiTattoo', '#ShokichiLegend', '#IrezumiArt', '#WaboriTattoo', '#FullBackTattoo', '#JapaneseTattoo', '#TraditionalIrezumi', '#TattooMasterpiece', '#TheTheTrungTattoo', '#AsianTattooArt', '#TattooCollector', '#JapaneseWarrior', '#TattooHeritage', '#LuxuryIrezumi'],
     },
     {
-        name: "The Silent Koi",
-        title: "Biểu tượng của sức mạnh tĩnh lặng",
+        name: "Silent Koi",
+        title: "Black Koi với Cherry Blossom – Japanese Traditional | Modern Execution",
         description: [
             {
                 passage: 1,
                 type: 'title',
-                content: 'The Silent Koi - Biểu tượng của sức mạnh tĩnh lặng'
+                content: 'Koi Được Request Nhiều Nhất – Và Bị Làm Sai Nhiều Nhất'
             },
             {
                 passage: 2,
                 type: 'text',
-                content: 'Giữa thế giới ồn ào của nghệ thuật tattoo, nơi mỗi đường mực đều mang một câu chuyện, The Silent Koi nổi bật như một bản giao hưởng của sự tĩnh tại và kiên định. Hình xăm cá chép đen uốn lượn quanh vai và ngực, giữa những cánh hoa đỏ rực và làn sóng nước trừu tượng, không chỉ là một tác phẩm nghệ thuật - mà còn là biểu tượng của nghị lực vượt dòng đời, nơi con người tìm thấy sự cân bằng giữa nội tâm và thử thách.'
+                content: 'Koi là motif request nhiều nhất trong Japanese tattoo. Cũng là motif bị làm sai nhiều nhất. Vấn đề phổ biến: koi trông như goldfish từ pet shop – cute nhưng thiếu presence. Silent Koi giải quyết vấn đề này bằng cách reference trực tiếp từ ukiyo-e prints và koi specimens từ Japanese koi farms. Kết quả: một con koi có gravitas, có weight, có presence – không phải cartoon fish màu cam.'
             },
             {
                 passage: 3,
                 type: 'title',
-                content: 'Lấy cảm hứng từ triết lý Koi Nobori trong văn hóa Nhật Bản - loài cá chép bơi ngược dòng tượng trưng cho lòng dũng cảm và tinh thần bất khuất - tác phẩm The Silent Koi thể hiện hành trình thầm lặng của những người không cần ồn ào để chứng minh sức mạnh. Màu đen sâu thẳm của thân cá tượng trưng cho sự vững vàng và trí tuệ, trong khi những bông hoa đỏ cam Sakura & Ume Blossom tượng trưng cho niềm tin, khởi đầu và sự tái sinh.'
+                content: 'Solid Black Base – Một Approach Khác Biệt'
             },
             {
                 passage: 4,
                 type: 'text',
-                content: 'Được thực hiện bởi đội ngũ nghệ sĩ tại The Thế Trung Tattoo Studio, tattoo này sử dụng kỹ thuật Japanese Traditional (Irezumi) với lối solid black shading, bold linework, và color blocking hoàn hảo giữa các tone đỏ - đen - xám. Sự phối hợp tinh tế này tạo nên chiều sâu và sức sống cho hình xăm, giúp từng chi tiết nổi bật mạnh mẽ trên làn da, vừa cổ điển vừa hiện đại - chuẩn phong cách Neo Traditional Irezumi.'
+                content: 'Silent Koi sử dụng solid black làm base – một approach khác biệt với majority of koi tattoos thường rely on orange/gold. Điều này tạo visual weight và presence mà color koi thiếu. Cherry blossoms được add như chromatic accents – vermillion và coral tones contrast với black body, tạo dynamic visual tension. Đây không phải safe choice – nhưng đó chính là point: người chọn piece này không tìm kiếm safe.'
             },
             {
                 passage: 5,
                 type: 'title',
-                content: 'Điểm đặc biệt trong The Silent Koi chính là sự cân đối giữa động và tĩnh. Dòng nước cuộn xoáy, những cánh hoa rơi và thân cá chuyển động thể hiện năng lượng liên tục của cuộc sống, trong khi ánh mắt cá hướng về phía trước lại gợi cảm giác bình tâm, kiên định. Nó nhắc nhở chúng ta rằng: “Đôi khi, sự mạnh mẽ nhất chính là khả năng giữ bình yên giữa bão tố.”'
+                content: 'Perseverance & Inner Strength – Ý Nghĩa Sâu Xa'
             },
             {
                 passage: 6,
                 type: 'text',
-                content: 'Tattoo này phù hợp cho những ai đang trên hành trình vượt qua thử thách cá nhân - những người hiểu rằng sức mạnh thật sự không cần phô trương, mà nằm ở sự bền bỉ và lòng tin vào chính mình. Mỗi đường kim, mỗi mảng màu trong The Silent Koi không chỉ là nghệ thuật - đó là một lời khẳng định: Bạn không cần nói to để thế giới biết bạn mạnh mẽ đến mức nào.'
+                content: 'Koi bơi ngược dòng để vượt vũ môn hóa rồng – legend ai cũng biết. Nhưng điều ít người nhắc: phần lớn koi fail. Chỉ những con với exceptional perseverance mới thành công. Silent Koi represent những người hiểu rằng success không đến từ talent alone – mà từ relentless effort khi không ai đang xem. Nó dành cho những người làm việc trong silence và để results speak.'
             },
             {
                 passage: 7,
                 type: 'title',
-                content: 'Tại The Thế Trung Tattoo Studio, chúng tôi không chỉ tạo nên hình xăm - chúng tôi tạo nên những câu chuyện khắc sâu trong tâm trí. Mỗi tác phẩm đều được thiết kế độc bản, mang dấu ấn của người sở hữu, để mỗi tattoo không chỉ đẹp - mà còn có linh hồn.'
+                content: 'Half Sleeve Hoặc Chest Piece – Phù Hợp Cả First-Timer'
             },
             {
                 passage: 8,
-                type: 'title',
-                content: 'Hãy đặt lịch ngay hôm nay để mang biểu tượng “The Silent Koi” lên cơ thể bạn - biểu tượng của sức mạnh tĩnh lặng, của nghị lực và niềm tin không bao giờ tắt.\n Theo dõi Studio để khám phá thêm những tác phẩm Japanese Irezumi mang linh hồn Việt - nơi nghệ thuật chạm đến cảm xúc và kể lại câu chuyện của chính bạn.'
+                type: 'text',
+                content: 'Silent Koi phù hợp làm half sleeve hoặc chest piece. Session time: 15-20 giờ. Đây là piece phù hợp cho cả first-time collectors lẫn seasoned enthusiasts – đủ sophisticated để impress, đủ accessible để không overwhelm. Consultation welcome, không commitment required. Drop by studio hoặc DM để bắt đầu conversation.'
             },
         ],
         author: "Admin",
@@ -452,46 +450,51 @@ export const COLECTION_ITEMS: (Omit<ProductImage, 'id' | 'discountedPrice' | 'cr
         isSectionNew: false,
         showNewIcon: false,
         displayOrder: 15,
-        hashTag: ['#TheSilentKoi', '#KoiTattoo', '#JapaneseTattoo', '#Irezumi', '#BlackAndGreyTattoo', '#TraditionalJapaneseTattoo', '#ShoulderTattoo', '#UpperArmTattoo', '#TattooArt', '#TattooDesign', '#TattooCulture', '#TattooMeaning', '#KoiFishTattoo', '#TattooArtist', '#TattooStudio', '#NeoTraditionalTattoo', '#TattooVietnam', '#TattooInspiration', '#BodyArt', '#TattooWorldWide', '#InkCulture', '#TattooJourney', '#TattooMasterpiece', '#TheTheTrungTattooStudio', '#TattooStorytelling', '#AsianTattooArt'],
+        hashTag: ['#SilentKoi', '#KoiTattoo', '#JapaneseTattoo', '#IrezumiArt', '#BlackKoi', '#CherryBlossom', '#TraditionalJapanese', '#TattooArtistry', '#HalfSleeve', '#TheTheTrungTattoo', '#TattooCollector', '#AsianTattooArt', '#KoiNobori', '#TattooMasterpiece', '#JapaneseBodyArt'],
     },
     {
-        name: "Hòa Điệu Vĩnh Cửu",
-        title: "",
+        name: "Eternal Harmony",
+        title: "Full Sleeve Irezumi – Crane, Peony & Clouds | Bố Cục Cổ Điển Đỉnh Cao",
         description: [
             {
                 passage: 1,
                 type: 'title',
-                content: ' '
+                content: 'Full Sleeve – Ultimate Test Cho Một Irezumi Artist'
             },
             {
                 passage: 2,
                 type: 'text',
-                content: 'Khi kim chạm mực, một bản giao hưởng của linh hồn được cất lên. The Eternal Harmony – full sleeve Japanese tattoo đến từ The Thế Trung Tattoo Studio – thể hiện sự hòa quyện hoàn hảo giữa nghệ thuật Irezumi cổ truyền và tinh thần đương đại, nơi cái đẹp, sức mạnh và triết lý sống cùng tồn tại trong một nhịp thở.'
+                content: 'Full sleeve là ultimate test cho một Irezumi artist. Không phải vì size – mà vì composition. Bạn phải wrap một 2D design xung quanh 3D cylinder, đảm bảo nó reads well từ mọi angle, và maintain flow từ shoulder đến wrist. Eternal Harmony là demonstration của mastery này – với ba classic motifs: Crane (Tsuru), Peony (Botan), và Cloud work (Kumo). Không random combination – mà là symbolic trinity được calculate đến từng chi tiết.'
             },
             {
                 passage: 3,
                 type: 'title',
-                content: 'Hình xăm là sự kết hợp hài hòa của ba yếu tố biểu tượng: chim hạc (Crane) tượng trưng cho trường thọ và cao quý, hoa mẫu đơn (Peony) biểu trưng cho thịnh vượng và danh vọng, cùng nền mây - gió (Cloud & Wind) đại diện cho dòng chảy vô thường của cuộc sống. Ba yếu tố này hòa quyện tạo nên một tổng thể nghệ thuật tôn vinh vẻ đẹp của sự đối lập - mạnh mẽ nhưng thanh thoát, trầm lắng nhưng rực rỡ.'
+                content: 'Anatomical Flow & Visual Hierarchy – Tại Sao Flow Quan Trọng'
             },
             {
                 passage: 4,
                 type: 'text',
-                content: 'Về kỹ thuật, tác phẩm được hoàn thiện bằng Japanese Traditional Irezumi, với bold outlines, saturated color blending, gradient shading và perfect anatomical flow, giúp tattoo ôm trọn cấu trúc cánh tay một cách tự nhiên như thể nó sinh ra cùng cơ thể. Đây là trình độ thể hiện đặc trưng của các nghệ sĩ cấp quốc tế - những người không chỉ “xăm hình” mà đang vẽ linh hồn lên da thịt.'
+                content: 'Crane được placed ở upper arm – focal point của sleeve. Peonies cascade xuống forearm, with size diminishing để maintain perspective. Cloud work fills negative space và creates visual continuity. Mọi element được design để flow theo muscle groups – khi arm move, tattoo move with it, không against it. Đây là difference giữa tattoo tốt và tattoo exceptional: có move cùng body, hay fight against body.'
             },
             {
                 passage: 5,
                 type: 'title',
-                content: 'Triết lý ẩn sâu trong The Eternal Harmony là lời nhắc nhở về sự cân bằng giữa vinh quang và bình an, giữa sắc đẹp phù du và giá trị vĩnh hằng. Mỗi đường kim, mỗi gam màu đều kể lại câu chuyện của người mang nó - hành trình tìm về bản ngã, nơi tâm hồn chạm đến sự tĩnh tại giữa biến động của đời sống hiện đại.'
+                content: 'Symbolic Trinity – Longevity, Prosperity, Transience'
             },
             {
                 passage: 6,
                 type: 'text',
-                content: 'Tác phẩm này không chỉ dành cho những ai yêu nghệ thuật xăm, mà còn cho những người đã từng bước qua thử thách, đã học được cách tìm bình yên trong sự đối lập, và mong muốn mang câu chuyện của mình theo cùng năm tháng.'
+                content: 'Crane symbolizes longevity và high virtue – theo legend, chúng sống 1000 năm. Peony là "king of flowers" trong Japanese culture, representing prosperity và good fortune. Clouds remind us về impermanence – rằng cả good times và bad times đều pass. Combination này creates balanced message: enjoy prosperity, maintain virtue, accept change. Đó là philosophy sống được encode vào da.'
             },
             {
                 passage: 7,
                 type: 'title',
-                content: 'The Thế Trung Tattoo Studio - nơi nghệ thuật và triết lý gặp nhau, nơi mỗi hình xăm không chỉ là tác phẩm, mà là dấu ấn của linh hồn. \n Đặt lịch ngay hôm nay để trải nghiệm nghệ thuật tattoo đẳng cấp quốc tế.'
+                content: 'Commitment Piece – Không Phải Cho "Thử Xem Sao"'
+            },
+            {
+                passage: 8,
+                type: 'text',
+                content: 'Eternal Harmony là full sleeve project. Session time: 30-40 giờ. Đây là commitment piece – không phải cho những người "thử xem sao". Khi bạn commit vào một full sleeve, bạn commit vào một relationship với tác phẩm đó suốt đời. Consultation required để discuss design direction và realistic expectations. Schedule buổi tư vấn đầu tiên để xem vision của bạn có match với approach của studio không.'
             },
         ],
         author: "Admin",
@@ -511,60 +514,6 @@ export const COLECTION_ITEMS: (Omit<ProductImage, 'id' | 'discountedPrice' | 'cr
         isSectionNew: false,
         showNewIcon: false,
         displayOrder: 17,
-        hashTag: ['#TheEternalHarmony', '#JapaneseTattoo', '#FullSleeveTattoo', '#IrezumiArt', '#LuxuryTattoo', '#TattooPhilosophy', '#TattooArt', '#BodyArt', '#JapaneseStyleTattoo', '#TraditionalTattoo', '#TattooMeaning', '#TattooCulture', '#TattooArtist', '#TattooVietnam', '#TheTheTrungTattooStudio', '#TattooWorldWide', '#InkCulture', '#TattooInspiration', '#TattooPassion', '#LuxuryBodyArt', '#TattooJourney', '#JapaneseBodyArt', '#TattooMasterpiece'],
+        hashTag: ['#EternalHarmony', '#FullSleeveTattoo', '#IrezumiArt', '#JapaneseTattoo', '#CraneTattoo', '#PeonyTattoo', '#TraditionalJapanese', '#TattooMasterpiece', '#JapaneseBodyArt', '#TheTheTrungTattoo', '#TattooCollector', '#SleeveTattoo', '#AsianTattooArt', '#LuxuryIrezumi', '#TattooHeritage'],
     },
-    // {
-    //     name: "", // Tên sản phẩm
-    //     title: "", // Tiêu đề sản phẩm
-    //     description: [
-    //             {
-    //         passage: 1,
-    //         type: 'title',
-    //         content: ' '
-    //     },
-    //     {
-    //         passage: 2,
-    //         type: 'text',
-    //         content: ' '
-    //     },
-    //     {
-    //         passage: 3,
-    //         type: 'title',
-    //         content: ' '
-    //     },
-    //     {
-    //         passage: 4,
-    //         type: 'text',
-    //         content: ' '
-    //     },
-    //     {
-    //         passage: 5,
-    //         type: 'title',
-    //         content: ' '
-    //     },
-    //     {
-    //         passage: 6,
-    //         type: 'text',
-    //         content: ' '
-    //     },
-    //     {
-    //         passage: 7,
-    //         type: 'title',
-    //         content: ' '
-    //     },
-    // ], // Mô tả sản phẩm
-    //     author: "Admin",
-    //     date: "22/02/2025",
-    //     mainImage: Product1_5, // Hình ảnh chính hiển thị
-    //     detailImages: [], // Hình ảnh chi tiết sản phẩm
-    //     category: ProductCategory.JAPANESE, // Danh mục sản phẩm
-    //     size: ProductSize.LARGE, // Kích thước sản phẩm
-    //     originalPrice: 0, // Giá gốc sản phẩm
-    //     discountPercentage: 0, // Phần trăm giảm giá sản phẩm
-    //     isActive: true, // Trạng thái sản phẩm
-    //     isSectionNew: true, // Sản phẩm mới
-    //     showNewIcon: true, // Hiển thị icon "New"
-    //     displayOrder: 1 // Thứ tự hiển thị
-    //     hashTag: [],
-    // },
 ];

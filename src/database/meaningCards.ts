@@ -65,670 +65,924 @@ export const meaningCards: MeaningCard[] = [
     {
         id: 'samurai-japanese-warrior-tattoo-meaning-2025',
         slug: 'samurai-japanese-warrior-tattoo-meaning',
-        title: "Khám phá ý nghĩa hình xăm Samurai Nhật Bản",
+        title: "Samurai Tattoo – Khi Bushido Khắc Trên Da",
         date: "22/02/2025",
-        author: "Admin",
-        subtitle: "Hình xăm Samurai mang sức mạnh kiên cường, tinh thần chiến binh bất khuất và lòng trung thành tuyệt đối.",
+        author: "The Trung",
+        subtitle: "Trong 15 năm làm việc với hàng nghìn khách hàng quốc tế, tôi nhận thấy một điều: những người chọn Samurai không tìm kiếm một hình xăm – họ tìm kiếm một lời thề.",
         image: Samurai,
         imageUI: [SamuraiUI4, SamuraiUI5, SamuraiUI6],
         galleryImages: [Samurai, Samurai1, Samurai2, Samurai3, Samurai4, Samurai5, Samurai6, Samurai7, Samurai8, Samurai9, Samurai10, Samurai11, Samurai12, Samurai13, Samurai14, Samurai15],
         content: [
             {
                 type: 'title',
-                content: 'Ý nghĩa hình xăm Samurai trong văn hóa Nhật Bản'
+                content: 'Vì Sao Samurai Là Biểu Tượng Bất Tử Trong Nghệ Thuật Xăm?'
             },
             {
                 type: 'text',
-                content: 'Hình xăm Samurai không chỉ mang vẻ đẹp mạnh mẽ mà còn là biểu tượng bất diệt của tinh thần chiến binh Nhật Bản. Samurai trong lịch sử không chỉ là những kiếm sĩ kiệt xuất, mà còn là hiện thân của triết lý sống đặt lòng trung thành, danh dự và dũng cảm lên trên tất cả. Với họ, cái chết chưa bao giờ đáng sợ bằng việc đánh mất danh dự.',
-                content2: 'Ngày nay, khi Samurai bước vào nghệ thuật xăm, họ không còn chỉ là hình ảnh trong trang sử, mà trở thành dấu ấn sống động trên cơ thể con người. Một hình xăm Samurai không chỉ khắc họa vẻ oai phong, thanh kiếm sắc bén hay bộ giáp uy nghi, mà còn gửi gắm thông điệp: hãy sống trọn vẹn với lý tưởng, kiên định trước thử thách và giữ vững danh dự như cách Samurai từng làm.'
+                content: 'Có một câu hỏi tôi thường nhận được từ khách hàng mới: "Samurai có ý nghĩa gì?" Câu trả lời ngắn gọn là: Samurai không chỉ là một hình xăm – đó là một tuyên ngôn về cách bạn chọn sống.',
+                content2: 'Từ kinh nghiệm tại The Thế Trung Tattoo Studio, khoảng 70% khách hàng chọn Samurai đều đang ở giai đoạn chuyển giao quan trọng trong cuộc sống – một cuộc chia tay, một sự nghiệp mới, hoặc đơn giản là quyết định sống đúng với giá trị của mình. Samurai không dành cho những người muốn "có một hình đẹp". Samurai dành cho những người sẵn sàng cam kết.'
             },
             {
                 type: 'image',
-                content: 'Hình ảnh Samurai truyền thống',
+                content: 'Samurai – Tinh thần Bushido khắc trên da',
                 image: Samurai
             },
             {
                 type: 'subtitle',
-                content: 'Lịch sử và nguồn gốc'
+                content: 'Bushido: Bảy Đức Tính Định Hình Một Chiến Binh'
             },
             {
                 type: 'text',
-                content: 'Samurai – những chiến binh huyền thoại của Nhật Bản – xuất hiện từ thế kỷ 12, gắn liền với thời kỳ các lãnh chúa phong kiến nắm quyền cai trị. Họ không chỉ là những kiếm sĩ thiện chiến, mà còn là biểu tượng của sức mạnh tinh thần, lòng trung thành tuyệt đối và kỷ luật thép. Điều làm nên sự vĩ đại của Samurai chính là Bushido – con đường của chiến binh, một bộ quy tắc sống cao quý đã trở thành linh hồn của tầng lớp này.',
-                content2: 'Bushido không chỉ rèn luyện kỹ năng chiến đấu, mà còn hun đúc nên một nhân cách kiên định, thông qua bảy đức tính cốt lõi: Chính nghĩa, Dũng cảm, Nhân từ, Lễ phép, Thành thật, Danh dự và Trung thành. Với Samurai, danh dự còn quý hơn cả sinh mạng, bởi họ tin rằng chỉ có sống và chết trong tinh thần Bushido mới thực sự xứng đáng. Chính triết lý sống ấy đã biến Samurai trở thành một biểu tượng bất tử, khiến cả thế giới phải ngưỡng mộ và kính nể.'
+                content: 'Bushido – con đường của chiến binh – không phải là một khái niệm trừu tượng. Đó là bộ quy tắc sống được đúc kết qua hàng thế kỷ, bao gồm: Gi (Chính nghĩa), Yu (Dũng cảm), Jin (Nhân từ), Rei (Lễ phép), Makoto (Thành thật), Meiyo (Danh dự), và Chugi (Trung thành).',
+                content2: 'Khi bạn mang hình Samurai trên da, bạn đang mang theo những giá trị này. Mỗi lần nhìn vào tác phẩm, đó là lời nhắc nhở: bạn đã chọn con đường nào, và bạn sẽ đi đến cùng như thế nào.'
             },
             {
                 type: 'subtitle',
-                content: 'Ý nghĩa hình xăm Samurai trong nghệ thuật xăm'
+                content: 'Kỹ Thuật Thực Hiện: Japanese Traditional vs. Neo-Japanese'
             },
             {
                 type: 'text',
-                content: 'Hình xăm Samurai không chỉ đơn thuần là một tác phẩm nghệ thuật trên da, mà còn là sự kết tinh tinh thần võ sĩ đạo đã tồn tại hàng trăm năm trong văn hóa Nhật Bản. Từng chi tiết – từ ánh mắt kiên định, thanh kiếm sắc bén cho đến bộ giáp uy nghi – đều mang trong mình một tầng ý nghĩa. Đó có thể là lời nhắc nhở về lòng trung thành, sự quả cảm hay khát vọng sống ngay thẳng, đặt danh dự lên trên tất cả.',
-                content2: 'Trong nghệ thuật xăm hiện đại, Samurai còn được xem như biểu tượng bảo hộ, tiếp thêm sức mạnh tinh thần cho người sở hữu. Với nhiều người, hình xăm này không chỉ khẳng định cá tính mạnh mẽ và ý chí vượt qua thử thách, mà còn trở thành lá bùa hộ mệnh đồng hành trên hành trình cuộc sống. Chính bởi chiều sâu ấy, Samurai mãi giữ được vị trí đặc biệt trong nghệ thuật xăm Châu Á – vừa đẹp, vừa đầy ý nghĩa.'
+                content: 'Tại studio, chúng tôi thực hiện Samurai theo hai hướng chính: Japanese Traditional (Irezumi) với đường nét bold, màu sắc flat, tuân thủ quy tắc cổ điển; và Neo-Japanese kết hợp realism hiện đại, tạo chiều sâu và chi tiết cao hơn.',
+                content2: 'Một tác phẩm Samurai full sleeve thường cần 3-5 sessions, mỗi session 4-6 tiếng. Đây không phải là hình xăm bạn làm trong một buổi chiều – đó là hành trình, và chúng tôi đồng hành cùng bạn từng bước.'
+            },
+            {
+                type: 'subtitle',
+                content: 'Ai Phù Hợp Với Hình Xăm Samurai?'
             },
             {
                 type: 'text',
-                content: '• Kiếm Katana: Biểu tượng của sức mạnh và kỹ năng\n• Áo giáp: Sự bảo vệ và sức mạnh\n• Mặt nạ: Sự bí ẩn và quyền lực'
+                content: 'Samurai không dành cho tất cả mọi người – và điều đó hoàn toàn ổn. Nếu bạn đang tìm kiếm một biểu tượng của kỷ luật, danh dự, và sự cam kết với giá trị sống của mình, Samurai là lựa chọn đúng đắn.',
+                content2: 'Tại The Thế Trung Tattoo Studio, chúng tôi không chỉ xăm – chúng tôi lắng nghe câu chuyện của bạn và biến nó thành tác phẩm nghệ thuật độc bản. Đặt lịch tư vấn để cùng chúng tôi thiết kế Samurai của riêng bạn.'
             }
         ],
-        tags: ['Samurai', 'Nhật Bản', 'Chiến binh', 'Bushido', 'Truyền thống'],
-        category: 'Văn hóa Nhật Bản',
-        readTime: '5 phút',
+        tags: ['SamuraiTattoo', 'JapaneseTattoo', 'Irezumi', 'BushidoSpirit', 'WarriorTattoo', 'TheTheTrungTattoo', 'TattooArt', 'InkCulture'],
+        category: 'Japanese Traditional',
+        readTime: '6 phút',
         views: 1250
     },
     {
         id: 'skull-tattoo-symbolism-life-death-2025',
         slug: 'skull-tattoo-symbolism-life-death',
-        title: "Hình xăm đầu lâu – Biểu tượng của sự sống",
+        title: "Skull Tattoo – Memento Mori Và Nghệ Thuật Của Sự Sống",
         date: "20/08/2025",
-        author: "Thế Trung",
-        subtitle: "Đầu lâu trong xăm hình gợi nhắc sự sống mong manh, cái chết tất yếu nhưng vẫn khẳng định ý chí kiên cường.",
+        author: "The Trung",
+        subtitle: "Đầu lâu không phải về cái chết. Đó là về việc sống – sống trọn vẹn, sống có ý thức, sống như thể mỗi ngày đều quan trọng.",
         image: DauLau,
         imageUI: DauLau,
         galleryImages: [DauLau],
         content: [
             {
                 type: 'title',
-                content: 'Ý nghĩa sâu sắc của hình xăm đầu lâu'
+                content: 'Skull Tattoo: Hiểu Lầm Lớn Nhất Trong Nghệ Thuật Xăm'
             },
             {
                 type: 'text',
-                content: 'Hình xăm đầu lâu không chỉ đơn thuần là biểu tượng của cái chết, mà còn mang nhiều ý nghĩa triết học sâu sắc về sự sống và cái chết.'
+                content: 'Trong hơn một thập kỷ làm việc với khách hàng từ khắp nơi trên thế giới, tôi đã chứng kiến sự chuyển đổi đáng kể trong cách mọi người nhìn nhận hình xăm đầu lâu. Từ biểu tượng "rebel" của thập niên 90s, skull đã trở thành một trong những chủ đề được yêu cầu nhiều nhất bởi các CEO, bác sĩ, luật sư – những người thành đạt hiểu rằng thời gian là hữu hạn.',
+                content2: 'Memento Mori – "Hãy nhớ rằng bạn sẽ chết" – không phải là lời đe dọa. Đó là lời mời gọi sống trọn vẹn hơn.'
             },
             {
                 type: 'image',
-                content: 'Hình ảnh đầu lâu nghệ thuật',
+                content: 'Skull Tattoo – Biểu tượng của Memento Mori',
                 image: DauLau
             },
             {
                 type: 'subtitle',
-                content: 'Triết lý Memento Mori'
+                content: 'Từ Triết Học La Mã Đến Nghệ Thuật Xăm Đương Đại'
             },
             {
                 type: 'text',
-                content: 'Memento Mori - "Hãy nhớ rằng bạn sẽ chết" là một triết lý cổ xưa nhắc nhở con người về tính tạm thời của cuộc sống. Hình xăm đầu lâu thể hiện sự nhận thức về cái chết để sống có ý nghĩa hơn.'
+                content: 'Memento Mori xuất phát từ La Mã cổ đại – nơi các tướng lĩnh chiến thắng được nhắc nhở về sự hữu hạn của vinh quang. Trong nghệ thuật xăm, skull mang theo triết lý này: mỗi ngày đều đáng sống, mỗi khoảnh khắc đều quý giá.',
+                content2: 'Tại The Thế Trung Tattoo Studio, chúng tôi thực hiện skull theo nhiều phong cách: từ Realism chi tiết đến cực điểm, Blackwork bold với contrast mạnh, hay kết hợp với hoa để tạo nên sự cân bằng giữa sống và chết, đẹp và tàn phai.'
             },
             {
                 type: 'subtitle',
-                content: 'Biểu tượng của sức mạnh'
+                content: 'Sugar Skull, Realistic Skull, hay Geometric Skull?'
             },
             {
                 type: 'text',
-                content: 'Trong nhiều nền văn hóa, đầu lâu còn là biểu tượng của sức mạnh và sự bất tử của tinh thần. Nó thể hiện ý chí kiên cường vượt qua mọi khó khăn.'
+                content: 'Sugar Skull (Día de los Muertos) mang ý nghĩa tôn vinh người đã khuất, phổ biến trong văn hóa Mexico. Realistic Skull thể hiện sự đối diện trực tiếp với mortality. Geometric Skull mang tính triết học, trừu tượng hơn.',
+                content2: 'Chọn phong cách nào phụ thuộc vào câu chuyện của bạn. Trong buổi tư vấn, chúng tôi sẽ cùng bạn tìm ra hướng đi phù hợp nhất.'
+            },
+            {
+                type: 'subtitle',
+                content: 'Kết Hợp Và Placement'
+            },
+            {
+                type: 'text',
+                content: 'Skull thường được kết hợp với hoa hồng (tình yêu và cái chết), đồng hồ (thời gian trôi), rắn (tái sinh), hoặc bướm (sự chuyển hóa). Placement phổ biến: cánh tay, ngực, lưng – những vị trí cho phép detail và size phù hợp.',
+                content2: 'Nếu bạn đang tìm kiếm một tác phẩm skull có chiều sâu, không chỉ đẹp mà còn mang ý nghĩa cá nhân, hãy đặt lịch tư vấn với chúng tôi.'
             }
         ],
-        tags: ['Đầu lâu', 'Memento Mori', 'Triết học', 'Sức mạnh', 'Bất tử'],
-        category: 'Triết học',
-        readTime: '4 phút',
+        tags: ['SkullTattoo', 'MementoMori', 'RealismTattoo', 'BlackworkTattoo', 'SugarSkull', 'TheTheTrungTattoo', 'TattooArt', 'InkMaster'],
+        category: 'Blackwork & Realism',
+        readTime: '5 phút',
         views: 980
     },
     {
         id: 'geisha-japanese-beauty-tattoo-meaning-2025',
         slug: 'geisha-japanese-beauty-tattoo-meaning',
-        title: "Hình xăm Geisha - Vẻ đẹp và bí ẩn Nhật Bản",
+        title: "Geisha Tattoo – Vẻ Đẹp Bất Diệt Của Nghệ Thuật Sống",
         date: "18/08/2025",
-        author: "Minh Anh",
-        subtitle: "Geisha tượng trưng cho vẻ đẹp tinh tế, sự duyên dáng và bí ẩn của văn hóa truyền thống Nhật Bản.",
+        author: "The Trung",
+        subtitle: "Geisha không phải về vẻ đẹp bề ngoài. Đó là về sự hoàn thiện bản thân qua nghệ thuật – từng cử chỉ, từng ánh mắt đều là kết quả của hàng thập kỷ rèn luyện.",
         image: Geisha,
         imageUI: Geisha,
         galleryImages: [Geisha],
         content: [
             {
                 type: 'title',
-                content: 'Ý nghĩa hình xăm Geisha trong văn hóa Nhật'
+                content: 'Geisha: Hiểu Đúng Trước Khi Khắc Lên Da'
             },
             {
                 type: 'text',
-                content: 'Geisha là biểu tượng của vẻ đẹp tinh tế và sự duyên dáng trong văn hóa Nhật Bản. Hình xăm Geisha thể hiện sự tôn trọng đối với nghệ thuật truyền thống và vẻ đẹp nữ tính.'
+                content: 'Một trong những hiểu lầm phổ biến nhất mà tôi gặp: Geisha bị nhầm với courtesan. Thực tế, Geisha là nghệ sĩ biểu diễn – họ dành cả đời để hoàn thiện các nghệ thuật như trà đạo, múa truyền thống, chơi đàn shamisen, và nghệ thuật giao tiếp.',
+                content2: 'Khi một khách hàng đến studio yêu cầu hình Geisha, câu hỏi đầu tiên của tôi luôn là: "Bạn muốn thể hiện điều gì?" Vẻ đẹp? Sự kiên nhẫn? Sự hoàn thiện không ngừng? Hay bí ẩn và quyền lực mềm?'
             },
             {
                 type: 'image',
-                content: 'Hình ảnh Geisha truyền thống',
+                content: 'Geisha – Nghệ thuật sống hóa thành hình xăm',
                 image: Geisha
             },
             {
                 type: 'subtitle',
-                content: 'Vẻ đẹp và bí ẩn'
+                content: 'Biểu Tượng Của Sự Hoàn Thiện Không Ngừng'
             },
             {
                 type: 'text',
-                content: 'Geisha không chỉ là những nghệ sĩ giải trí mà còn là những người bảo tồn văn hóa truyền thống. Họ đại diện cho sự tinh tế, lịch lãm và bí ẩn của văn hóa Nhật Bản.'
+                content: 'Để trở thành Geisha, một Maiko (học viên) phải trải qua ít nhất 5 năm đào tạo khắt khe. Mỗi chi tiết – từ cách đi, cách rót trà, đến góc nghiêng của đầu khi cười – đều được rèn luyện đến mức hoàn hảo.',
+                content2: 'Hình xăm Geisha vì thế không chỉ đẹp về thị giác – nó mang theo triết lý về sự kiên nhẫn, kỷ luật, và niềm tin rằng vẻ đẹp đích thực đến từ nỗ lực không ngừng.'
+            },
+            {
+                type: 'subtitle',
+                content: 'Kỹ Thuật Thực Hiện Và Placement'
+            },
+            {
+                type: 'text',
+                content: 'Geisha đòi hỏi độ chi tiết cao – đặc biệt ở phần khuôn mặt, tóc, và kimono. Tại studio, chúng tôi thường thực hiện Geisha theo phong cách Neo-Japanese để tận dụng kỹ thuật shading hiện đại, giữ nguyên tinh thần truyền thống.',
+                content2: 'Placement lý tưởng: cánh tay (half sleeve trở lên), lưng, hoặc đùi – những vị trí cho phép độ chi tiết cần thiết. Thời gian thực hiện: 2-4 sessions tùy kích thước và complexity.'
+            },
+            {
+                type: 'subtitle',
+                content: 'Ai Nên Chọn Hình Xăm Geisha?'
+            },
+            {
+                type: 'text',
+                content: 'Geisha phù hợp với những người trân trọng nghệ thuật sống, tin vào sự hoàn thiện bản thân, và có gu thẩm mỹ tinh tế. Đây không phải hình xăm "xu hướng" – đây là tuyên ngôn về cách bạn nhìn nhận cuộc sống.',
+                content2: 'Nếu bạn muốn sở hữu một tác phẩm Geisha thực sự có hồn, hãy đến The Thế Trung Tattoo Studio để được tư vấn và thiết kế riêng.'
             }
         ],
-        tags: ['Geisha', 'Nhật Bản', 'Vẻ đẹp', 'Truyền thống', 'Nghệ thuật'],
-        category: 'Văn hóa Nhật Bản',
-        readTime: '3 phút',
+        tags: ['GeishaTattoo', 'JapaneseTattoo', 'NeoJapanese', 'Irezumi', 'JapaneseArt', 'TheTheTrungTattoo', 'TattooInspiration', 'InkArt'],
+        category: 'Japanese Traditional',
+        readTime: '5 phút',
         views: 856
     },
     {
         id: 'kylin-chinese-mythical-creature-tattoo-2025',
         slug: 'kylin-chinese-mythical-creature-tattoo',
-        title: "Hình xăm Kỳ Lân - Linh vật may mắn Trung Hoa",
+        title: "Kỳ Lân Tattoo – Linh Vật Của Những Người Chính Trực",
         date: "15/08/2025",
-        author: "Hương Giang",
-        subtitle: "Kỳ Lân là linh vật báo hiệu điềm lành, mang lại may mắn, thịnh vượng và bảo vệ cho người sở hữu.",
+        author: "The Trung",
+        subtitle: "Trong văn hóa Á Đông, Kỳ Lân không chọn ai để xuất hiện – nó chỉ đến với những người có đức độ. Đó là lý do hình xăm này không dành cho tất cả.",
         image: KyLan,
         imageUI: KyLan,
         galleryImages: [KyLan],
         content: [
             {
                 type: 'title',
-                content: 'Ý nghĩa hình xăm Kỳ Lân trong văn hóa Trung Hoa'
+                content: 'Kỳ Lân: Linh Vật Hiền Lành Nhất Trong Tứ Linh'
             },
             {
                 type: 'text',
-                content: 'Kỳ Lân là một trong tứ linh của văn hóa Trung Hoa, tượng trưng cho sự may mắn, thịnh vượng và bảo vệ. Hình xăm Kỳ Lân mang lại năng lượng tích cực và bảo vệ cho người sở hữu.'
+                content: 'Khác với Rồng (quyền lực), Phượng Hoàng (cao quý), hay Rùa (trường thọ), Kỳ Lân đại diện cho sự nhân từ và chính trực. Theo truyền thuyết, Kỳ Lân chỉ xuất hiện khi thiên hạ thái bình hoặc khi có bậc thánh nhân ra đời.',
+                content2: 'Trong nghệ thuật xăm, Kỳ Lân thu hút những người tin vào karma, sống đúng với giá trị bản thân, và mong muốn được bảo vệ bởi năng lượng thiện lành.'
             },
             {
                 type: 'image',
-                content: 'Hình ảnh Kỳ Lân uy nghiêm',
+                content: 'Kỳ Lân – Linh vật của đức độ và may mắn',
                 image: KyLan
             },
             {
                 type: 'subtitle',
-                content: 'Biểu tượng của may mắn'
+                content: 'Ý Nghĩa Sâu Xa: Không Chỉ Là May Mắn'
             },
             {
                 type: 'text',
-                content: 'Theo truyền thuyết, Kỳ Lân chỉ xuất hiện khi có thánh nhân hoặc điềm lành. Hình xăm Kỳ Lân được tin là sẽ mang lại may mắn và bảo vệ khỏi những điều xấu.'
+                content: 'Nhiều người chọn Kỳ Lân vì tin vào khả năng mang lại may mắn. Nhưng ý nghĩa thực sự sâu hơn: Kỳ Lân nhắc nhở rằng may mắn đến với những người sống chính trực.',
+                content2: 'Tại studio, khoảng 60% khách hàng chọn Kỳ Lân là những người đang bắt đầu giai đoạn mới – khởi nghiệp, kết hôn, hoặc bước vào vị trí lãnh đạo. Họ không chỉ muốn may mắn – họ muốn một lời nhắc nhở về cách sống để xứng đáng với may mắn đó.'
+            },
+            {
+                type: 'subtitle',
+                content: 'Kỹ Thuật: Oriental Style Với Màu Sắc Truyền Thống'
+            },
+            {
+                type: 'text',
+                content: 'Kỳ Lân thường được thực hiện theo Oriental style với màu sắc đặc trưng: xanh lá (hòa bình), vàng gold (thịnh vượng), và đỏ (may mắn). Kỹ thuật shading gradient tạo chiều sâu, trong khi line work bold giữ sự rõ ràng theo thời gian.',
+                content2: 'Placement phổ biến: lưng (full back hoặc half back), ngực, hoặc đùi. Thời gian thực hiện: 3-6 sessions tùy kích thước và chi tiết.'
+            },
+            {
+                type: 'subtitle',
+                content: 'Kỳ Lân vs. Các Linh Vật Khác'
+            },
+            {
+                type: 'text',
+                content: 'Nếu bạn muốn thể hiện quyền lực → chọn Rồng. Nếu bạn muốn thể hiện sự cao quý và tái sinh → chọn Phượng Hoàng. Nhưng nếu bạn tin vào sức mạnh của đức độ và muốn được bảo vệ bởi năng lượng thiện lành → Kỳ Lân là lựa chọn đúng đắn.',
+                content2: 'Đặt lịch tư vấn tại The Thế Trung Tattoo Studio để cùng chúng tôi thiết kế Kỳ Lân độc bản cho riêng bạn.'
             }
         ],
-        tags: ['Kỳ Lân', 'Trung Hoa', 'May mắn', 'Tứ linh', 'Bảo vệ'],
-        category: 'Văn hóa Trung Hoa',
-        readTime: '4 phút',
+        tags: ['KyLinTattoo', 'ChineseTattoo', 'OrientalTattoo', 'MythicalCreature', 'AsianArt', 'TheTheTrungTattoo', 'LuckyTattoo', 'InkCulture'],
+        category: 'Oriental Traditional',
+        readTime: '5 phút',
         views: 723
     },
     {
         id: 'daruma-japanese-wishing-doll-tattoo-2025',
         slug: 'daruma-japanese-wishing-doll-tattoo',
-        title: "Hình xăm Daruma - Búp bê ước nguyện Nhật Bản",
+        title: "Daruma Tattoo – Ngã Bảy Lần, Đứng Dậy Tám",
         date: "12/08/2025",
-        author: "Yuki Tanaka",
-        subtitle: "Daruma tượng trưng cho sự kiên trì, quyết tâm và niềm tin vào việc thực hiện ước mơ.",
+        author: "The Trung",
+        subtitle: "Nanakorobi yaoki – triết lý Nhật Bản về sự kiên cường. Daruma không có chân để ngã, nhưng nếu có, nó sẽ đứng dậy. Luôn luôn.",
         image: Daruma,
         imageUI: Daruma,
         galleryImages: [Daruma],
         content: [
             {
                 type: 'title',
-                content: 'Ý nghĩa hình xăm Daruma trong văn hóa Nhật'
+                content: 'Daruma: Từ Thiền Sư Đến Biểu Tượng Quyết Tâm'
             },
             {
                 type: 'text',
-                content: 'Daruma là búp bê truyền thống Nhật Bản tượng trưng cho sự kiên trì và quyết tâm. Theo truyền thống, người ta vẽ một mắt khi đặt mục tiêu và vẽ mắt còn lại khi đạt được.'
+                content: 'Daruma được tạo ra theo hình ảnh Bodhidharma – thiền sư đã ngồi thiền suốt 9 năm đến mức chân tay teo lại. Hình dáng tròn không chân của búp bê Daruma tượng trưng cho khả năng "tự đứng dậy" – đẩy nó ngã theo hướng nào, nó cũng trở về vị trí thẳng đứng.',
+                content2: 'Trong nghệ thuật xăm, Daruma không dành cho những người "muốn thử". Nó dành cho những người đã quyết định – và sẵn sàng đi đến cùng.'
             },
             {
                 type: 'image',
-                content: 'Hình ảnh Daruma truyền thống',
+                content: 'Daruma – Biểu tượng của sự kiên cường',
                 image: Daruma
             },
             {
                 type: 'subtitle',
-                content: 'Biểu tượng của quyết tâm'
+                content: 'Nghi Thức Một Mắt – Và Ý Nghĩa Trong Tattoo'
             },
             {
                 type: 'text',
-                content: 'Hình xăm Daruma thể hiện sự cam kết với mục tiêu và niềm tin vào khả năng vượt qua khó khăn để đạt được ước mơ.'
+                content: 'Truyền thống Nhật Bản: khi đặt mục tiêu, bạn vẽ một mắt cho Daruma. Khi đạt được, bạn hoàn thành mắt còn lại. Nhiều khách hàng tại studio chọn xăm Daruma với một mắt – như một lời hứa với bản thân về mục tiêu đang theo đuổi.',
+                content2: 'Một số quay lại sau vài tháng, vài năm để "hoàn thành" mắt còn lại khi đã đạt được mục tiêu. Đó là những moment đặc biệt nhất trong nghề của tôi.'
+            },
+            {
+                type: 'subtitle',
+                content: 'Phong Cách Và Kỹ Thuật'
+            },
+            {
+                type: 'text',
+                content: 'Daruma có thể được thực hiện theo nhiều phong cách: Traditional Japanese với màu đỏ đặc trưng, Neo-Japanese với chi tiết cao hơn, hoặc kết hợp với các element khác như hoa anh đào, sóng, hoặc kanji.',
+                content2: 'Size linh hoạt từ nhỏ (cổ tay, mắt cá) đến lớn (bắp tay, bắp chân). Daruma nhỏ thường phù hợp với người mới xăm hoặc như một phần của bộ sưu tập Japanese.'
+            },
+            {
+                type: 'subtitle',
+                content: 'Ai Nên Chọn Daruma?'
+            },
+            {
+                type: 'text',
+                content: 'Daruma phù hợp với những người đang theo đuổi một mục tiêu cụ thể – khởi nghiệp, học tập, vượt qua một thử thách cá nhân. Nó là lời nhắc nhở hàng ngày: bạn có thể ngã, nhưng bạn sẽ đứng dậy.',
+                content2: 'Tại The Thế Trung Tattoo Studio, chúng tôi sẽ cùng bạn thiết kế Daruma phù hợp với câu chuyện và mục tiêu của riêng bạn.'
             }
         ],
-        tags: ['Daruma', 'Nhật Bản', 'Ước nguyện', 'Kiên trì', 'Quyết tâm'],
-        category: 'Văn hóa Nhật Bản',
-        readTime: '3 phút',
+        tags: ['DarumaTattoo', 'JapaneseTattoo', 'NeverGiveUp', 'Perseverance', 'JapaneseArt', 'TheTheTrungTattoo', 'TattooMeaning', 'InkInspiration'],
+        category: 'Japanese Traditional',
+        readTime: '5 phút',
         views: 645
     },
     {
         id: 'carp-fish-japanese-symbolism-tattoo-2025',
         slug: 'carp-fish-japanese-symbolism-tattoo',
-        title: "Hình xăm Cá Chép - Biểu tượng vượt vũ môn",
+        title: "Koi Fish Tattoo – Vượt Vũ Môn Và Hóa Rồng",
         date: "10/08/2025",
-        author: "Linh Chi",
-        subtitle: "Cá Chép tượng trưng cho sự kiên trì, dũng cảm vượt qua khó khăn để đạt được thành công.",
+        author: "The Trung",
+        subtitle: "Truyền thuyết kể rằng cá Koi bơi ngược dòng Hoàng Hà, vượt qua Vũ Môn và hóa Rồng. Đó không chỉ là câu chuyện – đó là triết lý sống.",
         image: CaChep,
         imageUI: CaChep,
         galleryImages: [CaChep],
         content: [
             {
                 type: 'title',
-                content: 'Ý nghĩa hình xăm Cá Chép trong văn hóa Á Đông'
+                content: 'Koi: Biểu Tượng Của Sự Chuyển Hóa Qua Nỗ Lực'
             },
             {
                 type: 'text',
-                content: 'Cá Chép là biểu tượng của sự kiên trì và dũng cảm trong văn hóa Á Đông. Truyền thuyết kể rằng cá chép bơi ngược dòng để vượt Vũ Môn và hóa rồng.'
+                content: 'Trong nghệ thuật xăm Nhật Bản, Koi là một trong những chủ đề được yêu cầu nhiều nhất – và cũng bị hiểu sai nhiều nhất. Nhiều người chọn Koi vì "đẹp" hoặc "may mắn", nhưng ý nghĩa thực sự sâu hơn nhiều.',
+                content2: 'Koi tượng trưng cho sự chuyển hóa thông qua nỗ lực – không phải may mắn ngẫu nhiên, mà là thành công đến từ việc không ngừng bơi ngược dòng, vượt qua mọi trở ngại.'
             },
             {
                 type: 'image',
-                content: 'Hình ảnh Cá Chép vượt vũ môn',
+                content: 'Koi – Biểu tượng của sự kiên trì và chuyển hóa',
                 image: CaChep
             },
             {
                 type: 'subtitle',
-                content: 'Biểu tượng của thành công'
+                content: 'Hướng Bơi Và Ý Nghĩa'
             },
             {
                 type: 'text',
-                content: 'Hình xăm Cá Chép thể hiện ý chí kiên cường, sẵn sàng đối mặt với thử thách để đạt được mục tiêu và thành công trong cuộc sống.'
+                content: 'Chi tiết quan trọng mà nhiều người bỏ qua: hướng bơi của Koi mang ý nghĩa khác nhau. Koi bơi lên (upstream) thể hiện đang trong quá trình chinh phục thử thách. Koi bơi xuống (downstream) thể hiện đã vượt qua khó khăn, đang trong giai đoạn thảnh thơi.',
+                content2: 'Tại studio, chúng tôi luôn hỏi khách hàng: "Bạn đang ở giai đoạn nào trong hành trình của mình?" Câu trả lời sẽ định hướng thiết kế.'
+            },
+            {
+                type: 'subtitle',
+                content: 'Màu Sắc Và Ý Nghĩa'
+            },
+            {
+                type: 'text',
+                content: 'Đỏ: Tình yêu, sức mạnh, nam tính. Vàng/Gold: Thịnh vượng, thành công tài chính. Đen: Vượt qua nghịch cảnh, sự chuyển hóa. Xanh dương: Sinh sản, nam tính (con trai). Trắng với đỏ (Kohaku): May mắn, sự nghiệp.',
+                content2: 'Kết hợp màu sắc cho phép tạo ra những tác phẩm độc đáo, mang ý nghĩa cá nhân hóa cao.'
+            },
+            {
+                type: 'subtitle',
+                content: 'Kết Hợp Phổ Biến'
+            },
+            {
+                type: 'text',
+                content: 'Koi thường được kết hợp với: Hoa sen (sự thanh khiết, giác ngộ), Sóng nước (khó khăn, thử thách), Hoa anh đào (vẻ đẹp tạm thời, sự trân trọng khoảnh khắc), hoặc Rồng (sự chuyển hóa hoàn thành).',
+                content2: 'Placement lý tưởng: cánh tay (sleeve), lưng, hoặc đùi – những vị trí cho phép movement và flow tự nhiên của cá trong nước. Đặt lịch tư vấn tại The Thế Trung Tattoo Studio để bắt đầu hành trình của bạn.'
             }
         ],
-        tags: ['Cá Chép', 'Vượt vũ môn', 'Kiên trì', 'Thành công', 'Á Đông'],
-        category: 'Văn hóa Á Đông',
-        readTime: '3 phút',
+        tags: ['KoiTattoo', 'JapaneseTattoo', 'KoiFish', 'Irezumi', 'AsianArt', 'TheTheTrungTattoo', 'TattooMeaning', 'ColorTattoo'],
+        category: 'Japanese Traditional',
+        readTime: '6 phút',
         views: 589
     },
     {
         id: 'oni-hannya-japanese-demon-tattoo-2025',
         slug: 'oni-hannya-japanese-demon-tattoo',
-        title: "Hình xăm Oni Hannya - Quỷ Nhật Bản",
+        title: "Oni & Hannya Tattoo – Bóng Tối Bảo Vệ Ánh Sáng",
         date: "08/08/2025",
-        author: "Kenji Yamamoto",
-        subtitle: "Oni Hannya đại diện cho sự bảo vệ, sức mạnh và khả năng xua đuổi tà ma.",
+        author: "The Trung",
+        subtitle: "Oni và Hannya không phải là ác quỷ cần sợ hãi. Trong văn hóa xăm Nhật Bản, chúng là những guardian – bảo vệ người sở hữu khỏi những điều xấu xa.",
         image: OniHannya,
         imageUI: OniHannya,
         galleryImages: [OniHannya],
         content: [
             {
                 type: 'title',
-                content: 'Ý nghĩa hình xăm Oni Hannya trong văn hóa Nhật'
+                content: 'Oni vs. Hannya: Hai Thực Thể Khác Biệt'
             },
             {
                 type: 'text',
-                content: 'Oni Hannya là quỷ trong thần thoại Nhật Bản, thường được mô tả với sừng và răng nanh. Mặc dù là quỷ nhưng Oni cũng có vai trò bảo vệ và xua đuổi tà ma.'
+                content: 'Một trong những nhầm lẫn phổ biến nhất: Oni và Hannya là một. Thực tế, chúng hoàn toàn khác biệt. Oni là quỷ (demon) – thường đại diện cho sức mạnh bảo vệ. Hannya là mặt nạ thể hiện một người phụ nữ đã biến thành quỷ dữ vì ghen tuông và đau khổ.',
+                content2: 'Trong Noh theater, Hannya mang cả sự đáng sợ lẫn nỗi buồn. Đó là sự phức tạp của cảm xúc con người – và chính sự phức tạp ấy làm nên sức hút của hình xăm này.'
             },
             {
                 type: 'image',
-                content: 'Hình ảnh Oni Hannya uy nghiêm',
+                content: 'Oni & Hannya – Sức mạnh bảo vệ từ bóng tối',
                 image: OniHannya
             },
             {
                 type: 'subtitle',
-                content: 'Biểu tượng của sức mạnh'
+                content: 'Oni: Guardian Từ Địa Ngục'
             },
             {
                 type: 'text',
-                content: 'Hình xăm Oni Hannya thể hiện sức mạnh nội tại, khả năng bảo vệ bản thân và người thân khỏi những điều xấu xa.'
+                content: 'Oni thường được mô tả với da xanh hoặc đỏ, sừng, răng nanh, và gậy Kanabō. Trong văn hóa xăm, Oni đóng vai trò bảo vệ – xua đuổi những điều xấu xa, bệnh tật, và vận rủi.',
+                content2: 'Nhiều Yakuza chọn Oni không phải để khoe sự hung dữ, mà để thể hiện vai trò bảo vệ gia đình và tổ chức. Ngày nay, ý nghĩa này đã mở rộng cho bất kỳ ai muốn mang theo "guardian" của riêng mình.'
+            },
+            {
+                type: 'subtitle',
+                content: 'Hannya: Vẻ Đẹp Trong Nỗi Đau'
+            },
+            {
+                type: 'text',
+                content: 'Hannya phù hợp với những người đã trải qua đau khổ, chuyển hóa nó thành sức mạnh. Màu sắc của Hannya cũng mang ý nghĩa: Trắng – quý tộc, tinh tế. Đỏ – tầng lớp thấp, cảm xúc mãnh liệt. Đỏ đậm (gần đen) – quỷ thực sự, không còn nhân tính.',
+                content2: 'Nhiều khách hàng nữ tại studio chọn Hannya như một cách embrace bóng tối trong bản thân – và biến nó thành power.'
+            },
+            {
+                type: 'subtitle',
+                content: 'Kỹ Thuật Và Placement'
+            },
+            {
+                type: 'text',
+                content: 'Oni và Hannya đòi hỏi kỹ thuật shading phức tạp để tạo chiều sâu và expression. Thường được thực hiện theo Japanese Traditional hoặc Neo-Japanese style. Placement phổ biến: bắp tay, ngực, lưng, hoặc đùi.',
+                content2: 'Tại The Thế Trung Tattoo Studio, chúng tôi có expertise đặc biệt với Oni và Hannya – đặt lịch tư vấn để khám phá design phù hợp với câu chuyện của bạn.'
             }
         ],
-        tags: ['Oni', 'Hannya', 'Nhật Bản', 'Quỷ', 'Bảo vệ'],
-        category: 'Văn hóa Nhật Bản',
-        readTime: '4 phút',
+        tags: ['OniTattoo', 'HannyaTattoo', 'JapaneseTattoo', 'DemonTattoo', 'Irezumi', 'TheTheTrungTattoo', 'DarkArt', 'ProtectorTattoo'],
+        category: 'Japanese Traditional',
+        readTime: '6 phút',
         views: 512
     },
     {
         id: 'phoenix-rising-from-ashes-tattoo-2025',
         slug: 'phoenix-rising-from-ashes-tattoo',
-        title: "Hình xăm Phượng Hoàng - Tái sinh từ tro tàn",
+        title: "Phoenix Tattoo – Tái Sinh Từ Tro Tàn",
         date: "05/08/2025",
-        author: "Mai Phương",
-        subtitle: "Phượng Hoàng tượng trưng cho sự tái sinh, đổi mới và vượt qua nghịch cảnh.",
+        author: "The Trung",
+        subtitle: "Phoenix không chỉ sống sót – nó cháy rụi hoàn toàn, rồi tái sinh mạnh mẽ hơn. Đó là biểu tượng của những người đã mất tất cả, và xây dựng lại từ đầu.",
         image: PhuongHoang,
         imageUI: PhuongHoang,
         galleryImages: [PhuongHoang],
         content: [
             {
                 type: 'title',
-                content: 'Ý nghĩa hình xăm Phượng Hoàng trong văn hóa toàn cầu'
+                content: 'Phoenix: Biểu Tượng Mạnh Mẽ Nhất Về Sự Tái Sinh'
             },
             {
                 type: 'text',
-                content: 'Phượng Hoàng là biểu tượng của sự tái sinh và đổi mới trong nhiều nền văn hóa. Theo truyền thuyết, Phượng Hoàng có thể tái sinh từ tro tàn của chính mình.'
+                content: 'Trong hơn 15 năm làm nghề, tôi nhận thấy một pattern thú vị: những người chọn Phoenix thường đang ở – hoặc vừa qua – giai đoạn khó khăn nhất trong đời. Ly hôn, phá sản, bệnh tật, mất mát người thân.',
+                content2: 'Phoenix không dành cho những người "muốn mạnh mẽ". Nó dành cho những người đã bị đốt cháy hoàn toàn – và vẫn chọn đứng dậy.'
             },
             {
                 type: 'image',
-                content: 'Hình ảnh Phượng Hoàng uy nghi',
+                content: 'Phoenix – Tái sinh từ tro tàn',
                 image: PhuongHoang
             },
             {
                 type: 'subtitle',
-                content: 'Biểu tượng của tái sinh'
+                content: 'Phoenix Trong Các Nền Văn Hóa'
             },
             {
                 type: 'text',
-                content: 'Hình xăm Phượng Hoàng thể hiện khả năng vượt qua khó khăn, tái sinh từ những thất bại và đạt được thành công mới.'
+                content: 'Greek Phoenix: Cháy và tái sinh từ tro, biểu tượng của immortality. Chinese Fenghuang: Vua của các loài chim, biểu tượng của harmony và virtue (thường đi cặp với Rồng). Japanese Hō-ō: Biểu tượng của sun, justice, và obedience.',
+                content2: 'Mỗi văn hóa mang đến một góc nhìn khác về Phoenix – và tại studio, chúng tôi có thể blend các element để tạo ra tác phẩm phù hợp với câu chuyện của bạn.'
+            },
+            {
+                type: 'subtitle',
+                content: 'Màu Sắc Và Phong Cách'
+            },
+            {
+                type: 'text',
+                content: 'Phoenix thường được thực hiện với màu đỏ, cam, vàng – gợi lên ngọn lửa. Tuy nhiên, Blue Phoenix (symbolizing peace) hoặc Black Phoenix (rising from darkness) cũng ngày càng phổ biến.',
+                content2: 'Phong cách phổ biến: Japanese Traditional (bold lines, flat colors), Neo-Japanese (more detail, gradient), hoặc Watercolor (soft, flowing – nhưng đòi hỏi artist có expertise).'
+            },
+            {
+                type: 'subtitle',
+                content: 'Placement Và Size'
+            },
+            {
+                type: 'text',
+                content: 'Phoenix là subject lớn – cánh, đuôi, lửa đều cần không gian. Placement lý tưởng: full back (classic), rib-to-hip (dramatic), hoặc sleeve (flowing around arm). Phoenix nhỏ có thể mất đi impact và detail.',
+                content2: 'Nếu bạn đã trải qua ngọn lửa và vẫn đứng đây – Phoenix là tác phẩm kể câu chuyện của bạn. Đặt lịch tư vấn tại The Thế Trung Tattoo Studio.'
             }
         ],
-        tags: ['Phượng Hoàng', 'Tái sinh', 'Đổi mới', 'Nghịch cảnh', 'Thành công'],
-        category: 'Thần thoại',
-        readTime: '4 phút',
+        tags: ['PhoenixTattoo', 'Rebirth', 'JapaneseTattoo', 'ColorTattoo', 'SymbolicTattoo', 'TheTheTrungTattoo', 'TattooArt', 'RisingFromAshes'],
+        category: 'Mythological',
+        readTime: '5 phút',
         views: 478
     },
     {
         id: 'dreamcatcher-native-american-tattoo-2025',
         slug: 'dreamcatcher-native-american-tattoo',
-        title: "Hình xăm Dream Catcher - Bắt giữ giấc mơ",
+        title: "Dreamcatcher Tattoo – Bảo Vệ Giấc Mơ, Lọc Đi Ác Mộng",
         date: "03/08/2025",
-        author: "Sarah Johnson",
-        subtitle: "Dream Catcher bảo vệ khỏi ác mộng và chỉ cho phép những giấc mơ đẹp đi qua.",
+        author: "The Trung",
+        subtitle: "Trong văn hóa Ojibwe, Dreamcatcher không chỉ bắt ác mộng – nó bảo vệ linh hồn người ngủ. Đó là lý do nó trở thành một trong những biểu tượng bảo hộ phổ biến nhất trong nghệ thuật xăm.",
         image: DreamCatcher,
         imageUI: DreamCatcher,
         galleryImages: [DreamCatcher],
         content: [
             {
                 type: 'title',
-                content: 'Ý nghĩa hình xăm Dream Catcher trong văn hóa Native American'
+                content: 'Dreamcatcher: Từ Ojibwe Đến Nghệ Thuật Xăm Toàn Cầu'
             },
             {
                 type: 'text',
-                content: 'Dream Catcher là một vật dụng thiêng liêng của người Native American, được treo trên giường để bắt giữ ác mộng và chỉ cho phép những giấc mơ đẹp đi qua.'
+                content: 'Dreamcatcher bắt nguồn từ bộ tộc Ojibwe ở Bắc Mỹ. Theo truyền thuyết, Spider Woman (Asibikaashi) bảo vệ trẻ em trong giấc ngủ. Khi bộ tộc mở rộng, bà không thể bảo vệ tất cả, nên dạy phụ nữ làm dreamcatcher – mạng nhện bắt giữ ác mộng, để giấc mơ đẹp trượt qua.',
+                content2: 'Trong nghệ thuật xăm, Dreamcatcher đã vượt qua ranh giới văn hóa để trở thành biểu tượng universal về sự bảo vệ và hy vọng.'
             },
             {
                 type: 'image',
-                content: 'Hình ảnh Dream Catcher truyền thống',
+                content: 'Dreamcatcher – Guardian trong giấc ngủ',
                 image: DreamCatcher
             },
             {
                 type: 'subtitle',
-                content: 'Biểu tượng của bảo vệ'
+                content: 'Các Element Và Ý Nghĩa'
             },
             {
                 type: 'text',
-                content: 'Hình xăm Dream Catcher thể hiện mong muốn được bảo vệ khỏi những điều xấu và chỉ nhận những điều tốt đẹp trong cuộc sống.'
+                content: 'Vòng tròn: Chu kỳ cuộc sống, mặt trời và mặt trăng. Mạng nhện: Bẫy bắt giữ negative energy. Lông vũ: Dẫn đường cho giấc mơ đẹp xuống người ngủ. Hạt cườm: Giấc mơ đẹp đã được giữ lại.',
+                content2: 'Nhiều người thêm các element cá nhân: hoa (vẻ đẹp), chim (tự do), hoặc tên/ngày tháng quan trọng.'
+            },
+            {
+                type: 'subtitle',
+                content: 'Phong Cách Và Kỹ Thuật'
+            },
+            {
+                type: 'text',
+                content: 'Dreamcatcher có thể được thực hiện theo nhiều phong cách: Traditional (bold lines, limited colors), Realistic (chi tiết lông vũ, texture mạng nhện), Watercolor (soft, dreamy), hoặc Geometric (modern interpretation).',
+                content2: 'Placement phổ biến: lưng, đùi, cánh tay, hoặc rib. Size linh hoạt từ nhỏ (sau tai, cổ tay) đến lớn (full back).'
+            },
+            {
+                type: 'subtitle',
+                content: 'Ai Phù Hợp Với Dreamcatcher?'
+            },
+            {
+                type: 'text',
+                content: 'Dreamcatcher phù hợp với những người tìm kiếm sự bảo vệ tinh thần, đang trải qua giai đoạn khó khăn, hoặc đơn giản muốn mang theo một "guardian" trong hành trình cuộc sống.',
+                content2: 'Tại The Thế Trung Tattoo Studio, chúng tôi sẽ giúp bạn thiết kế Dreamcatcher cá nhân hóa, kết hợp các element có ý nghĩa riêng với bạn.'
             }
         ],
-        tags: ['Dream Catcher', 'Native American', 'Bảo vệ', 'Giấc mơ', 'Thiêng liêng'],
-        category: 'Văn hóa Native American',
-        readTime: '3 phút',
+        tags: ['DreamcatcherTattoo', 'NativeAmerican', 'ProtectionTattoo', 'BohoTattoo', 'SpiritualTattoo', 'TheTheTrungTattoo', 'FeatherTattoo', 'TattooArt'],
+        category: 'Native American',
+        readTime: '5 phút',
         views: 445
     },
     {
         id: 'temple-buddhist-symbolism-tattoo-2025',
         slug: 'temple-buddhist-symbolism-tattoo',
-        title: "Hình xăm Đạo Chùa - Biểu tượng tâm linh",
+        title: "Buddhist Temple Tattoo – Kiến Trúc Tâm Linh Trên Da",
         date: "01/08/2025",
-        author: "Thích Minh Đức",
-        subtitle: "Đạo Chùa tượng trưng cho sự thanh tịnh, giác ngộ và con đường tâm linh.",
+        author: "The Trung",
+        subtitle: "Ngôi chùa không chỉ là kiến trúc – đó là biểu tượng của sự tĩnh lặng giữa hỗn loạn, điểm neo đậu trong hành trình tâm linh.",
         image: DaoChua,
         imageUI: DaoChua,
         galleryImages: [DaoChua],
         content: [
             {
                 type: 'title',
-                content: 'Ý nghĩa hình xăm Đạo Chùa trong Phật giáo'
+                content: 'Temple Tattoo: Mang Theo Sự Tĩnh Lặng'
             },
             {
                 type: 'text',
-                content: 'Đạo Chùa là biểu tượng của sự thanh tịnh và giác ngộ trong Phật giáo. Nó đại diện cho con đường tâm linh và sự tìm kiếm chân lý.'
+                content: 'Trong thế giới náo nhiệt, nhiều người tìm đến hình xăm chùa như một anchor – một lời nhắc nhở về sự tĩnh lặng mà họ cần duy trì. Đây không nhất thiết là biểu tượng tôn giáo – nhiều khách hàng tại studio không theo Phật giáo nhưng vẫn chọn temple vì giá trị triết học.',
+                content2: 'Temple tattoo phổ biến với những người thực hành mindfulness, meditation, hoặc đơn giản là những người tìm kiếm inner peace trong cuộc sống busy.'
             },
             {
                 type: 'image',
-                content: 'Hình ảnh Đạo Chùa thanh tịnh',
+                content: 'Buddhist Temple – Biểu tượng của sự thanh tịnh',
                 image: DaoChua
             },
             {
                 type: 'subtitle',
-                content: 'Biểu tượng của giác ngộ'
+                content: 'Phong Cách Kiến Trúc Và Ý Nghĩa'
             },
             {
                 type: 'text',
-                content: 'Hình xăm Đạo Chùa thể hiện mong muốn tìm kiếm sự thanh tịnh trong tâm hồn và con đường giác ngộ tâm linh.'
+                content: 'Japanese Temple (Pagoda): Sự tinh tế, harmony với thiên nhiên. Thai Temple: Chi tiết phức tạp, sự trang nghiêm. Tibetan Temple: Spirituality mạnh mẽ, mystical. Chinese Temple: Prosperity, ancestor worship.',
+                content2: 'Mỗi phong cách kiến trúc mang theo một layer ý nghĩa khác nhau – và tại studio, chúng tôi sẽ giúp bạn chọn style phù hợp nhất.'
+            },
+            {
+                type: 'subtitle',
+                content: 'Kết Hợp Và Placement'
+            },
+            {
+                type: 'text',
+                content: 'Temple thường được kết hợp với: Hoa sen (purity, enlightenment), Mây (heavenly realm), Núi (stability, eternal), hoặc Buddha (direct spiritual reference). Placement: forearm, calf, back – những vị trí cho phép detail kiến trúc.',
+                content2: 'Đặt lịch tư vấn tại The Thế Trung Tattoo Studio để thiết kế temple tattoo độc bản cho riêng bạn.'
             }
         ],
-        tags: ['Đạo Chùa', 'Phật giáo', 'Tâm linh', 'Giác ngộ', 'Thanh tịnh'],
-        category: 'Tôn giáo',
+        tags: ['TempleTattoo', 'BuddhistTattoo', 'SpiritualTattoo', 'JapaneseTattoo', 'ZenTattoo', 'TheTheTrungTattoo', 'MindfulTattoo', 'AsianArt'],
+        category: 'Spiritual',
         readTime: '4 phút',
         views: 412
     },
     {
         id: 'buddha-enlightenment-tattoo-2025',
         slug: 'buddha-enlightenment-tattoo',
-        title: "Hình xăm Đạo Phật - Con đường giác ngộ",
+        title: "Buddha Tattoo – Giác Ngộ Qua Từng Đường Kim",
         date: "30/07/2025",
-        author: "Thích Tâm An",
-        subtitle: "Đạo Phật tượng trưng cho sự giác ngộ, từ bi và con đường giải thoát khỏi khổ đau.",
+        author: "The Trung",
+        subtitle: "Buddha không phải là thần để thờ – đó là con người đã giác ngộ, và hình xăm này nhắc nhở rằng giác ngộ có thể đạt được bởi bất kỳ ai.",
         image: DaoPhat,
         imageUI: DaoPhat,
         galleryImages: [DaoPhat],
         content: [
             {
                 type: 'title',
-                content: 'Ý nghĩa hình xăm Đạo Phật trong tâm linh'
+                content: 'Buddha Tattoo: Không Chỉ Là Biểu Tượng Tôn Giáo'
             },
             {
                 type: 'text',
-                content: 'Đạo Phật là con đường dẫn đến giác ngộ và giải thoát khỏi khổ đau. Hình xăm Đạo Phật thể hiện sự tôn kính đối với giáo lý nhà Phật.'
+                content: 'Điều thú vị: phần lớn khách hàng chọn Buddha tattoo tại studio không phải Phật tử. Họ bị thu hút bởi triết lý – sự tĩnh lặng, từ bi, và niềm tin rằng mọi khổ đau đều có nguồn gốc và có thể được giải quyết.',
+                content2: 'Buddha tattoo không phải về tôn giáo – nó về mindset. Đó là lý do nó phổ biến với entrepreneurs, executives, và những người đang trên hành trình self-improvement.'
             },
             {
                 type: 'image',
-                content: 'Hình ảnh Đạo Phật thanh tịnh',
+                content: 'Buddha – Biểu tượng của sự giác ngộ',
                 image: DaoPhat
             },
             {
                 type: 'subtitle',
-                content: 'Biểu tượng của từ bi'
+                content: 'Các Hình Thức Buddha Trong Tattoo'
             },
             {
                 type: 'text',
-                content: 'Hình xăm Đạo Phật nhắc nhở về lòng từ bi, trí tuệ và con đường tu tập để đạt được hạnh phúc chân thật.'
+                content: 'Meditating Buddha: Tĩnh lặng, inner peace. Laughing Buddha (Budai): Abundance, happiness. Reclining Buddha: Moment trước khi nhập Niết bàn, sự buông bỏ. Buddha Head: Focus vào wisdom và enlightenment.',
+                content2: 'Mỗi form mang một energy khác nhau – chọn theo message bạn muốn truyền tải.'
+            },
+            {
+                type: 'subtitle',
+                content: 'Lưu Ý Quan Trọng Về Buddha Tattoo'
+            },
+            {
+                type: 'text',
+                content: 'Tại một số quốc gia Phật giáo (Thái Lan, Sri Lanka), Buddha tattoo bị coi là thiếu tôn trọng nếu đặt ở vị trí thấp (như chân, mông). Placement an toàn: từ thắt lưng trở lên. Đây là điều chúng tôi luôn tư vấn cho khách hàng có plan du lịch.',
+                content2: 'Tại The Thế Trung Tattoo Studio, chúng tôi approach Buddha tattoo với sự tôn trọng văn hóa, đồng thời tạo ra tác phẩm nghệ thuật đẹp và ý nghĩa.'
             }
         ],
-        tags: ['Đạo Phật', 'Giác ngộ', 'Từ bi', 'Tâm linh', 'Giải thoát'],
-        category: 'Tôn giáo',
-        readTime: '4 phút',
+        tags: ['BuddhaTattoo', 'SpiritualTattoo', 'ZenTattoo', 'MeditationTattoo', 'EnlightenmentTattoo', 'TheTheTrungTattoo', 'AsianArt', 'MindfulTattoo'],
+        category: 'Spiritual',
+        readTime: '5 phút',
         views: 389
     },
     {
         id: 'maori-samoa-tribal-tattoo-2025',
         slug: 'maori-samoa-tribal-tattoo',
-        title: "Hình xăm Maori Samoa - Nghệ thuật bộ lạc",
+        title: "Polynesian Tattoo – Ta Moko, Pe'a Và Nghệ Thuật Bộ Lạc",
         date: "28/07/2025",
-        author: "Tama Te Rangi",
-        subtitle: "Maori Samoa thể hiện văn hóa bộ lạc, sức mạnh và danh tính của người Polynesia.",
+        author: "The Trung",
+        subtitle: "Trong văn hóa Polynesia, tattoo không phải là decoration – đó là identity. Mỗi đường nét kể một câu chuyện, mỗi pattern mang một ý nghĩa cụ thể.",
         image: MaoriSamoa,
         imageUI: MaoriSamoa,
         galleryImages: [MaoriSamoa],
         content: [
             {
                 type: 'title',
-                content: 'Ý nghĩa hình xăm Maori Samoa trong văn hóa Polynesia'
+                content: 'Polynesian Tattoo: Không Chỉ Là Hoa Văn'
             },
             {
                 type: 'text',
-                content: 'Maori Samoa là nghệ thuật xăm truyền thống của người Polynesia, thể hiện văn hóa bộ lạc, sức mạnh và danh tính của người sở hữu.'
+                content: 'Ta Moko (Maori, New Zealand), Pe-a (Samoa), Tatau (Tahiti) – mỗi vùng Polynesia có truyền thống xăm riêng với ý nghĩa sâu sắc. Trong văn hóa truyền thống, tattoo thể hiện: dòng dõi gia đình, địa vị xã hội, thành tích cá nhân, và hành trình tâm linh.',
+                content2: 'Tại studio, chúng tôi approach Polynesian tattoo với sự tôn trọng văn hóa – không random chọn pattern, mà thiết kế có ý nghĩa cho từng khách hàng.'
             },
             {
                 type: 'image',
-                content: 'Hình ảnh Maori Samoa truyền thống',
+                content: 'Polynesian Tattoo – Nghệ thuật kể chuyện trên da',
                 image: MaoriSamoa
             },
             {
                 type: 'subtitle',
-                content: 'Biểu tượng của sức mạnh'
+                content: 'Các Element Và Ý Nghĩa'
             },
             {
                 type: 'text',
-                content: 'Mỗi hoa văn trong Maori Samoa đều có ý nghĩa riêng, thể hiện địa vị xã hội, sức mạnh và lịch sử gia đình.'
+                content: 'Enata (human figures): Gia đình, bạn bè, ancestors. Shark teeth: Protection, guidance, strength. Spearhead: Courage, warrior spirit. Ocean (waves): Life, change, continuity. Turtle shell: Longevity, peace, fertility.',
+                content2: 'Kết hợp các element tạo nên "bài thơ" trên da – kể câu chuyện của người sở hữu.'
+            },
+            {
+                type: 'subtitle',
+                content: 'Cultural Sensitivity'
+            },
+            {
+                type: 'text',
+                content: 'Polynesian tattoo đang trở nên phổ biến toàn cầu, nhưng quan trọng là approach với sự tôn trọng. Chúng tôi không sao chép Ta Moko khuôn mặt truyền thống (dành riêng cho người Maori) nhưng có thể thiết kế Polynesian-inspired với các element có ý nghĩa cá nhân.',
+                content2: 'Đặt lịch tư vấn tại The Thế Trung Tattoo Studio để cùng thiết kế Polynesian tattoo kể câu chuyện của riêng bạn.'
             }
         ],
-        tags: ['Maori', 'Samoa', 'Polynesia', 'Bộ lạc', 'Truyền thống'],
-        category: 'Văn hóa Polynesia',
-        readTime: '5 phút',
+        tags: ['PolynesianTattoo', 'MaoriTattoo', 'SamoanTattoo', 'TribalTattoo', 'TatauArt', 'TheTheTrungTattoo', 'CulturalTattoo', 'BlackworkTattoo'],
+        category: 'Tribal & Polynesian',
+        readTime: '6 phút',
         views: 356
     },
     {
         id: 'mandala-spiritual-symbolism-tattoo-2025',
         slug: 'mandala-spiritual-symbolism-tattoo',
-        title: "Hình xăm Mandala - Biểu tượng tâm linh",
+        title: "Mandala Tattoo – Vũ Trụ Trong Một Vòng Tròn",
         date: "25/07/2025",
-        author: "Priya Sharma",
-        subtitle: "Mandala tượng trưng cho vũ trụ, sự cân bằng và hành trình tâm linh.",
+        author: "The Trung",
+        subtitle: "Mandala là bản đồ của vũ trụ, là hành trình từ hỗn loạn bên ngoài đến tĩnh lặng bên trong. Mỗi đường nét đều có mục đích.",
         image: Mandala,
         imageUI: Mandala,
         galleryImages: [Mandala],
         content: [
             {
                 type: 'title',
-                content: 'Ý nghĩa hình xăm Mandala trong tâm linh'
+                content: 'Mandala: Geometry Gặp Spirituality'
             },
             {
                 type: 'text',
-                content: 'Mandala là biểu tượng thiêng liêng trong nhiều tôn giáo, đại diện cho vũ trụ và sự cân bằng. Hình xăm Mandala thể hiện hành trình tâm linh và sự tìm kiếm chân lý.'
+                content: 'Mandala – từ Sanskrit có nghĩa "vòng tròn" – là biểu tượng thiêng liêng trong Hindu và Buddhist traditions. Nhưng trong nghệ thuật xăm hiện đại, Mandala đã vượt qua ranh giới tôn giáo để trở thành biểu tượng của balance, harmony, và self-reflection.',
+                content2: 'Điều làm Mandala đặc biệt: nó vừa là meditation tool (tập trung vào pattern), vừa là artwork với giá trị thẩm mỹ cao.'
             },
             {
                 type: 'image',
-                content: 'Hình ảnh Mandala thiêng liêng',
+                content: 'Mandala – Vũ trụ trong một vòng tròn',
                 image: Mandala
             },
             {
                 type: 'subtitle',
-                content: 'Biểu tượng của vũ trụ'
+                content: 'Cấu Trúc Và Ý Nghĩa'
             },
             {
                 type: 'text',
-                content: 'Mandala với các hoa văn hình học phức tạp thể hiện sự hài hòa của vũ trụ và con đường dẫn đến giác ngộ.'
+                content: 'Vòng tròn bên ngoài: Universe, cosmos. Các layer bên trong: Journey từ chaos đến peace. Tâm điểm: The self, enlightenment, Buddha nature. Patterns lặp lại: Interconnectedness of all things.',
+                content2: 'Mandala không cần phải symmetric hoàn hảo – một số artist thêm asymmetrical elements để thể hiện imperfection của cuộc sống.'
+            },
+            {
+                type: 'subtitle',
+                content: 'Phong Cách Và Placement'
+            },
+            {
+                type: 'text',
+                content: 'Dotwork Mandala: Tạo texture độc đáo, meditative feel. Ornamental Mandala: Thêm floral, decorative elements. Geometric Mandala: Clean lines, modern. Watercolor Mandala: Soft, feminine.',
+                content2: 'Placement phổ biến: sternum (underboob), back, knee, elbow. Mandala sleeve cũng là trend đang lên. Đặt lịch tại The Thế Trung Tattoo Studio để thiết kế Mandala độc bản.'
             }
         ],
-        tags: ['Mandala', 'Tâm linh', 'Vũ trụ', 'Cân bằng', 'Thiêng liêng'],
-        category: 'Tâm linh',
-        readTime: '4 phút',
+        tags: ['MandalaTattoo', 'GeometricTattoo', 'DotworkTattoo', 'SpiritualTattoo', 'SacredGeometry', 'TheTheTrungTattoo', 'OrnamentalTattoo', 'ZenTattoo'],
+        category: 'Geometric & Spiritual',
+        readTime: '5 phút',
         views: 323
     },
     {
         id: 'lotus-flower-buddhist-symbolism-tattoo-2025',
         slug: 'lotus-flower-buddhist-symbolism-tattoo',
-        title: "Hình xăm Hoa Bỉ Ngạn - Vẻ đẹp và bí ẩn",
+        title: "Higanbana Tattoo – Hoa Bỉ Ngạn Và Biên Giới Hai Thế Giới",
         date: "22/07/2025",
-        author: "Hoa Linh",
-        subtitle: "Hoa Bỉ Ngạn tượng trưng cho sự chia ly, nhớ nhung và vẻ đẹp mong manh của cuộc sống.",
+        author: "The Trung",
+        subtitle: "Higanbana nở đỏ rực vào mùa thu, đúng dịp lễ Obon khi người Nhật tưởng nhớ tổ tiên. Không lá khi có hoa, không hoa khi có lá – vĩnh viễn không gặp nhau.",
         image: HoaBiNgan,
         imageUI: HoaBiNgan,
         galleryImages: [HoaBiNgan],
         content: [
             {
                 type: 'title',
-                content: 'Ý nghĩa hình xăm Hoa Bỉ Ngạn trong văn hóa Á Đông'
+                content: 'Higanbana: Hoa Của Sự Chia Ly Vĩnh Viễn'
             },
             {
                 type: 'text',
-                content: 'Hoa Bỉ Ngạn là loài hoa bí ẩn trong văn hóa Á Đông, tượng trưng cho sự chia ly và nhớ nhung. Theo truyền thuyết, hoa này nở ở ranh giới giữa cõi sống và cõi chết.'
+                content: 'Higanbana (彼岸花) – nghĩa đen là "hoa bên kia bờ" – nở dọc đường đến nghĩa trang, bờ ruộng, và những nơi ranh giới giữa sống và chết mờ nhòa. Trong truyền thuyết Nhật Bản, hoa này dẫn lối cho linh hồn người chết đến thế giới bên kia.',
+                content2: 'Đặc điểm độc đáo: lá và hoa không bao giờ xuất hiện cùng lúc – lá rụng khi hoa nở, hoa tàn khi lá mọc. Đó là biểu tượng của những người yêu nhau nhưng không thể ở bên nhau.'
             },
             {
                 type: 'image',
-                content: 'Hình ảnh Hoa Bỉ Ngạn bí ẩn',
+                content: 'Higanbana – Hoa của sự chia ly',
                 image: HoaBiNgan
             },
             {
                 type: 'subtitle',
-                content: 'Biểu tượng của chia ly'
+                content: 'Ý Nghĩa Trong Nghệ Thuật Xăm'
             },
             {
                 type: 'text',
-                content: 'Hình xăm Hoa Bỉ Ngạn thể hiện nỗi nhớ nhung về người đã khuất hoặc những kỷ niệm đẹp đã qua.'
+                content: 'Higanbana phổ biến với những người: Tưởng nhớ người đã khuất. Đánh dấu sự kết thúc của một giai đoạn cuộc sống. Chấp nhận sự chia ly như một phần tất yếu của cuộc sống. Hoặc đơn giản yêu thích vẻ đẹp bi tráng của loài hoa này.',
+                content2: 'Trong anime và manga Nhật Bản, Higanbana xuất hiện ở những scene emotionally charged – và nhiều fan chọn nó làm tattoo đầu tiên.'
+            },
+            {
+                type: 'subtitle',
+                content: 'Kỹ Thuật Và Màu Sắc'
+            },
+            {
+                type: 'text',
+                content: 'Higanbana đỏ là classic, nhưng white spider lily (Lycoris albiflora) cũng đẹp và mang ý nghĩa khác – sự thanh khiết, tái sinh. Thường được thực hiện theo Japanese style với background clouds hoặc đứng độc lập.',
+                content2: 'Placement: cánh tay, đùi, lưng, hoặc rib. Đặt lịch tại The Thế Trung Tattoo Studio để thiết kế Higanbana mang ý nghĩa cá nhân của bạn.'
             }
         ],
-        tags: ['Hoa Bỉ Ngạn', 'Chia ly', 'Nhớ nhung', 'Bí ẩn', 'Á Đông'],
-        category: 'Văn hóa Á Đông',
-        readTime: '3 phút',
+        tags: ['HiganbanaTattoo', 'SpiderLilyTattoo', 'JapaneseTattoo', 'FloralTattoo', 'MemorialTattoo', 'TheTheTrungTattoo', 'RedInk', 'AsianArt'],
+        category: 'Japanese Floral',
+        readTime: '5 phút',
         views: 290
     },
     {
         id: 'dragon-chinese-mythology-tattoo-2025',
         slug: 'dragon-chinese-mythology-tattoo',
-        title: "Hình xăm Rồng - Linh vật quyền lực Trung Hoa",
+        title: "Dragon Tattoo – Rồng Châu Á Vs. Rồng Phương Tây",
         date: "20/07/2025",
-        author: "Long Vũ",
-        subtitle: "Rồng tượng trưng cho sức mạnh, quyền lực và sự may mắn trong văn hóa Trung Hoa.",
+        author: "The Trung",
+        subtitle: "Trong khi Western dragon là quái vật cần chinh phục, Asian dragon là divine being – mang mưa, may mắn, và wisdom. Hai triết lý hoàn toàn khác biệt.",
         image: Rong,
         imageUI: Rong,
         galleryImages: [Rong],
         content: [
             {
                 type: 'title',
-                content: 'Ý nghĩa hình xăm Rồng trong văn hóa Trung Hoa'
+                content: 'Rồng: Biểu Tượng Mạnh Mẽ Nhất Trong Nghệ Thuật Xăm'
             },
             {
                 type: 'text',
-                content: 'Rồng là linh vật quan trọng nhất trong văn hóa Trung Hoa, tượng trưng cho sức mạnh, quyền lực và sự may mắn. Rồng được coi là biểu tượng của hoàng đế và sự thịnh vượng.'
+                content: 'Dragon là một trong những chủ đề được yêu cầu nhiều nhất tại mọi tattoo studio trên thế giới. Nhưng ý nghĩa thay đổi hoàn toàn tùy thuộc vào văn hóa: Western dragon (có cánh, thở lửa) là adversary cần chinh phục. Asian dragon (dài, không cánh, bay nhờ magic) là divine protector.',
+                content2: 'Tại studio, câu hỏi đầu tiên với khách hàng muốn dragon: "Bạn muốn truyền tải điều gì?" Câu trả lời sẽ định hướng thiết kế.'
             },
             {
                 type: 'image',
-                content: 'Hình ảnh Rồng uy nghiêm',
+                content: 'Dragon – Biểu tượng của quyền lực và may mắn',
                 image: Rong
             },
             {
                 type: 'subtitle',
-                content: 'Biểu tượng của quyền lực'
+                content: 'Asian Dragon: Chinese vs. Japanese'
             },
-            {       
+            {
                 type: 'text',
-                content: 'Hình xăm Rồng thể hiện khát khao về sức mạnh, quyền lực và sự thành công trong cuộc sống.'
+                content: 'Chinese Dragon (Long): 5 móng (imperial), thân dài hơn, thường đi với pearl (wisdom/enlightenment). Symbolizes: power, prosperity, good fortune. Japanese Dragon (Ryū): 3 móng, body coiled hơn, thường đi với clouds và waves. Symbolizes: strength, courage, protection.',
+                content2: 'Về kỹ thuật: Chinese dragon thường có màu sắc rực rỡ (đỏ, vàng, xanh). Japanese dragon theo Irezumi tradition với palette hạn chế hơn nhưng bold.'
+            },
+            {
+                type: 'subtitle',
+                content: 'Hướng Và Ý Nghĩa'
+            },
+            {
+                type: 'text',
+                content: 'Dragon hướng lên: Đang ascending, đạt được mục tiêu, ambition. Dragon hướng xuống: Đã đạt được, đang "share wisdom", hoặc descending to earth để protect. Dragon cuộn: Balance, potential energy chờ giải phóng.',
+                content2: 'Placement: Full back (classic), sleeve, chest, hoặc thigh. Dragon cần space để "live" – avoid quá nhỏ. Đặt lịch tại The Thế Trung Tattoo Studio để thiết kế dragon độc bản.'
             }
         ],
-        tags: ['Rồng', 'Trung Hoa', 'Quyền lực', 'May mắn', 'Thịnh vượng'],
-        category: 'Văn hóa Trung Hoa',
-        readTime: '4 phút',
+        tags: ['DragonTattoo', 'ChineseDragon', 'JapaneseDragon', 'Irezumi', 'AsianTattoo', 'TheTheTrungTattoo', 'PowerTattoo', 'MythicalCreature'],
+        category: 'Asian Traditional',
+        readTime: '6 phút',
         views: 267
     },
     {
         id: 'celtic-knot-ancient-symbolism-tattoo-2025',
         slug: 'celtic-knot-ancient-symbolism-tattoo',
-        title: "Hình xăm Celtic - Nghệ thuật cổ xưa Ireland",
+        title: "Celtic Tattoo – Nút Thắt Vĩnh Cửu Từ Ireland",
         date: "18/07/2025",
-        author: "Sean O'Connor",
-        subtitle: "Celtic Knot tượng trưng cho sự vĩnh cửu, kết nối và vẻ đẹp của nghệ thuật cổ xưa.",
+        author: "The Trung",
+        subtitle: "Celtic knots không có điểm bắt đầu, không có điểm kết thúc – tượng trưng cho eternity, interconnectedness, và cycle của sự sống. Đó là triết học được đan vào từng đường nét.",
         image: Celtic,
         imageUI: Celtic,
         galleryImages: [Celtic],
         content: [
             {
                 type: 'title',
-                content: 'Ý nghĩa hình xăm Celtic trong văn hóa Ireland'
+                content: 'Celtic Art: Hơn 2000 Năm Và Vẫn Timeless'
             },
             {
                 type: 'text',
-                content: 'Celtic Knot là nghệ thuật cổ xưa của người Ireland, với những đường nét phức tạp tượng trưng cho sự vĩnh cửu và kết nối. Mỗi nút thắt đều có ý nghĩa riêng.'
+                content: 'Celtic art xuất hiện từ thời Iron Age ở Ireland, Scotland, và Wales. Điều làm nó đặc biệt: những đường nét interlocking không có điểm bắt đầu hay kết thúc – symbolizing eternity, continuity, và interconnection của mọi thứ trong vũ trụ.',
+                content2: 'Trong nghệ thuật xăm hiện đại, Celtic patterns phổ biến với những người có heritage từ các vùng này, hoặc đơn giản bị thu hút bởi meaning và aesthetics.'
             },
             {
                 type: 'image',
-                content: 'Hình ảnh Celtic Knot cổ xưa',
+                content: 'Celtic Knot – Vĩnh cửu trong từng đường nét',
                 image: Celtic
             },
             {
                 type: 'subtitle',
-                content: 'Biểu tượng của vĩnh cửu'
+                content: 'Các Loại Celtic Knot Phổ Biến'
             },
             {
                 type: 'text',
-                content: 'Hình xăm Celtic thể hiện sự kết nối với tổ tiên, văn hóa cổ xưa và niềm tin vào sự vĩnh cửu của tình yêu và tình bạn.'
+                content: 'Trinity Knot (Triquetra): Ba góc tượng trưng cho Father-Son-Holy Spirit (Christian), hoặc Land-Sea-Sky (Pagan). Dara Knot: Strength, wisdom (từ oak tree roots). Shield Knot: Protection. Spiral: Growth, eternal life. Celtic Cross: Faith, heritage.',
+                content2: 'Mỗi knot có ý nghĩa riêng – tại studio, chúng tôi sẽ giúp bạn chọn pattern phù hợp với message.'
+            },
+            {
+                type: 'subtitle',
+                content: 'Kỹ Thuật Và Style'
+            },
+            {
+                type: 'text',
+                content: 'Celtic tattoo đòi hỏi precision cao – một sai sót nhỏ trong interlocking pattern sẽ phá vỡ visual flow. Thường được thực hiện blackwork, nhưng có thể thêm color (green cho Irish heritage). Dotwork shading tạo depth mà không làm mất clarity của lines.',
+                content2: 'Placement: arm band, forearm, back, chest. Celtic cross thường larger scale. Đặt lịch tại The Thế Trung Tattoo Studio để thiết kế Celtic tattoo với precision và meaning.'
             }
         ],
-        tags: ['Celtic', 'Ireland', 'Cổ xưa', 'Vĩnh cửu', 'Kết nối'],
-        category: 'Văn hóa Celtic',
-        readTime: '4 phút',
+        tags: ['CelticTattoo', 'IrishTattoo', 'KnotworkTattoo', 'TribalTattoo', 'BlackworkTattoo', 'TheTheTrungTattoo', 'HeritageInk', 'AncientArt'],
+        category: 'Celtic & Tribal',
+        readTime: '5 phút',
         views: 244
     },
     {
         id: 'quan-cong-chinese-warrior-tattoo-2025',
         slug: 'quan-cong-chinese-warrior-tattoo',
-        title: "Hình xăm Quan Công - Vị tướng trung nghĩa",
+        title: "Quan Công Tattoo – Thần Hộ Mệnh Của Nghĩa Khí",
         date: "15/07/2025",
-        author: "Trần Văn Minh",
-        subtitle: "Quan Công tượng trưng cho lòng trung nghĩa, dũng cảm và sự bảo vệ trong văn hóa Trung Hoa.",
+        author: "The Trung",
+        subtitle: "Quan Công không chỉ là tướng quân – ông là biểu tượng của lòng trung nghĩa đã được thần thánh hóa. Hình xăm này không dành cho những người thiếu commitment với giá trị của mình.",
         image: QuanCong,
         imageUI: QuanCong,
         galleryImages: [QuanCong],
         content: [
             {
                 type: 'title',
-                content: 'Ý nghĩa hình xăm Quan Công trong văn hóa Trung Hoa'
+                content: 'Quan Công: Từ Tướng Quân Đến Thần Hộ Mệnh'
             },
             {
                 type: 'text',
-                content: 'Quan Công là một trong những nhân vật nổi tiếng nhất trong lịch sử Trung Hoa, được tôn thờ như vị thánh bảo vệ. Ông tượng trưng cho lòng trung nghĩa, dũng cảm và sự công bằng.'
+                content: 'Quan Vũ (160-220 AD) – tướng quân thời Tam Quốc – đã trở thành một trong những nhân vật được thờ phụng rộng rãi nhất trong văn hóa Trung Hoa. Ông được tôn làm Quan Đế (Hoàng Đế), Quan Thánh Đế Quân, và là patron saint của police, triad, business owners.',
+                content2: 'Điều làm Quan Công đặc biệt: ông không được thờ vì chiến thắng quân sự (Liu Bei thực tế thua nhiều trận). Ông được thờ vì LÒNG TRUNG NGHĨA – giữ lời hứa với anh em kết nghĩa đến chết.'
             },
             {
                 type: 'image',
-                content: 'Hình ảnh Quan Công uy nghiêm',
+                content: 'Quan Công – Biểu tượng của trung nghĩa',
                 image: QuanCong
             },
             {
                 type: 'subtitle',
-                content: 'Biểu tượng của trung nghĩa'
+                content: 'Ý Nghĩa Trong Văn Hóa Xăm'
             },
             {
                 type: 'text',
-                content: 'Hình xăm Quan Công thể hiện mong muốn được bảo vệ và thể hiện những phẩm chất cao đẹp như trung nghĩa, dũng cảm.'
+                content: 'Quan Công tattoo phổ biến với: Doanh nhân (bảo vệ tài sản, may mắn trong business). Cảnh sát, quân nhân (protection, righteousness). Những người coi trọng loyalty và brotherhood.',
+                content2: 'Một số người trong giới underground cũng chọn Quan Công – nhưng ý nghĩa thực sự là về code of honor, không phải violence. Đây là điều quan trọng cần hiểu trước khi chọn.'
+            },
+            {
+                type: 'subtitle',
+                content: 'Các Hình Thức Quan Công Trong Tattoo'
+            },
+            {
+                type: 'text',
+                content: 'Reading (đọc sách): Wisdom, strategy. Battle stance với Thanh Long Yển Nguyệt Đao: Warrior, protection. Stroking beard: Contemplation, confidence. Kết hợp với Chu Long (Red Hare horse): Complete loyalty.',
+                content2: 'Detail đặc trưng: Mặt đỏ (righteousness shows through), râu dài (wisdom), áo xanh (scholar-warrior). Những detail này không thể bỏ qua nếu muốn tác phẩm authentic.'
+            },
+            {
+                type: 'subtitle',
+                content: 'Lưu Ý Khi Chọn Quan Công'
+            },
+            {
+                type: 'text',
+                content: 'Quan Công là hình xăm "nặng" về mặt văn hóa. Tại một số cộng đồng, mang hình Quan Công mà không sống đúng với giá trị của ông (trung, nghĩa, dũng) được coi là bất kính.',
+                content2: 'Tại The Thế Trung Tattoo Studio, chúng tôi tư vấn kỹ trước khi thực hiện – không chỉ về design, mà còn về meaning và responsibility đi kèm. Đặt lịch để bắt đầu hành trình.'
             }
         ],
-        tags: ['Quan Công', 'Trung Hoa', 'Trung nghĩa', 'Dũng cảm', 'Bảo vệ'],
-        category: 'Văn hóa Trung Hoa',
-        readTime: '4 phút',
+        tags: ['QuanCongTattoo', 'GuanYuTattoo', 'ChineseTattoo', 'WarriorTattoo', 'LoyaltyTattoo', 'TheTheTrungTattoo', 'ProtectionTattoo', 'OrientalArt'],
+        category: 'Chinese Traditional',
+        readTime: '6 phút',
         views: 221
     }
 ];

@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { useLoading, InitialLoading, LoadingSpinner } from '../../';
 
 // Constants
-const LOADING_TIMEOUT = 3000;
+const LOADING_TIMEOUT = 1000;
 
 // Types
 interface LoadingWrapperProps {
@@ -54,6 +54,12 @@ const LoadingWrapper: React.FC<LoadingWrapperProps> = ({ children }) => {
 
   useEffect(() => {
     if (!loadingState.isInitialLoading) {
+      // Skip loading nếu có flag skipLoading trong state
+      const skipLoading = (location.state as { skipLoading?: boolean })?.skipLoading;
+      if (skipLoading) {
+        return;
+      }
+
       startPageLoading();
       
       pageTimerRef.current = setTimeout(() => {
@@ -66,7 +72,7 @@ const LoadingWrapper: React.FC<LoadingWrapperProps> = ({ children }) => {
         }
       };
     }
-  }, [location.pathname, loadingState.isInitialLoading, startPageLoading, completePageLoading]);
+  }, [location.pathname, loadingState.isInitialLoading, startPageLoading, completePageLoading, location.state]);
 
   if (loadingState.isInitialLoading) {
     return <InitialLoading onComplete={completeInitialLoading} />;

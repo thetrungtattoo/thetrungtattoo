@@ -22,6 +22,8 @@ import CareRemoval from './components/services/page/care/careRemoval';
 import NotFound from './shared/components/NotFound/NotFound';
 import Pricing from './components/pricing-tattoo/pricing';
 import BannerPricing from './components/pricing-tattoo/banner/bannerPricing';
+import NewsDetail from './components/news-detail/newsDetail';
+import MeaningDetail from './components/meaning-detail/meaningDetail';
 
 /**
  * Component để scroll về đầu trang mỗi khi route thay đổi
@@ -90,6 +92,8 @@ const AppRouter = () => {
                   <Route path={ROUTE_PATHS.SERVICE_TATTOO.TATTOO_CARE_REMOVAL} element={<CareRemoval />} />
                   <Route path={ROUTE_PATHS.SERVICE_TATTOO.TRAINING_WORKSHOP} element={<TrainingWorkshop />} />
                   <Route path={ROUTE_PATHS.BUSINESS.PRICING} element={<Pricing />} />
+                  <Route path={ROUTE_PATHS.NEWS.DETAIL} element={<NewsDetail />} />
+                  <Route path={ROUTE_PATHS.MEANING.DETAIL} element={<MeaningDetail />} />
                   <Route path="*" element={<NotFound />} />
                   </Routes>
                 <QuickActions />

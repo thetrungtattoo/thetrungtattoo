@@ -3,8 +3,8 @@
  */
 
 export const LOADING_CONSTANTS = {
-  LOADING_TIMEOUT: 3000,
-  FADE_OUT_DELAY: 300,
+  LOADING_TIMEOUT: 1000,
+  FADE_OUT_DELAY: 200,
   DEFAULT_LOADING_MESSAGE: "The Thế Trung Tattoo...",
   LOADING_OVERLAY_Z_INDEX: 1000,
   INITIAL_LOADING_Z_INDEX: 9999,
@@ -16,8 +16,8 @@ export const LOADING_CONSTANTS = {
   
   COLORS: {
     SPINNER_BORDER: '#222',
-    SPINNER_ACTIVE: '#fafad2',
+    SPINNER_ACTIVE: '#ddeeff',
     OVERLAY_BACKGROUND: '#0f0f0f',
-    TEXT_COLOR: '#fafad2'
+    TEXT_COLOR: '#ddeeff'
   }
 } as const;

@@ -40,10 +40,10 @@
 
     &:hover {
         background: #272727;
-        border-color: #FAFAD2;
+        border-color: #ddeeff;
         
         svg {
-            fill: #FAFAD2;
+            fill: #ddeeff;
         }
 
         .tooltip {
@@ -83,7 +83,7 @@
 
     &:hover {
         background: rgba(255, 255, 255, 0.2);
-        border-color: #FAFAD2;
+        border-color: #ddeeff;
     }
 
     svg {
@@ -94,7 +94,7 @@
     }
 
     &:hover svg {
-        fill: #FAFAD2;
+        fill: #ddeeff;
     }
 }
 
@@ -104,9 +104,9 @@
     top: 25%;
     transform: translateY(-50%);
     background: #0f0f0f;
-    color: #FAFAD2;
+    color: #ddeeff;
     padding: 8px 16px;
-    border: 1px solid #FAFAD2;
+    border: 1px solid #ddeeff;
     border-radius: 6px;
     font-size: 16px;
     white-space: nowrap;
@@ -123,7 +123,7 @@
         transform: translateY(-50%);
         width: 0;
         height: 0;
-        border-left: 6px solid #FAFAD2;
+        border-left: 6px solid #ddeeff;
         border-top: 6px solid transparent;
         border-bottom: 6px solid transparent;
     }

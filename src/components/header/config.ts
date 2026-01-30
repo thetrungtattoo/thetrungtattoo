@@ -72,17 +72,15 @@ export const DROPDOWN_CONFIG: DropdownConfig = {
         {
             title: 'Blog',
             items: [
-                { label: 'Ý nghĩa những hình xăm', path: ROUTE_PATHS.BLOG_TATTOO.MEANING },
+                { label: 'Ý nghĩa những hình xăm', path: '/#meaning-tattoos' },
                 { label: 'Câu chuyện khách hàng', path: ROUTE_PATHS.BLOG_TATTOO.STORIES },
-                { label: 'Hướng dẫn chăm sóc sau xăm', path: ROUTE_PATHS.BLOG_TATTOO.AFTERCARE },
+                { label: 'Hướng dẫn chăm sóc sau xăm', path: '/news/huong-dan-cham-soc-sau-xam' },
             ]
         },
         {
             title: 'Hỗ trợ khách hàng',
             items: [
-                { label: 'Chăm sóc online với AI', path: ROUTE_PATHS.SUPPORT.CHAT },
-                { label: 'Góp ý sản phẩm dịch vụ', path: ROUTE_PATHS.SUPPORT.FEEDBACK },
-                { label: 'Câu hỏi thường gặp', path: ROUTE_PATHS.SUPPORT.FAQ },
+                { label: 'Câu hỏi thường gặp', path: '/#faq-section' },
                 { label: 'Điều khoản & Điều kiện', path: ROUTE_PATHS.SUPPORT.TERMS },
                 { label: 'Tiêu chuẩn cộng đồng', path: ROUTE_PATHS.SUPPORT.COMMUNITY_STANDARDS },
             ]

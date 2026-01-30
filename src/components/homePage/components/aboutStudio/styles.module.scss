@@ -91,7 +91,7 @@
       position: absolute;
       left: 0;
       width: 100%;
-      background: #fafad2;
+      background: #ddeeff;
       border-radius: 2px;
       transition: top 0.3s ease, height 0.3s ease;
     }
@@ -118,12 +118,12 @@
       z-index: 1;
 
       &:hover {
-        background: #fafad21a;
+        background: #ddeeff1a;
       }
 
       &.active {
-        border-color: #fafad2;
-        background: #fafad21a;
+        border-color: #ddeeff;
+        background: #ddeeff1a;
       }
 
       @media screen and (max-width: 768px) {
@@ -176,7 +176,7 @@
       .contentIcon {
         width: 32px;
         height: 32px;
-        fill: #fafad2;
+        fill: #ddeeff;
       }
 
       @media screen and (max-width: 425px) {
