@@ -39,7 +39,7 @@ export const newsCards: NewsCard[] = [
         content: [
             'Kính gửi Quý khách hàng thân mến,',
             'Tết là khoảng thời gian để chậm lại — không phải để mất đà, mà để giữ nhịp, giữ lực và sẵn sàng tăng tốc đúng thời điểm, đây cũng là thời gian để đội ngũ tạm rời khỏi nhịp làm việc liên tục, tái tạo năng lượng sáng tạo và chuẩn bị cho những concept, những tác phẩm có chiều sâu hơn cho năm mới.',
-            'Studio kính gửi tới quý khách hàng lịch nghĩ lễ Âm lịch 2026 như sau: bắt đầu từ 12/02/2026 (25 tháng Chạp) đến hết 22/02/2026 (mùng 6 Tết) và chính thức mở cửa trở lại từ 23/02/2026 (mùng 7 Tết)',
+            'Studio kính gửi tới quý khách hàng lịch nghĩ lễ Âm lịch 2026 như sau: bắt đầu từ <strong>12/02/2026 (ngày 25 tháng Chạp)</strong> đến hết <strong>23/02/2026 (mùng 7 Tết)</strong> và chính thức mở cửa trở lại từ <strong>24/02/2026 (mùng 8 Tết)</strong>',
             'Trong thời gian này, toàn bộ lịch hẹn sẽ được tự động sắp xếp lại sau ngày hoạt động. Đội ngũ studio vẫn duy trì hỗ trợ qua Zalo và Facebook để đảm bảo mọi kế hoạch tattoo — từ concept đến session planning — đều đã được chuẩn bị kỹ lưỡng trước khi bắt đầu.',
             'Với chúng tôi, năm mới không đơn thuần là một mốc thời gian. Đó là điểm khởi đầu cho những tác phẩm được thiết kế để tồn tại lâu dài - cả về thẩm mỹ, kỹ thuật và giá trị cá nhân.',
             'Cảm ơn bạn đã chọn Studio là một phần trong hành trình ghi dấu thời gian của mình.',

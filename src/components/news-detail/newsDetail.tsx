@@ -53,7 +53,7 @@ const NewsDetail = () => {
                                 duration={0.4}
                                 delay={100 + index * 50}
                             >
-                                <p className={styles.paragraph}>{paragraph}</p>
+                                <p className={styles.paragraph} dangerouslySetInnerHTML={{ __html: paragraph }} />
                             </FadeInSection>
                         ))}
                     </div>

@@ -24,6 +24,7 @@ import Pricing from './components/pricing-tattoo/pricing';
 import BannerPricing from './components/pricing-tattoo/banner/bannerPricing';
 import NewsDetail from './components/news-detail/newsDetail';
 import MeaningDetail from './components/meaning-detail/meaningDetail';
+import LunarNewYear2026 from './components/Notification/LunarNewYear2026';
 
 /**
  * Component để scroll về đầu trang mỗi khi route thay đổi
@@ -104,6 +105,7 @@ const AppRouter = () => {
             
             {/* Modal rendered at the highest level to avoid container constraints */}
             <ModalComponent />
+            <LunarNewYear2026 />
           </BrowserRouter>
         </ModalProvider>
       </LoadingProvider>
